@@ -32,50 +32,50 @@
     <h2 class="page-title">Вязание на заказ</h2>
     <p class="description">Мы будем рады воплотить в жизнь ваши пожелания!
       Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-    <form method="get" action="https://echo.htmlacademy.ru/" class="custom-order">
-      <fieldset class="custom-order__field">
-        <legend class="custom-order__title">тип</legend>
+    <form method="get" action="https://echo.htmlacademy.ru/" class="form">
+      <fieldset class="form__field">
+        <legend class="form__field-title">тип</legend>
         <input type="radio" id="radio-acces" value="accessory" class="custom-order__type">
-        <label for="radio-acces" class="custom-order__label-type custom-order__label-type--hover custom-order__label-type--active">Аксессуар для интерьера</label>
+        <label for="radio-acces" class="form__label">Аксессуар для интерьера</label>
         <input type="radio" id="radio-toy" value="toy" class="custom-order__type">
-        <label for="radio-toy" class="custom-order__label-type custom-order__label-type--hover custom-order__label-type--active">Детская игрушка</label>
+        <label for="radio-toy" class="form__label">Детская игрушка</label>
       </fieldset>
-      <fieldset class="custom-order__field">
-        <legend class="custom-order__title">цвет</legend>
+      <fieldset class="form__field">
+        <legend class="form__field-title">цвет</legend>
         <input type="checkbox" id="check-white" name="color" value="white" class="custom-order__color">
-        <label for="check-white" class="custom-order__label-color custom-order__label-color--hover custom-order__label-color--active">Белый</label>
+        <label for="check-white" class="form__label">Белый</label>
         <input type="checkbox" id="check-grey" name="color" value="grey" class="custom-order__color">
-        <label for="check-grey" class="custom-order__label-color custom-order__label-color--hover custom-order__label-color--active">Серый</label>
+        <label for="check-grey" class="form__label">Серый</label>
         <input type="checkbox" id="check-tiffany" name="color" value="tiffany" class="custom-order__color">
-        <label for="check-tiffany" class="custom-order__label-color custom-order__label-color--hover custom-order__label-color--active">&laquo;Тиффани&raquo;</label>
+        <label for="check-tiffany" class="form__label">&laquo;Тиффани&raquo;</label>
         <input type="checkbox" id="check-black" name="color" value="black" class="custom-order__color">
-        <label for="check-black" class="custom-order__label-color custom-order__label-color--hover custom-order__label-color--active">Черный</label>
+        <label for="check-black" class="form__label">Черный</label>
         <input type="checkbox" id="check-pink" name="color" value="pink" class="custom-order__color">
-        <label for="check-pink" class="custom-order__label-color custom-order__label-color--hover custom-order__label-color--active">Розовый</label>
+        <label for="check-pink" class="form__label">Розовый</label>
         <input type="checkbox" id="check-orange" name="color" value="orange" class="custom-order__color">
-        <label for="check-orange" class="custom-order__label-color custom-order__label-color--hover custom-order__label-color--active">Оранжевый</label>
+        <label for="check-orange" class="form__label">Оранжевый</label>
       </fieldset>
-      <fieldset class="custom-order__field">
-        <legend class="custom-order__title">фио</legend>
-        <label for="txt-name" class="custom-order__label-txt">Имя:</label>
+      <fieldset class="form__field">
+        <legend class="form__field-title">фио</legend>
+        <label for="txt-name" class="form__label">Имя:</label>
         <input type="text" id="txt-name" name="name" class="custom-order__txt" placeholder="Введите ваше имя*" required>
-        <label for="txt-surname" class="custom-order__label-txt">Фамилия:</label>
+        <label for="txt-surname" class="form__label">Фамилия:</label>
         <input type="text" id="txt-surname" name="surname" class="custom-order__txt" placeholder="Укажите фамилию*" required>
-        <label for="txt-patronymic" class="custom-order__label-txt">Отчество:</label>
+        <label for="txt-patronymic" class="form__label">Отчество:</label>
         <input type="text" id="txt-patronymic" name="patronymic" class="custom-order__txt" placeholder="Отчество, если желаете">
       </fieldset>
-      <fieldset class="custom-order__field">
-        <legend class="custom-order__title">тел</legend>
+      <fieldset class="form__field">
+        <legend class="form__field-title">тел</legend>
         <input type="tel" id="txt-phone" name="phone" class="custom-order__txt" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
         <label for="txt-phone" class="visually-hidden">номер телефона</label>
       </fieldset>
-      <fieldset class="custom-order__field">
+      <fieldset class="form__field">
         <legend class="custom-order__title">e-mail</legend>
         <input type="email" id="txt-email" name="email" class="custom-order__txt" placeholder="Ваш Email*" required>
         <label for="txt-email" class="visually-hidden">ваш email</label>
       </fieldset>
-      <fieldset class="custom-order__field">
-        <legend class="custom-order__title">доп</legend>
+      <fieldset class="form__field">
+        <legend class="form__field-title">доп</legend>
         <textarea name="order_message" id="txt-message" class="custom-order__textarea" placeholder="Опишите все вашипожелания к заказу"></textarea>
         <label for="txt-message" class="visually-hidden">сообщение с описанием к заказу</label>
       </fieldset>
