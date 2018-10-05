@@ -7,7 +7,9 @@
 <body>
   <header class="site-header">
     <h1 class="visually-hidden">Магазин вязаных игрушек ручной работы.</h1>
-    <img src="#" alt="Магазин Mishka" width="86" height="35" class="site-header__logo-img site-header__logo-img--hover site-header__logo-img--active">
+    <a href="#" class="site-header__logo site-header__logo--hover site-header__logo--active">
+      <img src="#" alt="Магазин Mishka" width="86" height="35" class="site-header__logo-img">
+    </a>
     <button class="site-header__btn-menu"></button>
     <nav class="site-header__navigation">
       <ul class="site-header__menu">
@@ -74,16 +76,17 @@
       </fieldset>
       <fieldset class="custom-order__field">
         <legend class="custom-order__title">доп</legend>
-        <textarea name="order_message" id="txt-message" class="custom-order__textarea" placeholder="Опишите все ваши
-пожелания к заказу"></textarea>
+        <textarea name="order_message" id="txt-message" class="custom-order__textarea" placeholder="Опишите все вашипожелания к заказу"></textarea>
         <label for="txt-message" class="visually-hidden">сообщение с описанием к заказу</label>
       </fieldset>
       <p class="custom-order__notification">*Поля обязательны для заполнения</p>
       <button type="submit" class="custom-order__submit">отправить заказ</button>
     </form>
   </main>
-  <footer>
-    <img src="#" alt="логотип MiSHKA" width="102" height="34" class="site-footer__logo site-footer__logo--hover site-footer__logo--active">
+  <footer class="site-footer">
+    <a href="#" class="site-footer__logo site-footer__logo--hover site-footer__logo--active">
+      <img src="#" alt="логотип MiSHKA" width="102" height="34" class="site-footer__logo-img">
+    </a>
     <section class="site-footer__social">
       <a href="https://www.instagram.com/htmlacademy/" target="_blank" class="site-footer__socilal-inst site-footer__socilal-inst--hover site-footer__socilal-inst--active" aria-label="Наши фотоотчёты в Instagram"></a>
       <a href="https://ru-ru.facebook.com/htmlacademy/" target="_blank" class="site-footer__socilal-fb site-footer__socilal-fb--hover site-footer__socilal-fb--active" aria-label="Наше сообщество в Facebook"></a>
