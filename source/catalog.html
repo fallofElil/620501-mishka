@@ -53,10 +53,10 @@
     <article class="video-material">
       <h2 class="video-material__title">Процесс производства</h2>
       <img src="#" alt="видео процесса вязания товара" width="260" height="150" class="video-material__img-video">
-      <button class="video-material__btn-play video-material__btn-play--hover video-material__btn-play--active" aria-label="воспроизвести видео">&#10148;</button>
+      <button class="video-material__btn-play" aria-label="воспроизвести видео">&#10148;</button>
       <p class="video-material__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о
         том, как появляются наши товары.</p>
-      <a href="#" class="video-material__link-order video-material__link-order--hover video-material__link-order--active">сделать заказ</a>
+      <a class="btn" href="#">сделать заказ</a>
     </article>
   </main>
   <footer class="footer">
@@ -73,23 +73,23 @@
       <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="site-footer__copyright-link" aria-label="Записывайтесь на интенсив по адаптивной вёрстке!"></a>
     </section>
   </footer>
-  <section class="modal modal--article">
-    <h3>добавить в корзину</h3>
+  <section class="modal modal--size">
+    <h3 class="modal__title">добавить в корзину</h3>
     <p class="modal__info">Выберете размер:</p>
-    <form method="get" action="https://echo.htmlacademy.ru/" class="modal__choose-size">
-      <label class="modal__size-label">
+    <form method="get" action="https://echo.htmlacademy.ru/" class="modal__form">
+      <label class="modal__label modal__label--size">
         s
-        <input type="radio" name="size" value="s" class="modal__size-radio">
+        <input class="modal__radio modal__radio--size" type="radio" name="size" value="s">
       </label>
-      <label class="modal__size-label">
+      <label class="modal__label modal__label--size">
         m
-        <input type="radio" name="size" value="m" class="modal__size-radio">
+        <input class="modal__radio modal__radio--size" type="radio" name="size" value="m">
       </label>
-      <label class="modal__size-label">
+      <label class="modal__label modal__label--size">
         l
-        <input type="radio" name="size" value="l" class="modal__size-radio">
+        <input class="modal__radio modal__radio--size" type="radio" name="size" value="l">
       </label>
-      <button type="submit" class="modal__btn-add"></button>
+      <button class="modal__submit" type="submit">добавить</button>
     </form>
   </section>
 </body>
