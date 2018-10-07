@@ -1,0 +1,17 @@
+@import "../variables.scss";
+
+.feedback__text {
+  color: $greyish-brown;
+}
+
+.feedback__username-full {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.41em;
+}
+
+.feedback__username {
+  font-size: 17px;
+  line-height: 1.76em;
+  color: $greyish-brown;
+}

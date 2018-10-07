@@ -1,0 +1,21 @@
+@import "../variables.scss";
+
+.week-article__subtitle {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.17em;
+  color: $mint;
+}
+
+.week-article__description,
+.week-article__characteristics {
+  line-height: 1.6em;
+  color: $greyish-brown;
+}
+
+.week-article__price {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.41em;
+  color: $greyish-brown;
+}
