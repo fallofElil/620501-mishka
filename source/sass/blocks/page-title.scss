@@ -1,0 +1,13 @@
+@import "../variables.scss";
+
+.page-title {
+  display: block;
+  margin: 0;
+  background-color: $background-grey;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.page-title--home {
+  background-image: url("../../img/hero-mobile@1x.jpg");
+}

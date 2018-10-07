@@ -1,0 +1,16 @@
+@import "../variables.scss";
+
+.categories__item {
+  font-size: 19px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.categories__item--accessories {
+  background-color: $mint;
+}
+
+.categories__item--toys {
+  background-color: $darker-mint;
+}
