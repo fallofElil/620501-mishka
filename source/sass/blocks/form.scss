@@ -1,4 +1,4 @@
-@include "../variables.scss";
+@import "../variables.scss";
 
 .form__field-title {
   font-size: 17px;
@@ -6,6 +6,7 @@
   line-height: 0.94em;
   color: $mint;
   text-transform: uppercase;
+
   &::after {
     content: "";
     width: 200px;
@@ -28,6 +29,7 @@
 
 .form__textarea {
   border: 2px solid #000000;
+
   &::placeholder {
     color: $grey-placeholder;
   }
