@@ -3,99 +3,98 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <h1 class="visually-hidden">Магазин вязаных игрушек ручной работы.</h1>
-    <a href="#" class="site-header__logo site-header__logo--hover site-header__logo--active">
-      <img src="#" alt="Магазин Mishka" width="86" height="35" class="site-header__logo-img">
-    </a>
-    <button class="site-header__btn-menu"></button>
-    <nav class="site-header__navigation">
-      <ul class="site-header__menu">
-        <li class="site-header__menu-item site-header__menu-item--hover site-header__menu-item--active">
-          <a class="site-header__menu-link">Каталог товаров</a>
+  <header class="header">
+    <a class="logo logo--header" href="index.html" aria-label="магазин вязаных игрушек MiSHKA"></a>
+    <nav class="menu">
+      <button class="menu__toggle" type="button">меню</button>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#">Каталог товаров</a>
         </li>
-        <li class="site-header__menu-item site-header__menu-item--hover site-header__menu-item--active">
-          <a class="site-header__menu-link">Вязание на заказ</a>
+        <li class="menu__item">
+          <a href="#">Вязание на заказ</a>
         </li>
-        <li class="site-header__menu-item site-header__menu-item--hover site-header__menu-item--active">
-          <a class="site-header__menu-link">Поиск по сайту</a>
+        <li class="menu__item menu__item--search">
+          <a href="#">Поиск по сайту</a>
         </li>
-        <li class="site-header__menu-item site-header__menu-item--hover site-header__menu-item--active">
-          <a class="site-header__menu-link">Корзина: пока пуста</a>
+        <li class="menu__item menu__item--cart">
+          <a href="#">Корзина: пока пуста</a>
         </li>
       </ul>
     </nav>
+    <p class="header__info">Бесплатная доставка по России</p>
   </header>
   <main>
-    <h2 class="page-title">Вязание на заказ</h2>
+    <h1 class="page-title">Вязание на заказ</h1>
     <p class="description">Мы будем рады воплотить в жизнь ваши пожелания!
       Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-    <form method="get" action="https://echo.htmlacademy.ru/" class="custom-order">
-      <fieldset class="custom-order__field">
-        <legend class="custom-order__title">тип</legend>
-        <input type="radio" id="radio-acces" value="accessory" class="custom-order__type">
-        <label for="radio-acces" class="custom-order__label-type custom-order__label-type--hover custom-order__label-type--active">Аксессуар для интерьера</label>
-        <input type="radio" id="radio-toy" value="toy" class="custom-order__type">
-        <label for="radio-toy" class="custom-order__label-type custom-order__label-type--hover custom-order__label-type--active">Детская игрушка</label>
+    <form method="get" action="https://echo.htmlacademy.ru/" class="form">
+      <fieldset class="form__field">
+        <legend class="form__field-title">тип</legend>
+        <input class="form__radio" type="radio" id="radio-acces" value="accessory">
+        <label class="form__label form__label--radio" for="radio-acces">Аксессуар для интерьера</label>
+        <input class="form__radio" type="radio" id="radio-toy" value="toy">
+        <label class="form__label form__label--radio" for="radio-toy">Детская игрушка</label>
       </fieldset>
-      <fieldset class="custom-order__field">
-        <legend class="custom-order__title">цвет</legend>
-        <input type="checkbox" id="check-white" name="color" value="white" class="custom-order__color">
-        <label for="check-white" class="custom-order__label-color custom-order__label-color--hover custom-order__label-color--active">Белый</label>
-        <input type="checkbox" id="check-grey" name="color" value="grey" class="custom-order__color">
-        <label for="check-grey" class="custom-order__label-color custom-order__label-color--hover custom-order__label-color--active">Серый</label>
-        <input type="checkbox" id="check-tiffany" name="color" value="tiffany" class="custom-order__color">
-        <label for="check-tiffany" class="custom-order__label-color custom-order__label-color--hover custom-order__label-color--active">&laquo;Тиффани&raquo;</label>
-        <input type="checkbox" id="check-black" name="color" value="black" class="custom-order__color">
-        <label for="check-black" class="custom-order__label-color custom-order__label-color--hover custom-order__label-color--active">Черный</label>
-        <input type="checkbox" id="check-pink" name="color" value="pink" class="custom-order__color">
-        <label for="check-pink" class="custom-order__label-color custom-order__label-color--hover custom-order__label-color--active">Розовый</label>
-        <input type="checkbox" id="check-orange" name="color" value="orange" class="custom-order__color">
-        <label for="check-orange" class="custom-order__label-color custom-order__label-color--hover custom-order__label-color--active">Оранжевый</label>
+      <fieldset class="form__field">
+        <legend class="form__field-title">цвет</legend>
+        <input class="form__check" type="checkbox" id="check-white" name="color" value="white">
+        <label class="form__label form__label--check" for="check-white">Белый</label>
+        <input class="form__check" type="checkbox" id="check-grey" name="color" value="grey">
+        <label class="form__label form__label--check" for="check-grey">Серый</label>
+        <input class="form__check" type="checkbox" id="check-tiffany" name="color" value="tiffany">
+        <label class="form__label form__label--check" for="check-tiffany">&laquo;Тиффани&raquo;</label>
+        <input class="form__check" type="checkbox" id="check-black" name="color" value="black">
+        <label class="form__label form__label--check" for="check-black">Черный</label>
+        <input class="form__check" type="checkbox" id="check-pink" name="color" value="pink">
+        <label class="form__label form__label--check" for="check-pink">Розовый</label>
+        <input class="form__check" type="checkbox" id="check-orange" name="color" value="orange">
+        <label class="form__label form__label--check" for="check-orange">Оранжевый</label>
       </fieldset>
-      <fieldset class="custom-order__field">
-        <legend class="custom-order__title">фио</legend>
-        <label for="txt-name" class="custom-order__label-txt">Имя:</label>
-        <input type="text" id="txt-name" name="name" class="custom-order__txt" placeholder="Введите ваше имя*" required>
-        <label for="txt-surname" class="custom-order__label-txt">Фамилия:</label>
-        <input type="text" id="txt-surname" name="surname" class="custom-order__txt" placeholder="Укажите фамилию*" required>
-        <label for="txt-patronymic" class="custom-order__label-txt">Отчество:</label>
-        <input type="text" id="txt-patronymic" name="patronymic" class="custom-order__txt" placeholder="Отчество, если желаете">
+      <fieldset class="form__field">
+        <legend class="form__field-title">фио</legend>
+        <label class="form__label form__label--txt" for="txt-name">Имя:</label>
+        <input class="form__txt" type="text" id="txt-name" name="name" placeholder="Введите ваше имя*" required>
+        <label class="form__label form__label--txt" for="txt-surname">Фамилия:</label>
+        <input class="form__txt" type="text" id="txt-surname" name="surname" placeholder="Укажите фамилию*" required>
+        <label class="form__label form__label--txt" for="txt-patronymic">Отчество:</label>
+        <input class="form__txt" type="text" id="txt-patronymic" name="patronymic" placeholder="Отчество, если желаете">
       </fieldset>
-      <fieldset class="custom-order__field">
-        <legend class="custom-order__title">тел</legend>
-        <input type="tel" id="txt-phone" name="phone" class="custom-order__txt" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-        <label for="txt-phone" class="visually-hidden">номер телефона</label>
+      <section class="form__contacts">
+        <fieldset class="form__field">
+          <legend class="form__field-title">тел</legend>
+          <input class="form__txt form__txt--phone" type="tel" id="txt-phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+          <label class="visually-hidden" for="txt-phone">номер телефона</label>
+        </fieldset>
+        <fieldset class="form__field">
+          <legend class="form__title">e-mail</legend>
+          <input class="form__txt form__txt--email" type="email" id="txt-email" name="email" placeholder="Ваш Email*" required>
+          <label class="visually-hidden" for="txt-email">ваш email</label>
+        </fieldset>
+      </section>
+      <fieldset class="form__field">
+        <legend class="form__field-title">доп</legend>
+        <textarea class="form__textarea" name="order_message" id="txt-message" placeholder="Опишите все вашипожелания к заказу"></textarea>
+        <label class="visually-hidden" for="txt-message">сообщение с описанием к заказу</label>
       </fieldset>
-      <fieldset class="custom-order__field">
-        <legend class="custom-order__title">e-mail</legend>
-        <input type="email" id="txt-email" name="email" class="custom-order__txt" placeholder="Ваш Email*" required>
-        <label for="txt-email" class="visually-hidden">ваш email</label>
-      </fieldset>
-      <fieldset class="custom-order__field">
-        <legend class="custom-order__title">доп</legend>
-        <textarea name="order_message" id="txt-message" class="custom-order__textarea" placeholder="Опишите все вашипожелания к заказу"></textarea>
-        <label for="txt-message" class="visually-hidden">сообщение с описанием к заказу</label>
-      </fieldset>
-      <p class="custom-order__notification">*Поля обязательны для заполнения</p>
-      <button type="submit" class="custom-order__submit">отправить заказ</button>
+      <p class="form__notification">*Поля обязательны для заполнения</p>
+      <button class="btn" type="submit">отправить заказ</button>
     </form>
   </main>
-  <footer class="site-footer">
-    <a href="#" class="site-footer__logo site-footer__logo--hover site-footer__logo--active">
-      <img src="#" alt="логотип MiSHKA" width="102" height="34" class="site-footer__logo-img">
-    </a>
-    <section class="site-footer__social">
-      <a href="https://www.instagram.com/htmlacademy/" target="_blank" class="site-footer__socilal-inst site-footer__socilal-inst--hover site-footer__socilal-inst--active" aria-label="Наши фотоотчёты в Instagram"></a>
-      <a href="https://ru-ru.facebook.com/htmlacademy/" target="_blank" class="site-footer__socilal-fb site-footer__socilal-fb--hover site-footer__socilal-fb--active" aria-label="Наше сообщество в Facebook"></a>
-      <a href="https://twitter.com/htmlacademy_ru?lang=ru" target="_blank" class="site-footer__socilal-tw site-footer__socilal-tw--hover site-footer__socilal-tw--active" aria-label="Читайте наши новости в Twitter"></a>
+  <footer class="footer">
+    <a class="logo logo--footer" href="index.html" aria-label="магазин вязаных игрушек MiSHKA"></a>
+    <section class="social">
+      <a class="social__icon social__icon--inst" href="https://www.instagram.com/htmlacademy/" target="_blank" aria-label="Наши фотоотчёты в Instagram"></a>
+      <a class="social__icon social__icon--fb" href="https://ru-ru.facebook.com/htmlacademy/" target="_blank" aria-label="Наше сообщество в Facebook"></a>
+      <a class="social__icon social__icon--tw" href="https://twitter.com/htmlacademy_ru?lang=ru" target="_blank" aria-label="Читайте наши новости в Twitter"></a>
     </section>
-    <section class="site-footer__copyright">
-      <p class="site-footer__copyright-text"></p>
-      <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="site-footer__copyright-link site-footer__copyright-link--hover site-footer__copyright-link--active" aria-label="Записывайтесь на интенсив по адаптивной вёрстке!"></a>
-    </section>
+    <p class="copyright__text">
+      Разработано
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Записывайтесь на интенсив по адаптивной вёрстке!"></a>
+    </p>
   </footer>
 </body>
 </html>

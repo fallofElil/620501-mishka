@@ -1,0 +1,13 @@
+@import "../variables.scss";
+
+.video-material__title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.41em;
+}
+
+.video-material__description {
+  font-size: 13px;
+  line-height: 1.84em;
+  color: $greyish-brown;
+}

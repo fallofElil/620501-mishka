@@ -1,0 +1,18 @@
+@import "../variables.scss";
+
+.article__title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.41em;
+}
+
+.article__characteristics {
+  font-size: 13px;
+  line-height: 2.3em;
+  color: $greyish-brown;
+}
+
+.article__price {
+  font-weight: 700;
+  line-height: 1.6em;
+}

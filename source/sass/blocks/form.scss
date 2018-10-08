@@ -1,0 +1,42 @@
+@import "../variables.scss";
+
+.form__field-title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 0.94em;
+  color: $mint;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    width: 200px;
+    height: 1px;
+    background-color: $mint;
+  }
+}
+
+.form__label--txt {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+.form__txt {
+  &::placeholder {
+    color: $grey-placeholder;
+  }
+}
+
+.form__textarea {
+  border: 2px solid #000000;
+
+  &::placeholder {
+    color: $grey-placeholder;
+  }
+}
+
+.form__notification {
+  font-size: 14px;
+  line-height: 1.14em;
+  color: $greyish-brown;
+}
