@@ -6,12 +6,12 @@
   line-height: 1.26em;
   text-decoration: none;
   color: #ffffff;
-}
 
-.categories__item--accessories {
-  background-color: $mint;
-}
+  &--accessories {
+    background-color: $mint;
+  }
 
-.categories__item--toys {
-  background-color: $darker-mint;
+  &--toys {
+    background-color: $darker-mint;
+  }
 }

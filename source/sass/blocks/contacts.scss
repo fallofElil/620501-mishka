@@ -3,3 +3,10 @@
 .contacts__table {
   color: $greyish-brown;
 }
+
+.contacts__value {
+  &--email {
+    text-decoration: none;
+    border-bottom: 1px solid $mint;
+  }
+}
