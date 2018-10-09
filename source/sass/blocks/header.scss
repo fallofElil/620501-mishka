@@ -1,0 +1,9 @@
+.header {
+  min-height: 80px;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    min-height: 90px;
+  }
+}

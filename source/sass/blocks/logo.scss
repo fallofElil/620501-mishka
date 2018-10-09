@@ -1,0 +1,36 @@
+@import "../variables.scss";
+
+.logo {
+  display: block;
+  height: 35px;
+  
+  &--footer {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    &--header {
+      height: 46px;
+    }
+
+    &--footer {
+      display: block;
+      height: 34px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    &--header {
+      height: 72px;
+    }
+
+    &--footer {
+      display: block;
+      height: 34px;
+    }
+  }
+}
