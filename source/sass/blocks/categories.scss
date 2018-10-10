@@ -1,17 +1,52 @@
 @import "../variables.scss";
 
-.categories__item {
-  font-size: 19px;
-  font-weight: 700;
-  line-height: 1.26em;
-  text-decoration: none;
-  color: #ffffff;
+.categories {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
 
+.categories__item-wrapper {
   &--accessories {
     background-color: $mint;
   }
 
   &--toys {
     background-color: $darker-mint;
+  }
+}
+
+.categories__item {
+  width: 260px;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.26em;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .categories {
+    flex-direction: row;
+  }
+
+  .categories__item-wrapper {
+    width: 335px;
+    padding-top: 30px;
+    padding-left: 35px;
+  }
+
+  .categories__item {
+    width: 265px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories__item-wrapper {
+    width: 525px;
+  }
+
+  .categories__item {
+    width: 455px;
   }
 }
