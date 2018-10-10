@@ -15,3 +15,9 @@
     border-bottom: 1px solid $mint;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .contacts__table {
+    display: flex;
+  }
+}
