@@ -6,6 +6,7 @@
 }
 
 .week-article__subtitle {
+  margin-bottom: 25px;
   font-size: 17px;
   font-weight: 700;
   line-height: 1.17em;
@@ -18,7 +19,20 @@
   color: $greyish-brown;
 }
 
+.week-article__description {
+  margin-bottom: 25px;
+}
+
+.week-article__characteristics {
+  margin-bottom: 30px;
+}
+
+.week-article__img {
+  margin-bottom: 25px;
+}
+
 .week-article__price {
+  margin-bottom: 25px;
   font-size: 17px;
   font-weight: 700;
   line-height: 1.41em;
