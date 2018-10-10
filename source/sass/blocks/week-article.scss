@@ -3,23 +3,30 @@
 .week-article {
   width: 260px;
   margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.week-article__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .week-article__subtitle {
-  margin-bottom: 25px;
   font-size: 17px;
   font-weight: 700;
   line-height: 1.17em;
   color: $mint;
 }
 
-.week-article__description,
+.week-article__description-txt,
 .week-article__characteristics {
   line-height: 1.6em;
   color: $greyish-brown;
 }
 
-.week-article__description {
+.week-article__description-txt {
   margin-bottom: 25px;
 }
 
@@ -32,9 +39,65 @@
 }
 
 .week-article__price {
+  margin: 0 auto;
   margin-bottom: 25px;
   font-size: 17px;
   font-weight: 700;
   line-height: 1.41em;
   color: $greyish-brown;
+}
+
+@media (min-width: $tablet-width) {
+  .week-article {
+    width: 670px;
+    padding-bottom: 65px;
+  }
+
+  .week-article__header {
+    margin-bottom: 50px;
+  }
+
+  .week-article__description-wrapper {
+    width: 290px;
+  }
+
+  .week-article__description-txt {
+    margin-bottom: 40px;
+  }
+
+  .week-article__characteristics {
+    margin-bottom: 55px;
+  }
+
+  .week-article__img {
+    position: absolute;
+    top: 0; /*--временное значение, нужно определиться, относительно какого блока позиционировать--*/
+    right: 0;
+  }
+
+  .week-article__price {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .week-article {
+    width: 875px;
+    padding-bottom: 85px;
+  }
+
+  .week-article__header {
+    position: relative;
+    width: 295px;
+  }
+
+  .week-article__subtitle {
+    position: absolute;
+    top: 0;
+    left: 60px;
+  }
+
+  .week-article__description-wrapper {
+    width: 295px;
+  }
 }

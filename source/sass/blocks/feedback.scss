@@ -27,3 +27,9 @@
   width: 260px;
   margin-bottom: 40px;
 }
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    padding-top: 80px;
+  }
+}

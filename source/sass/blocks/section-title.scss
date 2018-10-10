@@ -7,8 +7,26 @@
   font-weight: 700;
   line-height: 1.2em;
 
-  &__contacts {
+  &--contacts {
     margin-bottom: 35px;
     font-size: 18px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .section-title {
+    &--about-us {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .section-title {
+    &--week-article {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 }

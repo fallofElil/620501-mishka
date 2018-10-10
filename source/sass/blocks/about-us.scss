@@ -6,10 +6,28 @@
 }
 
 .about-us__feature {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.about-us__feature {
   height: 100px;
   margin-bottom: 25px;
   font-size: 17px;
   font-weight: 700;
   line-height: 1.17em;
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    padding-top: 60px;
+    margin-bottom: 80px;
+  }
+
+  .about-us__feature {
+    width: 335px;
+    margin-bottom: 65px;
+  }
 }
