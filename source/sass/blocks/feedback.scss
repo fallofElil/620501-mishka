@@ -1,17 +1,29 @@
 @import "../variables.scss";
 
+.feedback {
+  padding-bottom: 50px;
+}
+
 .feedback__text {
   color: $greyish-brown;
+  margin-bottom: 30px;
 }
 
 .feedback__username-full {
+  margin-bottom: 10px;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.41em;
 }
 
 .feedback__username {
+  margin-bottom: 30px;
   font-size: 17px;
   line-height: 1.76em;
   color: $greyish-brown;
+}
+
+.feedback__comment-switch {
+  width: 260px;
+  margin-bottom: 40px;
 }

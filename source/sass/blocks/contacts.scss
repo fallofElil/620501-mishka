@@ -1,6 +1,11 @@
 @import "../variables.scss";
 
+.contacts {
+  padding-top: 45px;
+}
+
 .contacts__table {
+  margin-bottom: 40px;
   color: $greyish-brown;
 }
 

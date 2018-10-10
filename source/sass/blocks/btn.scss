@@ -1,6 +1,7 @@
 @import "../variables.scss";
 
 .btn {
+  display: block;
   width: 260px;
   border: 2px solid $greyish-brown;
   font-size: 17px;
@@ -9,4 +10,8 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $greyish-brown;
+
+  &--write-us {
+    margin-bottom: 40px;
+  }
 }
