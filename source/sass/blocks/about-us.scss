@@ -1,4 +1,13 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 55px;
+}
+
 .about-us__feature {
+  height: 100px;
+  margin-bottom: 25px;
   font-size: 17px;
   font-weight: 700;
   line-height: 1.17em;
