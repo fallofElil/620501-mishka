@@ -4,6 +4,13 @@
 
 @media (min-width: $tablet-width) {
   .header {
+    width: 670px;
     min-height: 90px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    width: 1050px;
   }
 }

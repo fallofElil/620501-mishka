@@ -2,13 +2,35 @@
 
 .page-title {
   display: block;
+  height: 175px;
   margin: 0;
   background-color: $background-grey;
   font-size: 27px;
   font-weight: 700;
   line-height: 1.1em;
+  text-align: center;
+  vertical-align: center;
 
   &--home {
+    height: 280px;
     background-image: url("../img/hero-mobile@1x.jpg");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    height: 225px;
+
+    &--home {
+      height: 630px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-title {
+    height: 245px;
+  }
+}
+
+/*----245px----*/

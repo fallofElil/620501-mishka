@@ -17,7 +17,18 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 70px;
+  }
+
   .contacts__table {
     display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    padding-top: 155px;
+    margin-bottom: 105px;
   }
 }

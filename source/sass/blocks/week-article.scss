@@ -50,6 +50,7 @@
 @media (min-width: $tablet-width) {
   .week-article {
     width: 670px;
+    padding-top: 50px;
     padding-bottom: 65px;
   }
 
@@ -83,6 +84,7 @@
 @media (min-width: $desktop-width) {
   .week-article {
     width: 875px;
+    padding-top: 125px;
     padding-bottom: 85px;
   }
 
@@ -99,5 +101,9 @@
 
   .week-article__description-wrapper {
     width: 295px;
+  }
+
+  .week-article__img {
+    top: 0;
   }
 }

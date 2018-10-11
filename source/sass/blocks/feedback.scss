@@ -31,6 +31,10 @@
 @media (min-width: $tablet-width) {
   .feedback {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 130px;
+  }
+
+  .feedback__text {
+    margin-bottom: 60px;
   }
 }

@@ -31,3 +31,10 @@
     margin-bottom: 65px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    padding-top: 70px;
+    padding-bottom: 85px;
+  }
+}
