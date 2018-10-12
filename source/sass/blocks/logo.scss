@@ -7,7 +7,7 @@
   &--header {
     padding: 22px 0;
   }
-  
+
   &--footer {
     display: none;
   }
@@ -16,7 +16,9 @@
 @media (min-width: $tablet-width) {
   .logo {
     &--header {
+      position: absolute;
       height: 46px;
+      padding: 0;
     }
 
     &--footer {
