@@ -7,6 +7,9 @@
 }
 
 .categories__item-wrapper {
+  margin: 0;
+  padding: 25px 30px;
+
   &--accessories {
     background-color: $mint;
   }

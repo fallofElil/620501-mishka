@@ -7,9 +7,15 @@
   </head>
   <body>
     <header class="header">
-      <a class="logo logo--header" href="index.html" aria-label="магазин вязаных игрушек MiSHKA"></a>
       <nav class="menu">
-        <button class="menu__toggle" type="button">меню</button>
+        <a class="logo logo--header" href="index.html" aria-label="магазин вязаных игрушек &laquo;Мишка&raquo;">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" width="86" height="35" alt="Магазин &laquo;MiSHKA&raquo;">
+          </picture>
+        </a>
+        <button class="menu__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
         <ul class="menu__list menu__list--top">
           <li class="menu__item">
             <a href="#">Каталог товаров</a>
@@ -36,10 +42,11 @@
           </li>
         </ul>
       </nav>
-      <p class="header__info">Бесплатная доставка по России</p>
     </header>
     <main>
-      <h1 class="page-title page-title--home">Милые штуки ручной работы для дома</h1>
+      <div class="title-wrapper title-wrapper--home">
+        <h1 class="page-title page-title--home">Милые&nbsp;штуки ручной работы&nbsp;для&nbsp;дома</h1>
+      </div>
       <section class="categories">
         <p class="categories__item-wrapper categories__item-wrapper--accessories">
           <a class="categories__item categories__item--accessories" href="#">Предметы <br>интерьера</a>
@@ -114,9 +121,9 @@
               д. 19/8, офис 101</td>
           </tr>
         </table>
-      </section>
-      <section class="map">
-        <img class="map__img" src="#" alt="карта проезда до магазина" width="320" height="457">
+        <div class="contacts__map-wrapper">
+          <img class="contacts__map" src="img/map-mobile@1x.jpg" alt="карта проезда до магазина" width="322" height="457">
+        </div>
       </section>
       <a class="btn btn--write-us" href="#">напишите нам</a>
     </main>
@@ -134,5 +141,24 @@
         </p>
       </section>
     </footer>
+    <section class="modal modal--size">
+      <h3 class="modal__title">добавить в корзину</h3>
+      <p class="modal__info">Выберете размер:</p>
+      <form method="get" action="https://echo.htmlacademy.ru/" class="modal__form">
+        <label class="modal__label modal__label--size">
+          s
+          <input class="modal__radio modal__radio--size" type="radio" name="size" value="s">
+        </label>
+        <label class="modal__label modal__label--size">
+          m
+          <input class="modal__radio modal__radio--size" type="radio" name="size" value="m">
+        </label>
+        <label class="modal__label modal__label--size">
+          l
+          <input class="modal__radio modal__radio--size" type="radio" name="size" value="l">
+        </label>
+        <button class="modal__submit" type="submit">добавить</button>
+      </form>
+    </section>
   </body>
 </html>

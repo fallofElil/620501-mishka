@@ -1,5 +1,7 @@
 .header {
+  position: relative;
   min-height: 80px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {

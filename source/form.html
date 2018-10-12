@@ -7,9 +7,15 @@
 </head>
 <body>
   <header class="header">
-    <a class="logo logo--header" href="index.html" aria-label="магазин вязаных игрушек MiSHKA"></a>
     <nav class="menu">
-      <button class="menu__toggle" type="button">меню</button>
+      <a class="logo logo--header" href="index.html" aria-label="магазин вязаных игрушек &laquo;Мишка&raquo;">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Магазин &laquo;MiSHKA&raquo;">
+        </picture>
+      </a>
+      <button class="menu__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
       <ul class="menu__list">
         <li class="menu__item">
           <a href="#">Каталог товаров</a>
@@ -36,7 +42,6 @@
         </li>
       </ul>
     </nav>
-    <p class="header__info">Бесплатная доставка по России</p>
   </header>
   <main>
     <h1 class="page-title">Вязание на заказ</h1>
@@ -96,7 +101,9 @@
     </form>
   </main>
   <footer class="footer">
-    <a class="logo logo--footer" href="index.html" aria-label="магазин вязаных игрушек MiSHKA"></a>
+    <a class="logo logo--footer" href="index.html" aria-label="магазин вязаных игрушек &laquo;Мишка&raquo;">
+      <img src="img/logo-footer.svg" width="102" height="34" alt="Магазин &laquo;MiSHKA&raquo;">
+    </a>
     <section class="social">
       <a class="social__icon social__icon--inst" href="https://www.instagram.com/htmlacademy/" target="_blank" aria-label="Наши фотоотчёты в Instagram"></a>
       <a class="social__icon social__icon--fb" href="https://ru-ru.facebook.com/htmlacademy/" target="_blank" aria-label="Наше сообщество в Facebook"></a>

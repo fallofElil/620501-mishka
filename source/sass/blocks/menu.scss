@@ -1,12 +1,21 @@
+@import "../variables.scss";
+
 .menu {
   position: relative;
   width: 320px;
   margin: 0 auto;
 }
 
+.menu__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .menu__list {
   margin: 0;
   padding: 0;
+  border-collapse: collapse;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -15,6 +24,25 @@
   &--bottom {
     display: none;
   }
+}
+
+.menu__item {
+  padding: 28px 0;
+  border-top: 1px solid #ececec;
+  vertical-align: middle;
+
+  &:last-child {
+    border-bottom: 1px solid #ececec;
+  }
+}
+
+.menu__item a { /*---нужно заменить миксином или сделать элементом---*/
+  padding-left: 75px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.41em;
+  text-decoration: none;
+  color: #000000;
 }
 
 @media (min-width: $tablet-width) {

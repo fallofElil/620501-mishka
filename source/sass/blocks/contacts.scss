@@ -16,6 +16,11 @@
   }
 }
 
+.contacts__map-wrapper {
+  display: block;
+  margin-bottom: 40px;
+}
+
 @media (min-width: $tablet-width) {
   .contacts {
     padding-top: 70px;

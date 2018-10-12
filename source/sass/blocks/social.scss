@@ -1,3 +1,13 @@
 .social {
-  background-color: $background-grey;
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.social__icon {
+  outline: 1px solid black;
+  width: 25px;
+  height: 25px;
 }

@@ -2,7 +2,11 @@
 
 .logo {
   display: block;
-  height: 35px;
+  text-align: center;
+
+  &--header {
+    padding: 22px 0;
+  }
   
   &--footer {
     display: none;

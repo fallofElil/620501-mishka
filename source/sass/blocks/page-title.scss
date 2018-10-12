@@ -2,9 +2,7 @@
 
 .page-title {
   display: block;
-  height: 175px;
-  margin: 0;
-  background-color: $background-grey;
+  margin: 0 auto;
   font-size: 27px;
   font-weight: 700;
   line-height: 1.1em;
@@ -12,8 +10,7 @@
   vertical-align: center;
 
   &--home {
-    height: 280px;
-    background-image: url("../img/hero-mobile@1x.jpg");
+    padding-top: 75px;
   }
 }
 
