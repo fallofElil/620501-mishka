@@ -44,24 +44,38 @@
     </nav>
   </header>
   <main>
-    <h1 class="page-title">Каталог товаров</h1>
+    <div class="title-wrapper title-wrapper--catalog">
+      <h1 class="page-title">Каталог товаров</h1>
+    </div>
     <section class="goods">
       <article class="article">
-        <img class="article__img" src="#" alt="игрушка Зайчик-попрыгайчик" width="260" height="195">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-hare-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg">
+          <img class="article__img" src="img/photo-hare-mobile@1x.jpg" alt="игрушка Зайчик-попрыгайчик">
+        </picture>
         <h3 class="article__title"><a href="#">Зайчик-попрыгайчик</a></h3>
         <p class="article__characteristics">Рост 30 см, вес 200 г</p>
         <p class="article__price">1&nbsp;200 руб.</p>
         <a class="article__link-to-cart" href="#" aria-label="добавить в корзину"></a>
       </article>
       <article class="article">
-        <img class="article__img" src="#" alt="вязаная корзинка для белья" width="260" height="195">
-        <h3 class="article__title"><a href="#">Корзинка для белья</a>></h3>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-bowl-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg">
+          <img class="article__img" src="img/photo-bowl-mobile@1x.jpg" alt="вязаная корзинка для белья">
+        </picture>
+        <h3 class="article__title"><a href="#">Корзинка для белья</a></h3>
         <p class="article__characteristics">Диаметр 15 см, высота 10 см</p>
         <p class="article__price">690 руб.</p>
         <a class="article__link-to-cart" href="#" aria-label="добавить в корзину"></a>
       </article>
       <article class="article">
-        <img class="article__img" src="#" alt="большая вязаня корзинка для игрушек" width="260" height="195">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-toys-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg">
+          <img class="article__img" src="img/photo-toys-mobile@1x.jpg" alt="большая вязаня корзинка для игрушек">
+        </picture>
         <h3 class="article__title"><a href="#">Большая корзинка для игрушек</a></h3>
         <p class="article__characteristics">Диаметр 30 см, высота 30 см</p>
         <p class="article__price">1&nbsp;500 руб.</p>
@@ -70,7 +84,11 @@
     </section>
     <article class="video-material">
       <h2 class="video-material__title">Процесс производства</h2>
-      <img class="video-material__img-video" src="#" alt="видео процесса вязания товара" width="260" height="150">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg">
+        <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
+        <img class="video-material__img-video" src="img/video-mobile@1x.jpg" alt="видео процесса вязания товара">
+      </picture>
       <button class="video-material__btn-play" aria-label="воспроизвести видео">&#10148;</button>
       <p class="video-material__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о
         том, как появляются наши товары.</p>
@@ -95,7 +113,7 @@
       </section>
     </div>
   </footer>
-  <section class="modal modal--size">
+  <section class="modal modal--size visually-hidden">
     <h3 class="modal__title">добавить в корзину</h3>
     <p class="modal__info">Выберете размер:</p>
     <form method="get" action="https://echo.htmlacademy.ru/" class="modal__form">

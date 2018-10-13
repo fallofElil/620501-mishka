@@ -1,5 +1,12 @@
 @import "../variables.scss";
 
+.video-material {
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  border: 1px solid #ececec;
+}
+
 .video-material__title {
   font-size: 17px;
   font-weight: 700;

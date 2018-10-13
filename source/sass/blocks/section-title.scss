@@ -2,7 +2,6 @@
 
 .section-title {
   display: block;
-  margin: 0;
   font-size: 25px;
   font-weight: 700;
   line-height: 1.2em;
@@ -15,7 +14,6 @@
 
 @media (min-width: $tablet-width) {
   .section-title {
-    width: 500px;
     font-size: 43px;
     line-height: 1.16em;
 

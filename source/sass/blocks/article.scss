@@ -1,9 +1,26 @@
 @import "../variables.scss";
 
+.article {
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: 1px solid #ececec;
+}
+
+.article__img {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
 .article__title {
   font-size: 17px;
   font-weight: 700;
   line-height: 1.41em;
+}
+
+.article__title a {
+  text-decoration: none;
+  color: #000000;
 }
 
 .article__characteristics {
