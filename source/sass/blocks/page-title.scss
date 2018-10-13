@@ -16,17 +16,18 @@
 
 @media (min-width: $tablet-width) {
   .page-title {
-    height: 225px;
-
     &--home {
-      height: 630px;
+      width: 495px;
+      padding-top: 160px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-title {
-    height: 245px;
+    &--home {
+      width: 605px;
+    }
   }
 }
 

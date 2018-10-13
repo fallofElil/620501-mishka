@@ -29,14 +29,29 @@
 
   .contacts__table {
     width: 670px;
-    display: flex;
     margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
+    position: relative;
+    width: 1050px;
+    min-height: 305px;
     padding-top: 155px;
     margin-bottom: 105px;
+  }
+
+  .contacts__table {
+    width: 300px;
+    margin-left: 175px;
+    margin-bottom: 55px;
+  }
+
+  .contacts__map-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-bottom: 0;
   }
 }

@@ -47,6 +47,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .categories {
+    width: 1050px;
+  }
+
   .categories__item-wrapper {
     width: 525px;
   }

@@ -48,3 +48,19 @@
     width: 140px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    width: 1050px;
+  }
+
+  .feedback__text {
+    width: 770px;
+  }
+
+  .feedback__text,
+  .feedback__username-full,
+  .feedback__username {
+    margin-left: 175px;
+  }
+}

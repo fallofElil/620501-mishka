@@ -33,3 +33,14 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .btn {
+    width: 230px;
+
+    &--write-us {
+      margin: 0;
+      margin-left: 175px;
+    }
+  }
+}

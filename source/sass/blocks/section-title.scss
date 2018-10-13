@@ -38,9 +38,20 @@
 @media (min-width: $desktop-width) {
   .section-title {
     &--week-article {
-      position: absolute;
-      top: 0;
-      left: 0;
+      width: 875px;
+      margin-left: auto;
+      font-size: 53px;
+      line-height: 1em;
+    }
+
+    &--feedback {
+      margin-left: 175px;
+    }
+
+    &--contacts {
+      margin: 0;
+      margin-left: 175px;
+      margin-bottom: 55px;
     }
   }
 }
