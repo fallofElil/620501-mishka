@@ -11,3 +11,11 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    &--footer {
+      width: 1050px;
+    }
+  }
+}
