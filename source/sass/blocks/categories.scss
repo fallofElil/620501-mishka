@@ -30,7 +30,9 @@
 
 @media (min-width: $tablet-width) {
   .categories {
+    width: 670px;
     flex-direction: row;
+    margin: 0 auto;
   }
 
   .categories__item-wrapper {

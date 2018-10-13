@@ -14,9 +14,11 @@
 }
 
 .week-article__subtitle {
+  margin: 0;
   font-size: 17px;
   font-weight: 700;
   line-height: 1.17em;
+  text-transform: uppercase;
   color: $mint;
 }
 
@@ -49,13 +51,21 @@
 
 @media (min-width: $tablet-width) {
   .week-article {
+    position: relative;
     width: 670px;
     padding-top: 50px;
     padding-bottom: 65px;
   }
 
   .week-article__header {
+    width: 670px;
+    flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 50px;
+  }
+
+  .week-article__subtitle {
+    width: 70px;
   }
 
   .week-article__description-wrapper {
@@ -72,7 +82,7 @@
 
   .week-article__img {
     position: absolute;
-    top: 0; /*--временное значение, нужно определиться, относительно какого блока позиционировать--*/
+    top: 150px; /*--временное значение, нужно определиться, относительно какого блока позиционировать--*/
     right: 0;
   }
 

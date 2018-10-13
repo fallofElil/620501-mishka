@@ -29,12 +29,10 @@
           <li class="menu__item menu__item--cart">
             <a href="#">Корзина: пока пуста</a>
           </li>
-        </ul>
-        <ul class="menu__list menu__list--bottom">
-          <li class="menu__item">
+          <li class="menu__item menu__item--desktop">
             <a href="#">Новые поступления</a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item menu__item--desktop">
             <a href="#">Распродажа</a>
           </li>
           <li class="menu__item menu__item--info">
@@ -77,9 +75,11 @@
               <td class="week-article__characteristic-value">15 см</td>
             </tr>
           </table>
-<!--
-          <img class="week-article__img" src="#" alt="вязаные корзинки" width="260" height="315">
--->
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
+            <img class="week-article__img" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="вязаные корзинки">
+          </picture>
           <p class="week-article__price">Цена: 990 руб.</p>
           <a class="btn" href="#">заказать</a>
         </div>
@@ -87,12 +87,12 @@
       <section class="about-us">
         <h2 class="section-title section-title--about-us">Коротко о нас:</h2>
         <ul class="about-us__list">
-          <li class="about-us__feature about-us__feature--eco">Экологически чистые материалы</li>
-          <li class="about-us__feature about-us__feature--price">Скандинавский стиль по российской цене</li>
-          <li class="about-us__feature about-us__feature--like">Увеличивает лайки на фотографиях</li>
-          <li class="about-us__feature about-us__feature--love">Связано вручную с любовью и умилением</li>
+          <li class="about-us__feature about-us__feature--eco">Экологически чистые&nbsp;материалы</li>
+          <li class="about-us__feature about-us__feature--price">Скандинавский стиль по&nbsp;российской&nbsp;цене</li>
+          <li class="about-us__feature about-us__feature--like">Увеличивает лайки на&nbsp;фотографиях</li>
+          <li class="about-us__feature about-us__feature--love">Связано вручную с любовью&nbsp;и&nbsp;умилением</li>
           <li class="about-us__feature about-us__feature--support">Поддержка отечественного производителя</li>
-          <li class="about-us__feature about-us__feature--gift">Поставляется в подарочной упаковке</li>
+          <li class="about-us__feature about-us__feature--gift">Поставляется в подарочной&nbsp;упаковке</li>
         </ul>
       </section>
       <section class="feedback">
