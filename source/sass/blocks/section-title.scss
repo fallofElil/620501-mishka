@@ -19,13 +19,17 @@
     font-size: 43px;
     line-height: 1.16em;
 
-
-
     &--about-us {
       margin-bottom: 40px;
     }
 
     &--feedback {
+      margin-bottom: 50px;
+    }
+
+    &--contacts {
+      width: 670px;
+      margin: 0 auto;
       margin-bottom: 50px;
     }
   }

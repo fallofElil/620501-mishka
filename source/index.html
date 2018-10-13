@@ -78,7 +78,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x.jpg">
             <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
-            <img class="week-article__img" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="вязаные корзинки">
+            <img class="week-article__img" src="img/triple-set-mobile@1x.jpg" alt="вязаные корзинки">
           </picture>
           <p class="week-article__price">Цена: 990 руб.</p>
           <a class="btn" href="#">заказать</a>
@@ -124,26 +124,34 @@
           </tr>
         </table>
         <div class="contacts__map-wrapper">
-          <img class="contacts__map" src="img/map-mobile@1x.jpg" alt="карта проезда до магазина" width="322" height="457">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/map-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
+            <img class="contacts__map" src="img/map-mobile@1x.jpg" alt="карта проезда до магазина">
+          </picture>
         </div>
       </section>
       <a class="btn btn--write-us" href="#">напишите нам</a>
     </main>
     <footer class="footer">
-      <a class="logo logo--footer" href="index.html" aria-label="магазин вязаных игрушек MiSHKA"></a>
-      <section class="social">
-        <a class="social__icon social__icon--inst" href="https://www.instagram.com/htmlacademy/" target="_blank" aria-label="Наши фотоотчёты в Instagram"></a>
-        <a class="social__icon social__icon--fb" href="https://ru-ru.facebook.com/htmlacademy/" target="_blank" aria-label="Наше сообщество в Facebook"></a>
-        <a class="social__icon social__icon--tw" href="https://twitter.com/htmlacademy_ru?lang=ru" target="_blank" aria-label="Читайте наши новости в Twitter"></a>
-      </section>
-      <section class="copyright">
-        <p class="copyright__text">
-          Разработано
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Записывайтесь на интенсив по адаптивной вёрстке!"></a>
-        </p>
-      </section>
+      <div class="wrapper wrapper--footer">
+        <a class="logo logo--footer" href="index.html" aria-label="магазин вязаных игрушек &laquo;Мишка&raquo;">
+          <img src="img/logo-footer.svg" width="102" height="34" alt="&laquo;MiSHKA&raquo;">
+        </a>
+        <section class="social">
+          <a class="social__icon social__icon--inst" href="https://www.instagram.com/htmlacademy/" target="_blank" aria-label="Наши фотоотчёты в Instagram"></a>
+          <a class="social__icon social__icon--fb" href="https://ru-ru.facebook.com/htmlacademy/" target="_blank" aria-label="Наше сообщество в Facebook"></a>
+          <a class="social__icon social__icon--tw" href="https://twitter.com/htmlacademy_ru?lang=ru" target="_blank" aria-label="Читайте наши новости в Twitter"></a>
+        </section>
+        <section class="copyright">
+          <p class="copyright__text">
+            Разработано
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Записывайтесь на интенсив по адаптивной вёрстке!"></a>
+          </p>
+        </section>
+      </div>
     </footer>
-    <section class="modal modal--size">
+    <section class="modal modal--size visually-hidden">
       <h3 class="modal__title">добавить в корзину</h3>
       <p class="modal__info">Выберете размер:</p>
       <form method="get" action="https://echo.htmlacademy.ru/" class="modal__form">

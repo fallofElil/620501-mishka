@@ -28,16 +28,23 @@
 
 .feedback__comment-switch {
   width: 260px;
-  margin-bottom: 40px;
 }
 
 @media (min-width: $tablet-width) {
   .feedback {
+    width: 670px;
+    padding: 0;
     padding-top: 80px;
-    padding-bottom: 130px;
   }
 
   .feedback__text {
     margin-bottom: 60px;
+  }
+
+  .feedback__comment-switch {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 140px;
   }
 }

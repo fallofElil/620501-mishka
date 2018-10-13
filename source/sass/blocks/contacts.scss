@@ -1,6 +1,7 @@
 @import "../variables.scss";
 
 .contacts {
+  margin: 0 auto;
   padding-top: 45px;
 }
 
@@ -27,7 +28,9 @@
   }
 
   .contacts__table {
+    width: 670px;
     display: flex;
+    margin: 0 auto;
   }
 }
 
