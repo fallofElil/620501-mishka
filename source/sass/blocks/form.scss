@@ -1,5 +1,27 @@
 @import "../variables.scss";
 
+.form {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.form__field {
+  padding: 0;
+  margin-bottom: 30px;
+
+  &--type,
+  &--color,
+  &--fullname {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &--addition {
+    height: 175px;
+  }
+}
+
 .form__field-title {
   font-size: 17px;
   font-weight: 700;
@@ -28,6 +50,8 @@
 }
 
 .form__textarea {
+  width: 260px;
+  height: 140px;
   border: 2px solid #000000;
 
   &::placeholder {
@@ -36,6 +60,7 @@
 }
 
 .form__notification {
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.14em;
   color: $greyish-brown;
