@@ -65,3 +65,14 @@
   line-height: 1.14em;
   color: $greyish-brown;
 }
+
+@media (min-width: $tablet-width) {
+  .form {
+    width: auto;
+  }
+
+  .form__field {
+    width: 670px;
+    margin: 0 auto;
+  }
+}

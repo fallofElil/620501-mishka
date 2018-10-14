@@ -8,3 +8,9 @@
   line-height: 1.84em;
   color: $greyish-brown;
 }
+
+@media (min-width: $tablet-width) {
+  .description {
+    width: 670px;
+  }
+}
