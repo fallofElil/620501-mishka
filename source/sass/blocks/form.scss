@@ -71,8 +71,68 @@
     width: auto;
   }
 
-  .form__field {
+  .description {
     width: 670px;
+  }
+
+  .form__field {
+    position: relative;
+    width: 500px;
+    padding-left: 167px;
     margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .form__field-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .form__field--color {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__contacts {
+    position: relative;
+    background-color: $background-grey;
+  }
+
+  .form__textarea {
+    width: 500px;
+    height: 140px;
+  }
+
+  .form__field--addition {
+    height: auto;
+  }
+
+  .form__field--submit {
+    display: flex;
+    justify-content: space-between;
+    width: 670px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description,
+  .form__field,
+  .form__contacts {
+    width: 700px;
+  }
+
+  .form__field-title {
+    top: 0;
+    left: -115px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .form__textarea {
+    width: 700px;
   }
 }

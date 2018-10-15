@@ -20,6 +20,7 @@
 
   &--send-order {
     margin-bottom: 55px;
+    background-color: transparent;
   }
 }
 
@@ -41,7 +42,10 @@
       margin-bottom: 45px;
     }
 
-    &--send-order
+    &--send-order {
+      margin: 0;
+      order: -1;
+    }
   }
 }
 
