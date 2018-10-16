@@ -1,17 +1,66 @@
 @import "../variables.scss";
 
+.feedback {
+  position: relative;
+  width: 260px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
 .feedback__text {
   color: $greyish-brown;
+  margin-bottom: 30px;
 }
 
 .feedback__username-full {
+  margin-bottom: 10px;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.41em;
 }
 
 .feedback__username {
+  margin-bottom: 30px;
   font-size: 17px;
   line-height: 1.76em;
   color: $greyish-brown;
+}
+
+.feedback__comment-switch {
+  width: 260px;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    width: 670px;
+    padding: 0;
+    padding-top: 80px;
+  }
+
+  .feedback__text {
+    margin-bottom: 60px;
+  }
+
+  .feedback__comment-switch {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 140px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    width: 1050px;
+  }
+
+  .feedback__text {
+    width: 770px;
+  }
+
+  .feedback__text,
+  .feedback__username-full,
+  .feedback__username {
+    margin-left: 175px;
+  }
 }

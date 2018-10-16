@@ -1,0 +1,33 @@
+@import "../variables.scss";
+
+.title-wrapper {
+  display: block;
+  height: 175px;
+  margin-bottom: 30px;
+  background-color: $background-grey;
+
+  &--home {
+    height: 280px;
+    padding: 0 30px;
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .title-wrapper {
+    &--home {
+      height: 625px;
+      background-image: url("../img/hero-tablet@1x.jpg");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title-wrapper {
+    &--home {
+      background-image: url("../img/hero-desktop@1x.jpg");
+    }
+  }
+}

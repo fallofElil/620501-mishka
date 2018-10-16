@@ -1,6 +1,26 @@
 @import "../variables.scss";
 
+.categories {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.categories__item-wrapper {
+  margin: 0;
+  padding: 25px 30px;
+
+  &--accessories {
+    background-color: $mint;
+  }
+
+  &--toys {
+    background-color: $darker-mint;
+  }
+}
+
 .categories__item {
+  width: 260px;
   font-size: 19px;
   font-weight: 700;
   line-height: 1.26em;
@@ -8,10 +28,34 @@
   color: #ffffff;
 }
 
-.categories__item--accessories {
-  background-color: $mint;
+@media (min-width: $tablet-width) {
+  .categories {
+    width: 670px;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .categories__item-wrapper {
+    width: 335px;
+    padding-top: 30px;
+    padding-left: 35px;
+  }
+
+  .categories__item {
+    width: 265px;
+  }
 }
 
-.categories__item--toys {
-  background-color: $darker-mint;
+@media (min-width: $desktop-width) {
+  .categories {
+    width: 1050px;
+  }
+
+  .categories__item-wrapper {
+    width: 525px;
+  }
+
+  .categories__item {
+    width: 455px;
+  }
 }

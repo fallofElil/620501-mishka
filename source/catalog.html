@@ -7,10 +7,16 @@
 </head>
 <body>
   <header class="header">
-    <a class="logo logo--header" href="index.html" aria-label="магазин вязаных игрушек MiSHKA"></a>
     <nav class="menu">
-      <button class="menu__toggle" type="button">меню</button>
-      <ul class="menu__list">
+      <a class="logo logo--header" href="index.html" aria-label="магазин вязаных игрушек &laquo;Мишка&raquo;">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Магазин &laquo;MiSHKA&raquo;">
+        </picture>
+      </a>
+      <button class="menu__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
+      <ul class="menu__list menu__list--top">
         <li class="menu__item">
           <a href="#">Каталог товаров</a>
         </li>
@@ -23,59 +29,97 @@
         <li class="menu__item menu__item--cart">
           <a href="#">Корзина: пока пуста</a>
         </li>
+        <li class="menu__item menu__item--desktop">
+          <a href="#">Новые поступления</a>
+        </li>
+        <li class="menu__item menu__item--desktop">
+          <a href="#">Распродажа</a>
+        </li>
+        <li class="menu__item menu__item--info">
+          <p>Бесплатная доставка по России</p>
+        </li>
       </ul>
     </nav>
-    <p class="header__info">Бесплатная доставка по России</p>
   </header>
   <main>
-    <h1 class="page-title">Каталог товаров</h1>
+    <div class="title-wrapper title-wrapper--catalog">
+      <h1 class="page-title">Каталог товаров</h1>
+    </div>
     <section class="goods">
       <article class="article">
-        <img class="article__img" src="#" alt="игрушка Зайчик-попрыгайчик" width="260" height="195">
-        <h3 class="article__title"><a href="#">Зайчик-попрыгайчик</a></h3>
-        <p class="article__characteristics">Рост 30 см, вес 200 г</p>
-        <p class="article__price">1&nbsp;200 руб.</p>
-        <a class="article__link-to-cart" href="#" aria-label="добавить в корзину"></a>
+        <picture class="article__img">
+          <source media="(min-width: 1200px)" srcset="img/photo-hare-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg">
+          <img src="img/photo-hare-mobile@1x.jpg" alt="игрушка Зайчик-попрыгайчик">
+        </picture>
+        <div class="article__description">
+          <h3 class="article__title"><a href="#">Зайчик-попрыгайчик</a></h3>
+          <p class="article__characteristics">Рост 30 см, вес 200 г</p>
+          <p class="article__price">1&nbsp;200 руб.</p>
+          <a class="article__link-to-cart" href="#" aria-label="добавить в корзину"></a>
+        </div>
       </article>
       <article class="article">
-        <img class="article__img" src="#" alt="вязаная корзинка для белья" width="260" height="195">
-        <h3 class="article__title"><a href="#">Корзинка для белья</a>></h3>
-        <p class="article__characteristics">Диаметр 15 см, высота 10 см</p>
-        <p class="article__price">690 руб.</p>
-        <a class="article__link-to-cart" href="#" aria-label="добавить в корзину"></a>
+        <picture class="article__img">
+          <source media="(min-width: 1200px)" srcset="img/photo-bowl-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg">
+          <img src="img/photo-bowl-mobile@1x.jpg" alt="вязаная корзинка для белья">
+        </picture>
+        <div class="article__description">
+          <h3 class="article__title"><a href="#">Корзинка для белья</a></h3>
+          <p class="article__characteristics">Диаметр 15 см, высота 10 см</p>
+          <p class="article__price">690 руб.</p>
+          <a class="article__link-to-cart" href="#" aria-label="добавить в корзину"></a>
+        </div>
       </article>
       <article class="article">
-        <img class="article__img" src="#" alt="большая вязаня корзинка для игрушек" width="260" height="195">
-        <h3 class="article__title"><a href="#">Большая корзинка для игрушек</a></h3>
-        <p class="article__characteristics">Диаметр 30 см, высота 30 см</p>
-        <p class="article__price">1&nbsp;500 руб.</p>
-        <a class="article__link-to-cart" href="#" aria-label="добавить в корзину"></a>
+        <picture class="article__img">
+          <source media="(min-width: 1200px)" srcset="img/photo-toys-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg">
+          <img src="img/photo-toys-mobile@1x.jpg" alt="большая вязаня корзинка для игрушек">
+        </picture>
+        <div class="article__description">
+          <h3 class="article__title"><a href="#">Большая корзинка для игрушек</a></h3>
+          <p class="article__characteristics">Диаметр 30 см, высота 30 см</p>
+          <p class="article__price">1&nbsp;500 руб.</p>
+          <a class="article__link-to-cart" href="#" aria-label="добавить в корзину"></a>
+        </div>
       </article>
     </section>
     <article class="video-material">
       <h2 class="video-material__title">Процесс производства</h2>
-      <img class="video-material__img-video" src="#" alt="видео процесса вязания товара" width="260" height="150">
+      <picture class="video-material__img-video">
+        <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg">
+        <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
+        <img src="img/video-mobile@1x.jpg" alt="видео процесса вязания товара">
+      </picture>
       <button class="video-material__btn-play" aria-label="воспроизвести видео">&#10148;</button>
-      <p class="video-material__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о
-        том, как появляются наши товары.</p>
-      <a class="btn" href="#">сделать заказ</a>
+      <div class="video-material__desc-wrapper">
+        <p class="video-material__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о
+          том, как появляются наши товары.</p>
+        <a class="btn btn--order" href="#">сделать заказ</a>
+      </div>
     </article>
   </main>
   <footer class="footer">
-    <a class="logo logo--footer" href="index.html" aria-label="магазин вязаных игрушек MiSHKA"></a>
-    <section class="social">
-      <a class="social__icon social__icon--inst" href="https://www.instagram.com/htmlacademy/" target="_blank" aria-label="Наши фотоотчёты в Instagram"></a>
-      <a class="social__icon social__icon--fb" href="https://ru-ru.facebook.com/htmlacademy/" target="_blank" aria-label="Наше сообщество в Facebook"></a>
-      <a class="social__icon social__icon--tw" href="https://twitter.com/htmlacademy_ru?lang=ru" target="_blank" aria-label="Читайте наши новости в Twitter"></a>
-    </section>
-    <section class="copyright">
-      <p class="copyright__text">
-        Разработано
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Записывайтесь на интенсив по адаптивной вёрстке!"></a>
-      </p>
-    </section>
+    <div class="wrapper wrapper--footer">
+      <a class="logo logo--footer" href="index.html" aria-label="магазин вязаных игрушек &laquo;Мишка&raquo;">
+        <img src="img/logo-footer.svg" width="102" height="34" alt="&laquo;MiSHKA&raquo;">
+      </a>
+      <section class="social">
+        <a class="social__icon social__icon--inst" href="https://www.instagram.com/htmlacademy/" target="_blank" aria-label="Наши фотоотчёты в Instagram"></a>
+        <a class="social__icon social__icon--fb" href="https://ru-ru.facebook.com/htmlacademy/" target="_blank" aria-label="Наше сообщество в Facebook"></a>
+        <a class="social__icon social__icon--tw" href="https://twitter.com/htmlacademy_ru?lang=ru" target="_blank" aria-label="Читайте наши новости в Twitter"></a>
+      </section>
+      <section class="copyright">
+        <p class="copyright__text">
+          Разработано
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Записывайтесь на интенсив по адаптивной вёрстке!"></a>
+        </p>
+      </section>
+    </div>
   </footer>
-  <section class="modal modal--size">
+  <section class="modal modal--size visually-hidden">
     <h3 class="modal__title">добавить в корзину</h3>
     <p class="modal__info">Выберете размер:</p>
     <form method="get" action="https://echo.htmlacademy.ru/" class="modal__form">

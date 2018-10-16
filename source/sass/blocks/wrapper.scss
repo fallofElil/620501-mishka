@@ -1,0 +1,21 @@
+@import "../variables.scss";
+
+@media (min-width: $tablet-width) {
+  .wrapper {
+    margin: 0 auto;
+
+    &--footer {
+      width: 670px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    &--footer {
+      width: 1050px;
+    }
+  }
+}

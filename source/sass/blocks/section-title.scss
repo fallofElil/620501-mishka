@@ -1,11 +1,55 @@
 @import "../variables.scss";
 
 .section-title {
+  display: block;
   font-size: 25px;
   font-weight: 700;
   line-height: 1.2em;
 
-  &__contacts {
+  &--contacts {
+    margin-bottom: 35px;
     font-size: 18px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .section-title {
+    font-size: 43px;
+    line-height: 1.16em;
+
+    &--about-us {
+      margin-bottom: 40px;
+    }
+
+    &--feedback {
+      margin-bottom: 50px;
+    }
+
+    &--contacts {
+      width: 670px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .section-title {
+    &--week-article {
+      width: 875px;
+      margin-left: auto;
+      font-size: 53px;
+      line-height: 1em;
+    }
+
+    &--feedback {
+      margin-left: 175px;
+    }
+
+    &--contacts {
+      margin: 0;
+      margin-left: 175px;
+      margin-bottom: 55px;
+    }
   }
 }

@@ -1,0 +1,11 @@
+@import "../variables.scss";
+
+@media (min-width: $desktop-width) {
+  .goods {
+    width: 1050px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}

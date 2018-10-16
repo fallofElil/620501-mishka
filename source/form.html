@@ -7,10 +7,16 @@
 </head>
 <body>
   <header class="header">
-    <a class="logo logo--header" href="index.html" aria-label="магазин вязаных игрушек MiSHKA"></a>
     <nav class="menu">
-      <button class="menu__toggle" type="button">меню</button>
-      <ul class="menu__list">
+      <a class="logo logo--header" href="index.html" aria-label="магазин вязаных игрушек &laquo;Мишка&raquo;">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Магазин &laquo;MiSHKA&raquo;">
+        </picture>
+      </a>
+      <button class="menu__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
+      <ul class="menu__list menu__list--top">
         <li class="menu__item">
           <a href="#">Каталог товаров</a>
         </li>
@@ -23,23 +29,33 @@
         <li class="menu__item menu__item--cart">
           <a href="#">Корзина: пока пуста</a>
         </li>
+        <li class="menu__item menu__item--desktop">
+          <a href="#">Новые поступления</a>
+        </li>
+        <li class="menu__item menu__item--desktop">
+          <a href="#">Распродажа</a>
+        </li>
+        <li class="menu__item menu__item--info">
+          <p>Бесплатная доставка по России</p>
+        </li>
       </ul>
     </nav>
-    <p class="header__info">Бесплатная доставка по России</p>
   </header>
   <main>
-    <h1 class="page-title">Вязание на заказ</h1>
+    <div class="title-wrapper title-wrapper--form">
+      <h1 class="page-title">Вязание на заказ</h1>
+    </div>
     <p class="description">Мы будем рады воплотить в жизнь ваши пожелания!
       Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     <form method="get" action="https://echo.htmlacademy.ru/" class="form">
-      <fieldset class="form__field">
+      <fieldset class="form__field form__field--type">
         <legend class="form__field-title">тип</legend>
         <input class="form__radio" type="radio" id="radio-acces" value="accessory">
         <label class="form__label form__label--radio" for="radio-acces">Аксессуар для интерьера</label>
         <input class="form__radio" type="radio" id="radio-toy" value="toy">
         <label class="form__label form__label--radio" for="radio-toy">Детская игрушка</label>
       </fieldset>
-      <fieldset class="form__field">
+      <fieldset class="form__field form__field--color">
         <legend class="form__field-title">цвет</legend>
         <input class="form__check" type="checkbox" id="check-white" name="color" value="white">
         <label class="form__label form__label--check" for="check-white">Белый</label>
@@ -54,7 +70,7 @@
         <input class="form__check" type="checkbox" id="check-orange" name="color" value="orange">
         <label class="form__label form__label--check" for="check-orange">Оранжевый</label>
       </fieldset>
-      <fieldset class="form__field">
+      <fieldset class="form__field form__field--fullname">
         <legend class="form__field-title">фио</legend>
         <label class="form__label form__label--txt" for="txt-name">Имя:</label>
         <input class="form__txt" type="text" id="txt-name" name="name" placeholder="Введите ваше имя*" required>
@@ -64,37 +80,45 @@
         <input class="form__txt" type="text" id="txt-patronymic" name="patronymic" placeholder="Отчество, если желаете">
       </fieldset>
       <section class="form__contacts">
-        <fieldset class="form__field">
-          <legend class="form__field-title">тел</legend>
+        <fieldset class="form__field form__field--phone">
+          <legend class="form__field-title form__field-title--phone">тел</legend>
           <input class="form__txt form__txt--phone" type="tel" id="txt-phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
           <label class="visually-hidden" for="txt-phone">номер телефона</label>
         </fieldset>
-        <fieldset class="form__field">
-          <legend class="form__title">e-mail</legend>
+        <fieldset class="form__field form__field--email">
+          <legend class="form__field-title form__field-title--email">e-mail</legend>
           <input class="form__txt form__txt--email" type="email" id="txt-email" name="email" placeholder="Ваш Email*" required>
           <label class="visually-hidden" for="txt-email">ваш email</label>
         </fieldset>
       </section>
-      <fieldset class="form__field">
+      <fieldset class="form__field form__field--addition">
         <legend class="form__field-title">доп</legend>
         <textarea class="form__textarea" name="order_message" id="txt-message" placeholder="Опишите все вашипожелания к заказу"></textarea>
         <label class="visually-hidden" for="txt-message">сообщение с описанием к заказу</label>
       </fieldset>
-      <p class="form__notification">*Поля обязательны для заполнения</p>
-      <button class="btn" type="submit">отправить заказ</button>
+      <fieldset class="form__field form__field--submit">
+        <p class="form__notification">*Поля обязательны для заполнения</p>
+        <button class="btn btn--send-order" type="submit">отправить заказ</button>
+      </fieldset>
     </form>
   </main>
   <footer class="footer">
-    <a class="logo logo--footer" href="index.html" aria-label="магазин вязаных игрушек MiSHKA"></a>
-    <section class="social">
-      <a class="social__icon social__icon--inst" href="https://www.instagram.com/htmlacademy/" target="_blank" aria-label="Наши фотоотчёты в Instagram"></a>
-      <a class="social__icon social__icon--fb" href="https://ru-ru.facebook.com/htmlacademy/" target="_blank" aria-label="Наше сообщество в Facebook"></a>
-      <a class="social__icon social__icon--tw" href="https://twitter.com/htmlacademy_ru?lang=ru" target="_blank" aria-label="Читайте наши новости в Twitter"></a>
-    </section>
-    <p class="copyright__text">
-      Разработано
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Записывайтесь на интенсив по адаптивной вёрстке!"></a>
-    </p>
+    <div class="wrapper wrapper--footer">
+      <a class="logo logo--footer" href="index.html" aria-label="магазин вязаных игрушек &laquo;Мишка&raquo;">
+        <img src="img/logo-footer.svg" width="102" height="34" alt="&laquo;MiSHKA&raquo;">
+      </a>
+      <section class="social">
+        <a class="social__icon social__icon--inst" href="https://www.instagram.com/htmlacademy/" target="_blank" aria-label="Наши фотоотчёты в Instagram"></a>
+        <a class="social__icon social__icon--fb" href="https://ru-ru.facebook.com/htmlacademy/" target="_blank" aria-label="Наше сообщество в Facebook"></a>
+        <a class="social__icon social__icon--tw" href="https://twitter.com/htmlacademy_ru?lang=ru" target="_blank" aria-label="Читайте наши новости в Twitter"></a>
+      </section>
+      <section class="copyright">
+        <p class="copyright__text">
+          Разработано
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Записывайтесь на интенсив по адаптивной вёрстке!"></a>
+        </p>
+      </section>
+    </div>
   </footer>
 </body>
 </html>

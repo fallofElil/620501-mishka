@@ -1,11 +1,20 @@
 @import "../variables.scss";
 
 .copyright {
-  background-color: $background-grey;
+  margin: auto 0;
 }
 
 .copyright__text {
+  width: 180px;
+  margin: 0 auto;
   font-size: 19px;
   font-weight: 700;
   line-height: 0.94em;
+}
+
+.copyright__link {
+  display: inline-flex;
+  width: 27px;
+  height: 34px;
+  outline: 1px solid $mint;
 }

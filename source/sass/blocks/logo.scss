@@ -1,0 +1,50 @@
+@import "../variables.scss";
+
+.logo {
+  display: block;
+  text-align: center;
+
+  &--header {
+    padding: 22px 0;
+  }
+
+  &--footer {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    &--header {
+      position: absolute;
+      top: 22px;
+      height: 46px;
+      padding: 0;
+    }
+
+    &--footer {
+      display: block;
+      height: 34px;
+      margin-top: 50px;
+      margin-bottom: 55px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    &--header {
+      height: 72px;
+      margin: 0 auto;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+
+    &--footer {
+      display: block;
+      height: 34px;
+    }
+  }
+}

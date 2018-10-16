@@ -2,13 +2,34 @@
 
 .page-title {
   display: block;
-  margin: 0;
-  background-color: $background-grey;
+  margin: 0 auto;
+  padding-top: 72px;
   font-size: 27px;
   font-weight: 700;
   line-height: 1.1em;
+  text-align: center;
+  vertical-align: center;
+
+  &--home {
+    padding-top: 75px;
+  }
 }
 
-.page-title--home {
-  background-image: url("../../img/hero-mobile@1x.jpg");
+@media (min-width: $tablet-width) {
+  .page-title {
+    &--home {
+      width: 495px;
+      padding-top: 160px;
+    }
+  }
 }
+
+@media (min-width: $desktop-width) {
+  .page-title {
+    &--home {
+      width: 605px;
+    }
+  }
+}
+
+/*----245px----*/

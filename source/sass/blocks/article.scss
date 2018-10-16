@@ -1,9 +1,26 @@
 @import "../variables.scss";
 
+.article {
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: 1px solid #ececec;
+}
+
+.article__img {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
 .article__title {
   font-size: 17px;
   font-weight: 700;
   line-height: 1.41em;
+}
+
+.article__title a {
+  text-decoration: none;
+  color: #000000;
 }
 
 .article__characteristics {
@@ -15,4 +32,42 @@
 .article__price {
   font-weight: 700;
   line-height: 1.6em;
+}
+
+@media (min-width: $tablet-width) {
+  .article {
+    position: relative;
+    width: 670px;
+    height: 335px;
+  }
+
+  .article__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .article__description {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .article__title {
+    width: 235px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .article {
+    width: 315px;
+    height: 660px;
+    margin: 0;
+    margin-right: 49px;
+    margin-bottom: 60px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

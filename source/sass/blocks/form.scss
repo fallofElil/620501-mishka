@@ -1,5 +1,27 @@
 @import "../variables.scss";
 
+.form {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.form__field {
+  padding: 0;
+  margin-bottom: 30px;
+
+  &--type,
+  &--color,
+  &--fullname {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &--addition {
+    height: 175px;
+  }
+}
+
 .form__field-title {
   font-size: 17px;
   font-weight: 700;
@@ -28,6 +50,8 @@
 }
 
 .form__textarea {
+  width: 260px;
+  height: 140px;
   border: 2px solid #000000;
 
   &::placeholder {
@@ -36,7 +60,79 @@
 }
 
 .form__notification {
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.14em;
   color: $greyish-brown;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    width: auto;
+  }
+
+  .description {
+    width: 670px;
+  }
+
+  .form__field {
+    position: relative;
+    width: 500px;
+    padding-left: 167px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .form__field-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .form__field--color {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__contacts {
+    position: relative;
+    background-color: $background-grey;
+  }
+
+  .form__textarea {
+    width: 500px;
+    height: 140px;
+  }
+
+  .form__field--addition {
+    height: auto;
+  }
+
+  .form__field--submit {
+    display: flex;
+    justify-content: space-between;
+    width: 670px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description,
+  .form__field,
+  .form__contacts {
+    width: 700px;
+  }
+
+  .form__field-title {
+    top: 0;
+    left: -115px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .form__textarea {
+    width: 700px;
+  }
 }
