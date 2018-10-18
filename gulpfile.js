@@ -6,10 +6,11 @@ var gulp = require("gulp"),
     postcss = require("gulp-postcss"),
     autoprefixer = require("autoprefixer"),
     server = require("browser-sync").create(),
-    svgSprite = require('gulp-svg-sprite'),
-    cheerio = require('gulp-cheerio'),
-    svgmin = require('gulp-svgmin'),
-    replace = require('gulp-replace');
+    svgSprite = require("gulp-svg-sprite"),
+    cheerio = require("gulp-cheerio"),
+    svgmin = require("gulp-svgmin"),
+    replace = require("gulp-replace"),
+    fileinclude = require("gulp-file-include");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -35,7 +36,7 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("start", gulp.series("css", "server"));
+gulp.task("start", gulp.series("css", "server", "includeSprite"));
 
 gulp.task("buildSvgSprite", function () {
   return gulp.src("source/img/*.svg")
@@ -61,4 +62,13 @@ gulp.task("buildSvgSprite", function () {
       }
     }))
     .pipe(gulp.dest("source/img/sprite"));
+});
+
+gulp.task("includeSprite", function () {
+  gulp.src(["source/img/sprite/symbol/*"])
+    .pipe(fileinclude({
+      prefix: "@@",
+      basepath: "@file"
+    }))
+    .pipe(gulp.dest("./"));
 });

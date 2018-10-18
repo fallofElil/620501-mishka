@@ -1,4 +1,5 @@
 @import "variables.scss";
+@import "global.scss";
 @import "blocks/about-us.scss";
 @import "blocks/article.scss";
 @import "blocks/btn.scss";
@@ -8,7 +9,6 @@
 @import "blocks/feedback.scss";
 @import "blocks/form.scss";
 @import "blocks/goods.scss";
-@import "global.scss";
 @import "blocks/header.scss";
 @import "blocks/logo.scss";
 @import "blocks/menu.scss";
@@ -21,3 +21,4 @@
 @import "blocks/section-title.scss";
 @import "blocks/contacts.scss";
 @import "blocks/wrapper.scss";
+@import "blocks/icon.scss";

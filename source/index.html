@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+  @@include('./sprite.svg')
     <header class="header">
       <nav class="menu">
         <a class="logo logo--header" href="index.html" aria-label="магазин вязаных игрушек &laquo;Мишка&raquo;">
@@ -25,7 +26,7 @@
           </li>
           <li class="menu__item menu__item--search">
             <a href="#">
-              <svg class="icon icon--search">
+              <svg class="icon icon--search" x="0" y="0">
                 <use xlink:href="img/sprite/symbol/sprite.svg#icon-search"/>
               </svg>
               Поиск по сайту
@@ -59,7 +60,7 @@
         <p class="categories__item-wrapper categories__item-wrapper--accessories">
           <a class="categories__item categories__item--accessories" href="#">
             Предметы <br>интерьера
-            <svg class="icon icon--interior">
+            <svg class="icon icon--interior" width="40" height="62">
               <use xlink:href="img/sprite/symbol/sprite.svg#icon-interior"/>
             </svg>
           </a>
@@ -67,7 +68,7 @@
         <p class="categories__item-wrapper categories__item-wrapper--toys">
           <a class="categories__item categories__item--toys" href="#">
             Детские <br>игрушки
-            <svg class="icon icon--toy">
+            <svg class="icon icon--toy" width="60" height="60">
               <use xlink:href="img/sprite/symbol/sprite.svg#icon-toy"/>
             </svg>
           </a>
@@ -108,37 +109,37 @@
         <h2 class="section-title section-title--about-us">Коротко о нас:</h2>
         <ul class="about-us__list">
           <li class="about-us__feature about-us__feature--eco">
-            <svg class="icon icon--feature-flower">
+            <svg class="icon icon--feature-flower" width="32" height="37">
               <use xlink:href="img/sprite/symbol/sprite.svg#icon-feature-flower"/>
             </svg>
             Экологически чистые&nbsp;материалы
           </li>
           <li class="about-us__feature about-us__feature--price">
-            <svg class="icon icon--feature-money">
+            <svg class="icon icon--feature-money" width="47" height="27">
               <use xlink:href="img/sprite/symbol/sprite.svg#icon-feature-money"/>
             </svg>
             Скандинавский стиль по&nbsp;российской&nbsp;цене
           </li>
           <li class="about-us__feature about-us__feature--like"><!--icon-feature-ball-->
-            <svg class="icon icon--feature-heart">
+            <svg class="icon icon--feature-heart" width="34" height="27">
               <use xlink:href="img/sprite/symbol/sprite.svg#icon-feature-heart"/>
             </svg>
             Увеличивает лайки на&nbsp;фотографиях
           </li>
           <li class="about-us__feature about-us__feature--love">
-            <svg class="icon icon--feature-ball">
+            <svg class="icon icon--feature-ball" width="35" height="34">
               <use xlink:href="img/sprite/symbol/sprite.svg#icon-feature-ball"/>
             </svg>
             Связано вручную с любовью&nbsp;и&nbsp;умилением
           </li>
           <li class="about-us__feature about-us__feature--support">
-            <svg class="icon icon--feature-rocket">
+            <svg class="icon icon--feature-rocket" width="55" height="23">
               <use xlink:href="img/sprite/symbol/sprite.svg#icon-feature-rocket"/>
             </svg>
             Поддержка отечественного производителя
           </li>
           <li class="about-us__feature about-us__feature--gift">
-            <svg class="icon icon--feature-gift">
+            <svg class="icon icon--feature-gift" width="33" height="32">
               <use xlink:href="img/sprite/symbol/sprite.svg#icon-feature-gift"/>
             </svg>
             Поставляется в подарочной&nbsp;упаковке
@@ -153,8 +154,18 @@
         <p class="feedback__username-full">Анастасия Красильникова</p>
         <p class="feedback__username">@misssssiskras</p>
         <nav class="feedback__comment-switch">
-          <button class="feedback__btn-switch" aria-label="предыдущий комментарий">&#8592;</button>
-          <button class="feedback__btn-switch" aria-label="следующий комментарий">&#8594;</button>
+          <button class="feedback__btn-switch" aria-label="предыдущий комментарий">
+            &#8592;
+            <svg class="icon icon--left-arrow" width="50" height="26">
+              <use xlink:href="img/sprite/symbol/sprite.svg#icon-left-arrow"/>
+            </svg>
+          </button>
+          <button class="feedback__btn-switch" aria-label="следующий комментарий">
+            &#8594;
+            <svg class="icon icon--right-arrow" width="50" height="26">
+              <use xlink:href="img/sprite/symbol/sprite.svg#icon-right-arrow"/>
+            </svg>
+          </button>
         </nav>
         <a class="btn btn--feedback" href="#">написать</a>
       </section>
@@ -195,8 +206,8 @@
         </a>
         <section class="social">
           <a class="social__icon social__icon--inst" href="https://www.instagram.com/htmlacademy/" target="_blank" aria-label="Наши фотоотчёты в Instagram">
-            <svg class="icon icon--feature-heart">
-              <use xlink:href="img/sprite/symbol/sprite.svg#icon-feature-heart"/>
+            <svg class="icon icon--insta">
+              <use xlink:href="img/sprite/symbol/sprite.svg#icon-insta"/>
             </svg>
           </a>
           <a class="social__icon social__icon--fb" href="https://ru-ru.facebook.com/htmlacademy/" target="_blank" aria-label="Наше сообщество в Facebook">
@@ -214,7 +225,7 @@
           <p class="copyright__text">
             Разработано
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Записывайтесь на интенсив по адаптивной вёрстке!">
-              <svg class="icon icon--htmlacademy">
+              <svg class="icon icon--htmlacademy" width="27" height="34">
                 <use xlink:href="img/sprite/symbol/sprite.svg#htmlacademy"/>
               </svg>
             </a>

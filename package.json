@@ -37,5 +37,8 @@
   ],
   "engines": {
     "node": "8.12"
+  },
+  "dependencies": {
+    "gulp-file-include": "^2.0.1"
   }
 }
