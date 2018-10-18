@@ -1,11 +1,15 @@
 "use strict";
 
-var gulp = require("gulp");
-var sass = require("gulp-sass");
-var plumber = require("gulp-plumber");
-var postcss = require("gulp-postcss");
-var autoprefixer = require("autoprefixer");
-var server = require("browser-sync").create();
+var gulp = require("gulp"),
+    sass = require("gulp-sass"),
+    plumber = require("gulp-plumber"),
+    postcss = require("gulp-postcss"),
+    autoprefixer = require("autoprefixer"),
+    server = require("browser-sync").create(),
+    svgSprite = require('gulp-svg-sprite'),
+    cheerio = require('gulp-cheerio'),
+    svgmin = require('gulp-svgmin'),
+    replace = require('gulp-replace');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -32,3 +36,29 @@ gulp.task("server", function () {
 });
 
 gulp.task("start", gulp.series("css", "server"));
+
+gulp.task("buildSvgSprite", function () {
+  return gulp.src("source/img/*.svg")
+    .pipe(svgmin({
+      js2svg: {
+        pretty: true
+      }
+    }))
+    .pipe(cheerio({
+      run: function ($) {
+        $("[fill]").removeAttr("fill");
+        $("[stroke]").removeAttr("stroke");
+        $("[style]").removeAttr("style");
+      },
+      parseOptions: { xmlMode: true }
+    }))
+    .pipe(replace("&gt;", ">"))
+    .pipe(svgSprite({
+      mode: {
+        symbol: {
+          sprite: "sprite.svg"
+        }
+      }
+    }))
+    .pipe(gulp.dest("source/img/sprite"));
+});
