@@ -18,16 +18,26 @@
         <button class="menu__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
         <ul class="menu__list menu__list--top">
           <li class="menu__item">
-            <a href="#">Каталог товаров</a>
+            <a href="catalog.html">Каталог товаров</a>
           </li>
           <li class="menu__item">
-            <a href="#">Вязание на заказ</a>
+            <a href="form.html">Вязание на заказ</a>
           </li>
           <li class="menu__item menu__item--search">
-            <a href="#">Поиск по сайту</a>
+            <a href="#">
+              <svg class="icon icon--search">
+                <use xlink:href="img/sprite/symbol/sprite.svg#icon-search"/>
+              </svg>
+              Поиск по сайту
+            </a>
           </li>
           <li class="menu__item menu__item--cart">
-            <a href="#">Корзина: пока пуста</a>
+            <a href="#">
+              <svg class="icon icon--cart">
+                <use xlink:href="img/sprite/symbol/sprite.svg#icon-cart"/>
+              </svg>
+              Корзина: пока пуста
+            </a>
           </li>
           <li class="menu__item menu__item--desktop">
             <a href="#">Новые поступления</a>
@@ -47,10 +57,20 @@
       </div>
       <section class="categories">
         <p class="categories__item-wrapper categories__item-wrapper--accessories">
-          <a class="categories__item categories__item--accessories" href="#">Предметы <br>интерьера</a>
+          <a class="categories__item categories__item--accessories" href="#">
+            Предметы <br>интерьера
+            <svg class="icon icon--interior">
+              <use xlink:href="img/sprite/symbol/sprite.svg#icon-interior"/>
+            </svg>
+          </a>
         </p>
         <p class="categories__item-wrapper categories__item-wrapper--toys">
-          <a class="categories__item categories__item--toys" href="#">Детские <br>игрушки</a>
+          <a class="categories__item categories__item--toys" href="#">
+            Детские <br>игрушки
+            <svg class="icon icon--toy">
+              <use xlink:href="img/sprite/symbol/sprite.svg#icon-toy"/>
+            </svg>
+          </a>
         </p>
       </section>
       <article class="week-article">
@@ -87,12 +107,42 @@
       <section class="about-us">
         <h2 class="section-title section-title--about-us">Коротко о нас:</h2>
         <ul class="about-us__list">
-          <li class="about-us__feature about-us__feature--eco">Экологически чистые&nbsp;материалы</li>
-          <li class="about-us__feature about-us__feature--price">Скандинавский стиль по&nbsp;российской&nbsp;цене</li>
-          <li class="about-us__feature about-us__feature--like">Увеличивает лайки на&nbsp;фотографиях</li>
-          <li class="about-us__feature about-us__feature--love">Связано вручную с любовью&nbsp;и&nbsp;умилением</li>
-          <li class="about-us__feature about-us__feature--support">Поддержка отечественного производителя</li>
-          <li class="about-us__feature about-us__feature--gift">Поставляется в подарочной&nbsp;упаковке</li>
+          <li class="about-us__feature about-us__feature--eco">
+            <svg class="icon icon--feature-flower">
+              <use xlink:href="img/sprite/symbol/sprite.svg#icon-feature-flower"/>
+            </svg>
+            Экологически чистые&nbsp;материалы
+          </li>
+          <li class="about-us__feature about-us__feature--price">
+            <svg class="icon icon--feature-money">
+              <use xlink:href="img/sprite/symbol/sprite.svg#icon-feature-money"/>
+            </svg>
+            Скандинавский стиль по&nbsp;российской&nbsp;цене
+          </li>
+          <li class="about-us__feature about-us__feature--like"><!--icon-feature-ball-->
+            <svg class="icon icon--feature-heart">
+              <use xlink:href="img/sprite/symbol/sprite.svg#icon-feature-heart"/>
+            </svg>
+            Увеличивает лайки на&nbsp;фотографиях
+          </li>
+          <li class="about-us__feature about-us__feature--love">
+            <svg class="icon icon--feature-ball">
+              <use xlink:href="img/sprite/symbol/sprite.svg#icon-feature-ball"/>
+            </svg>
+            Связано вручную с любовью&nbsp;и&nbsp;умилением
+          </li>
+          <li class="about-us__feature about-us__feature--support">
+            <svg class="icon icon--feature-rocket">
+              <use xlink:href="img/sprite/symbol/sprite.svg#icon-feature-rocket"/>
+            </svg>
+            Поддержка отечественного производителя
+          </li>
+          <li class="about-us__feature about-us__feature--gift">
+            <svg class="icon icon--feature-gift">
+              <use xlink:href="img/sprite/symbol/sprite.svg#icon-feature-gift"/>
+            </svg>
+            Поставляется в подарочной&nbsp;упаковке
+          </li>
         </ul>
       </section>
       <section class="feedback">
@@ -109,7 +159,12 @@
         <a class="btn btn--feedback" href="#">написать</a>
       </section>
       <section class="contacts">
-        <h2 class="section-title section-title--contacts">Контакты</h2>
+        <h2 class="section-title section-title--contacts">
+          <svg class="icon icon--flag">
+            <use xlink:href="img/sprite/symbol/sprite.svg#icon-flag"/>
+          </svg>
+          Контакты
+        </h2>
         <table class="contacts__table">
           <tr class="contacts__row">
             <th class="contacts__title">e-mail:</th>
@@ -139,14 +194,30 @@
           <img src="img/logo/logo-footer.svg" width="102" height="34" alt="&laquo;MiSHKA&raquo;">
         </a>
         <section class="social">
-          <a class="social__icon social__icon--inst" href="https://www.instagram.com/htmlacademy/" target="_blank" aria-label="Наши фотоотчёты в Instagram"></a>
-          <a class="social__icon social__icon--fb" href="https://ru-ru.facebook.com/htmlacademy/" target="_blank" aria-label="Наше сообщество в Facebook"></a>
-          <a class="social__icon social__icon--tw" href="https://twitter.com/htmlacademy_ru?lang=ru" target="_blank" aria-label="Читайте наши новости в Twitter"></a>
+          <a class="social__icon social__icon--inst" href="https://www.instagram.com/htmlacademy/" target="_blank" aria-label="Наши фотоотчёты в Instagram">
+            <svg class="icon icon--feature-heart">
+              <use xlink:href="img/sprite/symbol/sprite.svg#icon-feature-heart"/>
+            </svg>
+          </a>
+          <a class="social__icon social__icon--fb" href="https://ru-ru.facebook.com/htmlacademy/" target="_blank" aria-label="Наше сообщество в Facebook">
+            <svg class="icon icon--fb">
+              <use xlink:href="img/sprite/symbol/sprite.svg#icon-fb"/>
+            </svg>
+          </a>
+          <a class="social__icon social__icon--tw" href="https://twitter.com/htmlacademy_ru?lang=ru" target="_blank" aria-label="Читайте наши новости в Twitter">
+            <svg class="icon icon--twitter">
+              <use xlink:href="img/sprite/symbol/sprite.svg#icon-twitter"/>
+            </svg>
+          </a>
         </section>
         <section class="copyright">
           <p class="copyright__text">
             Разработано
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Записывайтесь на интенсив по адаптивной вёрстке!"></a>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Записывайтесь на интенсив по адаптивной вёрстке!">
+              <svg class="icon icon--htmlacademy">
+                <use xlink:href="img/sprite/symbol/sprite.svg#htmlacademy"/>
+              </svg>
+            </a>
           </p>
         </section>
       </div>
