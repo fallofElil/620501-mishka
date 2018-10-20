@@ -12,50 +12,9 @@
     </div>
 
     <header class="header">
-      <nav class="menu">
-        <a class="logo logo--header" href="index.html" aria-label="магазин вязаных игрушек &laquo;Мишка&raquo;">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
-            <img src="img/logo/logo-mobile.svg" alt="Магазин &laquo;MiSHKA&raquo;">
-          </picture>
-        </a>
-        <button class="menu__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
-        <ul class="menu__list menu__list--top">
-          <li class="menu__item">
-            <a href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="menu__item">
-            <a href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="menu__item menu__item--search">
-            <a href="#">
-              <svg class="icon icon--search" viewBox="0 0 17.6 17.6" width="18" height="18">
-                <use xlink:href="#icon-search"/>
-              </svg>
-              Поиск по сайту
-            </a>
-          </li>
-          <li class="menu__item menu__item--cart">
-            <a href="#">
-              <svg class="icon icon--cart" viewBox="0 0 20.294 18.849" width="21" height="18">
-                <use xlink:href="#icon-cart"/>
-              </svg>
-              Корзина: пока пуста
-            </a>
-          </li>
-          <li class="menu__item menu__item--desktop">
-            <a href="#">Новые поступления</a>
-          </li>
-          <li class="menu__item menu__item--desktop">
-            <a href="#">Распродажа</a>
-          </li>
-          <li class="menu__item menu__item--info">
-            <p>Бесплатная доставка по России</p>
-          </li>
-        </ul>
-      </nav>
+      <include src="source/header.html"></include>
     </header>
+
     <main>
       <div class="title-wrapper title-wrapper--home">
         <h1 class="page-title page-title--home">Милые&nbsp;штуки ручной работы&nbsp;для&nbsp;дома</h1>
@@ -197,58 +156,14 @@
         <a class="btn btn--write-us" href="#">напишите нам</a>
       </section>
     </main>
+
     <footer class="footer">
-      <div class="wrapper wrapper--footer">
-        <a class="logo logo--footer" href="index.html" aria-label="магазин вязаных игрушек &laquo;Мишка&raquo;">
-          <img src="img/logo/logo-footer.svg" width="102" height="34" alt="&laquo;MiSHKA&raquo;">
-        </a>
-        <section class="social">
-          <a class="social__icon social__icon--inst" href="https://www.instagram.com/htmlacademy/" target="_blank" aria-label="Наши фотоотчёты в Instagram">
-            <svg class="icon icon--insta" viewBox="0 0 21.769 21.334" width="22" height="21">
-              <use xlink:href="#icon-insta"/>
-            </svg>
-          </a>
-          <a class="social__icon social__icon--fb" href="https://ru-ru.facebook.com/htmlacademy/" target="_blank" aria-label="Наше сообщество в Facebook">
-            <svg class="icon icon--fb" viewBox="0 0 14.962 27.718" width="15" height="28">
-              <use xlink:href="#icon-fb"/>
-            </svg>
-          </a>
-          <a class="social__icon social__icon--tw" href="https://twitter.com/htmlacademy_ru?lang=ru" target="_blank" aria-label="Читайте наши новости в Twitter">
-            <svg class="icon icon--twitter" viewBox="0 0 23.494 20.168" width="23" height="20">
-              <use xlink:href="#icon-twitter"/>
-            </svg>
-          </a>
-        </section>
-        <section class="copyright">
-          <p class="copyright__text">
-            Разработано
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Записывайтесь на интенсив по адаптивной вёрстке!">
-              <svg class="icon icon--htmlacademy" viewBox="0 0 27 34" width="27" height="34">
-                <use xlink:href="#htmlacademy"/>
-              </svg>
-            </a>
-          </p>
-        </section>
-      </div>
+      <include src="source/footer.html"></include>
     </footer>
+
     <section class="modal modal--size visually-hidden">
-      <h3 class="modal__title">добавить в корзину</h3>
-      <p class="modal__info">Выберете размер:</p>
-      <form method="get" action="https://echo.htmlacademy.ru/" class="modal__form">
-        <label class="modal__label modal__label--size">
-          s
-          <input class="modal__radio modal__radio--size" type="radio" name="size" value="s">
-        </label>
-        <label class="modal__label modal__label--size">
-          m
-          <input class="modal__radio modal__radio--size" type="radio" name="size" value="m">
-        </label>
-        <label class="modal__label modal__label--size">
-          l
-          <input class="modal__radio modal__radio--size" type="radio" name="size" value="l">
-        </label>
-        <button class="modal__submit" type="submit">добавить</button>
-      </form>
+      <include src="source/modal.html"></include>
     </section>
+
   </body>
 </html>
