@@ -34,7 +34,21 @@
 }
 
 .week-article__characteristics {
+  width: 260px;
   margin-bottom: 30px;
+  border-collapse: collapse;
+}
+
+.week-article__characteristics th,
+.week-article__characteristics td {
+  padding-top: 13px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $light-grey;
+}
+
+.week-article__characteristic-title {
+  font-weight: 300;
+  text-align: left;
 }
 
 .week-article__img {
@@ -46,6 +60,7 @@
   margin-bottom: 25px;
   font-size: 17px;
   font-weight: 700;
+  text-align: center;
   line-height: 1.41em;
   color: $greyish-brown;
 }

@@ -5,6 +5,9 @@
 }
 
 .categories__item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
   padding: 25px 30px;
 

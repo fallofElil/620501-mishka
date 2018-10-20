@@ -16,6 +16,7 @@
     "gulp-rename": "^1.4.0",
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.2",
+    "gulp-svgmin": "^2.1.0",
     "gulp-svgo": "^1.5.4",
     "gulp-svgstore": "^7.0.0",
     "posthtml-include": "^1.2.0",
@@ -28,7 +29,8 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp start"
+    "start": "gulp start",
+    "reload": "gulp reload"
   },
   "browserslist": [
     "last 2 versions",

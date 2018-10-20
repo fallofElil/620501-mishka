@@ -13,7 +13,7 @@ var gulp = require("gulp"),
     posthtml = require("gulp-posthtml"),
     include = require("posthtml-include"),
     csso = require("gulp-csso"),
-    svgo = require("gulp-svgo"),
+    svgmin = require("gulp-svgmin"),
     svgstore = require("gulp-svgstore");
 
 gulp.task("css", function () {
@@ -32,17 +32,20 @@ gulp.task("css", function () {
 
 gulp.task("svgSprite", function () {
   return gulp.src("source/img/*.svg")
-    .pipe(svgo())
+    .pipe(svgmin({
+      plugin: [{
+        removeViewBox: false
+      }]
+    }))
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
     .pipe(cheerio({
       run: function ($) {
         $("[fill]").removeAttr("fill");
         $("[style]").removeAttr("style");
       },
       parseOptions: { xmlMode: true }
-    }))
-    .pipe(replace("&gt;", ">"))
-    .pipe(svgstore({
-      inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img/svg"));
@@ -87,3 +90,5 @@ gulp.task("server", function () {
 
 gulp.task("build", gulp.series("clean", "copy", "css", "svgSprite", "html"));
 gulp.task("start", gulp.series("css", "server"));
+
+gulp.task("reload", gulp.series("build", "start"));

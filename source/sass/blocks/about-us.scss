@@ -17,12 +17,20 @@
 }
 
 .about-us__feature {
-  padding-top: 50px;
-  margin-bottom: 25px;
+  /*padding-top: 50px;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 90px;
+  margin-bottom: 30px;
   font-size: 17px;
   font-weight: 700;
   line-height: 1.17em;
   list-style: none;
+}
+
+.about-us__feature svg {
+  fill: $mint;
 }
 
 @media (min-width: $tablet-width) {

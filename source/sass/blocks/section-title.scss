@@ -2,9 +2,14 @@
 
 .section-title {
   display: block;
+  margin: 0;
   font-size: 25px;
   font-weight: 700;
   line-height: 1.2em;
+
+  &--feedback {
+    margin-bottom: 35px;
+  }
 
   &--contacts {
     margin-bottom: 35px;
@@ -14,6 +19,7 @@
 
 @media (min-width: $tablet-width) {
   .section-title {
+    margin-bottom: 5px;
     font-size: 43px;
     line-height: 1.16em;
 
