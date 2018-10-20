@@ -22,8 +22,17 @@
 
 .menu__item {
   padding: 28px 0;
-  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
   vertical-align: middle;
+
+  &:first-child {
+    border-top: 1px solid #ececec;
+  }
+
+  &--search a,
+  &--cart a {
+    position: relative;
+  }
 
   &--desktop,
   &--info {

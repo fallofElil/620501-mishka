@@ -1,8 +1,18 @@
 .icon {
   display: inline;
 
+  &--search,
+  &--cart {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 30px;
+    display: block;
+    margin: auto 0;
+    fill: $icon-color;
+  }
+
   &--search {
-    display: none;
     width: 17.6px;
     height: 17.6px;
 
@@ -12,7 +22,6 @@
   }
 
   &--cart {
-    display: none;
     width: 20.3px;
     height: 18.9px;
 
@@ -81,5 +90,9 @@
   &--icon-flag {
     width: 46.68px;
     height: 81.691px;
+  }
+
+  &--htmlacademy {
+    fill: $mint;
   }
 }
