@@ -12,8 +12,14 @@
   }
 
   &--contacts {
+    width: 260px;
+    margin: 0 auto;
     margin-bottom: 35px;
     font-size: 18px;
+  }
+
+  &--contacts svg {
+    display: none;
   }
 }
 
