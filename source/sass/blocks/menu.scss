@@ -8,6 +8,7 @@
   position: absolute;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 
   &--open {
     top: 32px;
@@ -60,48 +61,60 @@
 .menu__list {
   margin: 0;
   padding: 0;
-  border-collapse: collapse;
   list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.menu__item {
-  padding: 28px 0;
-  border-bottom: 1px solid #ececec;
-  vertical-align: middle;
+@media (max-width: $mobile-width-only) {
+  .menu {
+    &--closed .menu__item {
+      display: none;
+    }
 
-  &:first-child {
-    border-top: 1px solid #ececec;
+    &--opened .menu__item,
+    &--nojs .menu__item {
+      padding: 28px 0;
+      border-bottom: 1px solid #ececec;
+      vertical-align: middle;
+
+      &:first-child {
+        border-top: 1px solid #ececec;
+      }
+
+      a {
+        padding-left: 75px;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 1.41em;
+        text-decoration: none;
+        color: #000000;
+      }
+
+      &--search a,
+      &--cart a {
+        position: relative;
+      }
+
+      &--desktop,
+      &--info {
+        display: none;
+      }
+
+      &--info p {
+        margin: 0;
+      }
+
+      &:last-child {
+        border-bottom: 1px solid #ececec;
+      }
+    }
+
+    &--nojs .menu__toggle {
+      display: none;
+    }
   }
-
-  &--search a,
-  &--cart a {
-    position: relative;
-  }
-
-  &--desktop,
-  &--info {
-    display: none;
-  }
-
-  &--info p {
-    margin: 0;
-  }
-
-  &:last-child {
-    border-bottom: 1px solid #ececec;
-  }
-}
-
-.menu__item a { /*---нужно заменить миксином или сделать элементом---*/
-  padding-left: 75px;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 1.41em;
-  text-decoration: none;
-  color: #000000;
 }
 
 @media (min-width: $tablet-width) {
