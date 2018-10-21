@@ -4,12 +4,29 @@
   width: 260px;
   margin: 0 auto;
   margin-bottom: 30px;
-  border: 1px solid #ececec;
+  border: 1px solid $light-grey;
+
+  hr {
+    color: $light-grey;
+  }
 }
 
 .article__img {
   margin: 0 auto;
   margin-bottom: 30px;
+}
+
+.article__description {
+  width: 205px;
+  margin: 0 auto;
+  
+  @media (min-width: $tablet-width) {
+    width: 270px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 255px;
+  }
 }
 
 .article__title {
