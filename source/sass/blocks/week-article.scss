@@ -21,6 +21,11 @@
   line-height: 1.17em;
   text-transform: uppercase;
   color: $mint;
+  
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    padding-right: 30px;
+  }
 }
 
 .week-article__description-txt,
@@ -31,12 +36,22 @@
 
 .week-article__description-txt {
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+    font-size: 17px;
+    line-height: 1.76em;
+  }
 }
 
 .week-article__characteristics {
   width: 260px;
   margin-bottom: 30px;
   border-collapse: collapse;
+  
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
 }
 
 .week-article__characteristics th,
@@ -63,6 +78,11 @@
   text-align: center;
   line-height: 1.41em;
   color: $greyish-brown;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.2em;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -77,7 +97,7 @@
     width: 670px;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   .week-article__subtitle {
@@ -87,14 +107,6 @@
 
   .week-article__description-wrapper {
     width: 290px;
-  }
-
-  .week-article__description-txt {
-    margin-bottom: 40px;
-  }
-
-  .week-article__characteristics {
-    margin-bottom: 55px;
   }
 
   .week-article__img {

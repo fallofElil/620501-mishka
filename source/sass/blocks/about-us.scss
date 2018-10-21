@@ -6,6 +6,11 @@
   width: 260px;
   margin: 0 auto;
   margin-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+    background-image: url("img/review@1x.jpg");
+  }
 }
 
 .about-us__list {
@@ -37,7 +42,6 @@
   .about-us {
     width: 670px;
     padding-top: 60px;
-    margin-bottom: 80px;
   }
 
   .about-us__list {
