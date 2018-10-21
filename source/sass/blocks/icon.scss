@@ -15,10 +15,6 @@
   &--search {
     width: 17.6px;
     height: 17.6px;
-
-    @media (min-width: $tablet-width) {
-      display: inline;
-    }
   }
 
   &--cart {
@@ -26,6 +22,8 @@
     height: 18.9px;
 
     @media (min-width: $tablet-width) {
+      top: auto;
+      bottom: auto;
       display: inline;
     }
   }
