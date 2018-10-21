@@ -12,6 +12,10 @@
   justify-content: space-between;
   margin-bottom: 30px;
   z-index: 5;
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+  }
 }
 
 .week-article__subtitle {
@@ -25,6 +29,12 @@
   @media (min-width: $tablet-width) {
     align-self: center;
     padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 10px;
+    left: 60px;
   }
 }
 
@@ -132,19 +142,14 @@
     width: 1050px;
   }
 
-  .week-article__subtitle {
-    position: absolute;
-    top: 0;
-    left: 60px;
-  }
-
   .week-article__description-wrapper {
     width: 295px;
-    margin-left: 80px;
+    margin-left: 175px;
   }
 
   .week-article__characteristics {
     width: 295px;
+    margin-bottom: 110px;
   }
 
   .week-article__img {

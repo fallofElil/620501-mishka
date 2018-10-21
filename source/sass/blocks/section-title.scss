@@ -16,10 +16,15 @@
     margin: 0 auto;
     margin-bottom: 35px;
     font-size: 18px;
-  }
 
-  &--contacts svg {
-    display: none;
+    @media (min-width: $desktop-width) {
+      font-size: 53px;
+      line-height: 1.07em;
+    }
+
+    svg {
+      display: none;
+    }
   }
 }
 

@@ -8,6 +8,10 @@
     flex-direction: row;
     margin: 0 auto;
   }
+  
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
 }
 
 .categories__item-wrapper {
@@ -50,10 +54,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .categories {
-    width: 1050px;
-  }
-
   .categories__item-wrapper {
     width: 525px;
   }

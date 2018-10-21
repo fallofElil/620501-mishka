@@ -82,11 +82,6 @@
 }
 
 .menu__item {
-  &--info {
-    display: inline-flex;
-    margin-left: auto;
-  }
-
   a {
     padding-left: 75px;
     font-size: 17px;
@@ -147,10 +142,6 @@
     }
   }
 
-  &--desktop {
-    display: none;
-  }
-
   &--info {
     display: none;
 
@@ -158,9 +149,23 @@
       margin: 0;
     }
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $desktop-width) {
       display: inline-flex;
-      width: auto;
+      margin-left: auto;
+    }
+  }
+
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--catalog a,
+    &--order a {
+      display: block;
+      padding-top: 35px;
+      font-size: 17px;
+      line-height: 1.41em;
     }
   }
 }
