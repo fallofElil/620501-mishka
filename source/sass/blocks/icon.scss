@@ -32,12 +32,22 @@
     width: 40.219px;
     height: 62.411px;
     fill: $blue-green;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      right: 23px;
+    }
   }
 
   &--toy {
     width: 60px;
     height: 59.62px;
     fill: $blue-green;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      right: 23px;
+    }
   }
 
   &--feature-flower,

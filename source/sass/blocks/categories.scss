@@ -26,9 +26,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 335px;
-    padding-top: 30px;
-    padding-left: 35px;
+    position: relative;
+    width: auto;
+    padding: 0;
   }
 }
 
@@ -41,7 +41,11 @@
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    width: 265px;
+    display: block;
+    width: 300px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 35px;
   }
 }
 
