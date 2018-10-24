@@ -1,5 +1,3 @@
-@import "../variables.scss";
-
 .logo {
   display: block;
   text-align: center;
@@ -8,10 +6,26 @@
     width: 86px;
     padding: 22px 0;
     margin: 0 auto;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &--footer {
     display: none;
+
+    &:hover {
+      fill: $mint;
+    }
+
+    &:active {
+      fill: opacify($mint, 0.3);
+    }
   }
 }
 
