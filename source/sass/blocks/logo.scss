@@ -64,3 +64,30 @@
     }
   }
 }
+
+.logo__img {
+  &--hover,
+  &--active {
+    display: none;
+  }
+}
+
+.logo--footer:hover {
+  .logo__img {
+    display:none;
+
+    &--hover {
+      display: block;
+    }
+  }
+}
+
+.logo--footer:active {
+  .logo__img {
+    display:none;
+
+    &--active {
+      display: block;
+    }
+  }
+}
