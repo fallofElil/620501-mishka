@@ -13,6 +13,23 @@
   line-height: 1.41em;
 }
 
+.video-material__btn-play {
+  width: 101px;
+  height: 77px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-size: 0;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 190px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+
 .video-material__description {
   font-size: 13px;
   line-height: 1.84em;
@@ -34,16 +51,6 @@
 
   .video-material__img-video {
     order: -1;
-  }
-
-  .video-material__btn-play {
-    position: absolute;
-    top: 190px;
-    left: 0;
-    right: 0;
-    width: 100px;
-    height: 80px;
-    margin: 0 auto;
   }
 
   .video-material__description {

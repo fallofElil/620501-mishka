@@ -1,11 +1,20 @@
 "use strict";
 
-var gulp = require("gulp");
-var sass = require("gulp-sass");
-var plumber = require("gulp-plumber");
-var postcss = require("gulp-postcss");
-var autoprefixer = require("autoprefixer");
-var server = require("browser-sync").create();
+var gulp = require("gulp"),
+    sass = require("gulp-sass"),
+    plumber = require("gulp-plumber"),
+    postcss = require("gulp-postcss"),
+    autoprefixer = require("autoprefixer"),
+    server = require("browser-sync").create(),
+    cheerio = require("gulp-cheerio"),
+    replace = require("gulp-replace"),
+    rename = require("gulp-rename"),
+    del = require("del"),
+    posthtml = require("gulp-posthtml"),
+    include = require("posthtml-include"),
+    csso = require("gulp-csso"),
+    svgmin = require("gulp-svgmin"),
+    svgstore = require("gulp-svgstore");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -14,13 +23,61 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
+    .pipe(csso())
+    .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+});
+
+gulp.task("svgSprite", function () {
+  return gulp.src("source/img/*.svg")
+    .pipe(svgmin({
+      plugin: [{
+        removeViewBox: false
+      }]
+    }))
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(cheerio({
+      run: function ($) {
+        $("[fill]").removeAttr("fill");
+        $("[style]").removeAttr("style");
+      },
+      parseOptions: { xmlMode: true }
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img/svg"));
+});
+
+gulp.task("html", () => {
+  return gulp.src("source/*.html")
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task("clean", function () {
+  return del("build");
+});
+
+gulp.task("copy", function () {
+  return gulp.src([
+    "source/fonts/**/*.{woff,woff2}",
+    "source/img/logo/**",
+    "source/img/**.jpg",
+    "source/js/**"
+  ], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("server", function () {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -31,4 +88,7 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
+gulp.task("build", gulp.series("clean", "copy", "css", "svgSprite", "html"));
 gulp.task("start", gulp.series("css", "server"));
+
+gulp.task("reload", gulp.series("build", "start"));

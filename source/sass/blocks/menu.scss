@@ -1,102 +1,198 @@
-@import "../variables.scss";
-
 .menu {
   position: relative;
   width: 320px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 670px;
+  }
 }
 
 .menu__toggle {
   position: absolute;
-  top: 0;
-  right: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &--open {
+    top: 32px;
+    right: 30px;
+    width: 20px;
+    height: 14px;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      right: 0;
+      width: 20px;
+      height: 2px;
+      background-color: #000000;
+    }
+  }
+
+  &--close {
+    top: 30px;
+    right: 30px;
+    width: 21px;
+    height: 20px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      width: 29px;
+      height: 2px;
+      background-color: #000000;
+      border-radius: 1px;
+    }
+
+    &::before {
+      right: -3px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      right: -4px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .menu__list {
   margin: 0;
   padding: 0;
-  border-collapse: collapse;
   list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
 
-.menu__item {
-  padding: 28px 0;
-  border-top: 1px solid #ececec;
-  vertical-align: middle;
-
-  &--desktop,
-  &--info {
-    display: none;
-  }
-
-  &--info p {
-    margin: 0;
-  }
-
-  &:last-child {
-    border-bottom: 1px solid #ececec;
-  }
-}
-
-.menu__item a { /*---нужно заменить миксином или сделать элементом---*/
-  padding-left: 75px;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 1.41em;
-  text-decoration: none;
-  color: #000000;
-}
-
-@media (min-width: $tablet-width) {
-  .menu {
-    width: 670px;
-  }
-
-  .menu__list {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
+  }
+}
 
-    .menu__item {
-      padding: 0;
-      padding-top: 20px;
-      width: 165px;
+.menu__item {
+  a {
+    padding-left: 75px;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.41em;
+    text-decoration: none;
+    color: #000000;
 
-      &--search {
-        order: -1;
-        width: 85px;
-        height: 90px;
-        margin-left: 320px;
-        padding: 0;
-        outline: 1px solid darkgrey;
-      }
-
-      &--cart {
-        order: -1;
-        width: 265px;
-        height: 90px;
-        padding: 0;
-        font-size: 17px;
-        text-align: right;
-        outline: 1px solid darkgrey;
-      }
-
-      &--info {
-        display: inline-flex;
-        margin-left: auto;
-      }
-    }
-
-    .menu__item a {
+    @media (min-width: $tablet-width) {
       padding: 0;
       font-size: 15px;
     }
+  }
 
-    .menu__item--search a {
-      font-size: 0;
+  &--search a,
+  &--cart a {
+    position: relative;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-top: 20px;
+    width: 165px;
+  }
+
+  &--search {
+    @media (min-width: $tablet-width) {
+      order: -1;
+      width: 82px;
+      margin-left: 320px;
+      padding: 0;
+      outline: 1px solid darkgrey;
+
+      a {
+        display: block;
+        width: 82px;
+        height: 88px;
+        font-size: 0;
+      }
+    }
+  }
+
+  &--cart {
+    @media (min-width: $tablet-width) {
+      order: -1;
+      width: 265px;
+      height: 90px;
+      padding: 0;
+      font-size: 17px;
+      text-align: right;
+      outline: 1px solid darkgrey;
+
+      a {
+        display: block;
+        padding-top: 35px;
+        font-size: 17px;
+      }
+    }
+  }
+
+  &--info {
+    display: none;
+
+    p {
+      margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: inline-flex;
+      margin-left: auto;
+    }
+  }
+
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--catalog a,
+    &--order a {
+      display: block;
+      padding-top: 35px;
+      font-size: 17px;
+      line-height: 1.41em;
+    }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .menu {
+    &--closed .menu__item {
+      display: none;
+    }
+
+    &--opened .menu__item,
+    &--nojs .menu__item {
+      padding: 28px 0;
+      border-bottom: 1px solid #ececec;
+      vertical-align: middle;
+
+      &:first-child {
+        border-top: 1px solid #ececec;
+      }
+
+      &:last-child {
+        border-bottom: 1px solid #ececec;
+      }
+    }
+
+    &--nojs .menu__toggle {
+      display: none;
     }
   }
 }

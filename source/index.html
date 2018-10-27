@@ -2,55 +2,40 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+
+    <div style="display:none">
+      <include src="build/img/svg/sprite.svg"></include>
+    </div>
+
     <header class="header">
-      <nav class="menu">
-        <a class="logo logo--header" href="index.html" aria-label="магазин вязаных игрушек &laquo;Мишка&raquo;">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img src="img/logo-mobile.svg" width="86" height="35" alt="Магазин &laquo;MiSHKA&raquo;">
-          </picture>
-        </a>
-        <button class="menu__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
-        <ul class="menu__list menu__list--top">
-          <li class="menu__item">
-            <a href="#">Каталог товаров</a>
-          </li>
-          <li class="menu__item">
-            <a href="#">Вязание на заказ</a>
-          </li>
-          <li class="menu__item menu__item--search">
-            <a href="#">Поиск по сайту</a>
-          </li>
-          <li class="menu__item menu__item--cart">
-            <a href="#">Корзина: пока пуста</a>
-          </li>
-          <li class="menu__item menu__item--desktop">
-            <a href="#">Новые поступления</a>
-          </li>
-          <li class="menu__item menu__item--desktop">
-            <a href="#">Распродажа</a>
-          </li>
-          <li class="menu__item menu__item--info">
-            <p>Бесплатная доставка по России</p>
-          </li>
-        </ul>
-      </nav>
+      <include src="source/header.html"></include>
     </header>
+
     <main>
       <div class="title-wrapper title-wrapper--home">
         <h1 class="page-title page-title--home">Милые&nbsp;штуки ручной работы&nbsp;для&nbsp;дома</h1>
       </div>
       <section class="categories">
         <p class="categories__item-wrapper categories__item-wrapper--accessories">
-          <a class="categories__item categories__item--accessories" href="#">Предметы <br>интерьера</a>
+          <a class="categories__item categories__item--accessories" href="#">
+            Предметы <br>интерьера
+            <svg class="icon icon--interior" viewBox="0 0 40.219 62.411" width="40" height="62">
+              <use xlink:href="#icon-interior"/>
+            </svg>
+          </a>
         </p>
         <p class="categories__item-wrapper categories__item-wrapper--toys">
-          <a class="categories__item categories__item--toys" href="#">Детские <br>игрушки</a>
+          <a class="categories__item categories__item--toys" href="#">
+            Детские <br>игрушки
+            <svg class="icon icon--toy" viewBox="0 0 60 59.62" width="60" height="60">
+              <use xlink:href="#icon-toy"/>
+            </svg>
+          </a>
         </p>
       </section>
       <article class="week-article">
@@ -81,18 +66,48 @@
             <img class="week-article__img" src="img/triple-set-mobile@1x.jpg" alt="вязаные корзинки">
           </picture>
           <p class="week-article__price">Цена: 990 руб.</p>
-          <a class="btn" href="#">заказать</a>
+          <a class="btn btn--week-art" href="#">заказать</a>
         </div>
       </article>
       <section class="about-us">
         <h2 class="section-title section-title--about-us">Коротко о нас:</h2>
         <ul class="about-us__list">
-          <li class="about-us__feature about-us__feature--eco">Экологически чистые&nbsp;материалы</li>
-          <li class="about-us__feature about-us__feature--price">Скандинавский стиль по&nbsp;российской&nbsp;цене</li>
-          <li class="about-us__feature about-us__feature--like">Увеличивает лайки на&nbsp;фотографиях</li>
-          <li class="about-us__feature about-us__feature--love">Связано вручную с любовью&nbsp;и&nbsp;умилением</li>
-          <li class="about-us__feature about-us__feature--support">Поддержка отечественного производителя</li>
-          <li class="about-us__feature about-us__feature--gift">Поставляется в подарочной&nbsp;упаковке</li>
+          <li class="about-us__feature about-us__feature--eco">
+            <svg class="icon icon--feature-flower" viewBox="0 0 31.972 37.301" width="32" height="37px">
+              <use xlink:href="#icon-feature-flower"/>
+            </svg>
+            Экологически чистые&nbsp;материалы
+          </li>
+          <li class="about-us__feature about-us__feature--price">
+            <svg class="icon icon--feature-money" viewBox="0 0 46.575 27.332" width="47" height="27">
+              <use xlink:href="#icon-feature-money"/>
+            </svg>
+            Скандинавский стиль по&nbsp;российской&nbsp;цене
+          </li>
+          <li class="about-us__feature about-us__feature--like">
+            <svg class="icon icon--feature-heart" viewBox="0 0 33.05 27.857" width="34" height="27">
+              <use xlink:href="#icon-feature-heart"/>
+            </svg>
+            Увеличивает лайки на&nbsp;фотографиях
+          </li>
+          <li class="about-us__feature about-us__feature--love">
+            <svg class="icon icon--feature-ball" viewBox="0 0 34.373 34.373" width="35" height="34">
+              <use xlink:href="#icon-feature-ball"/>
+            </svg>
+            Связано вручную с любовью&nbsp;и&nbsp;умилением
+          </li>
+          <li class="about-us__feature about-us__feature--support">
+            <svg class="icon icon--feature-rocket" viewBox="0 0 54.156 23.183" width="55" height="23">
+              <use xlink:href="#icon-feature-rocket"/>
+            </svg>
+            Поддержка отечественного производителя
+          </li>
+          <li class="about-us__feature about-us__feature--gift">
+            <svg class="icon icon--feature-gift" viewBox="0 0 32.666 32.486" width="33" height="32">
+              <use xlink:href="#icon-feature-gift"/>
+            </svg>
+            Поставляется в подарочной&nbsp;упаковке
+          </li>
         </ul>
       </section>
       <section class="feedback">
@@ -103,13 +118,28 @@
         <p class="feedback__username-full">Анастасия Красильникова</p>
         <p class="feedback__username">@misssssiskras</p>
         <nav class="feedback__comment-switch">
-          <button class="feedback__btn-switch" aria-label="предыдущий комментарий">&#8592;</button>
-          <button class="feedback__btn-switch" aria-label="следующий комментарий">&#8594;</button>
+          <button class="feedback__btn-switch" aria-label="предыдущий комментарий">
+            &#8592;
+            <svg class="icon icon--left-arrow" viewBox="0 0 50 26" width="50" height="26">
+              <use xlink:href="#icon-left-arrow"/>
+            </svg>
+          </button>
+          <button class="feedback__btn-switch" aria-label="следующий комментарий">
+            &#8594;
+            <svg class="icon icon--right-arrow" viewBox="0 0 50 26" width="50" height="26">
+              <use xlink:href="#icon-right-arrow"/>
+            </svg>
+          </button>
         </nav>
         <a class="btn btn--feedback" href="#">написать</a>
       </section>
       <section class="contacts">
-        <h2 class="section-title section-title--contacts">Контакты</h2>
+        <h2 class="section-title section-title--contacts">
+          <svg class="icon icon--flag" viewBox="0 0 46.68 81.691" width="47" height="81">
+            <use xlink:href="#icon-flag"/>
+          </svg>
+          Контакты
+        </h2>
         <table class="contacts__table">
           <tr class="contacts__row">
             <th class="contacts__title">e-mail:</th>
@@ -123,52 +153,20 @@
               д. 19/8, офис 101</td>
           </tr>
         </table>
-        <div class="contacts__map-wrapper">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/map-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
-            <img class="contacts__map" src="img/map-mobile@1x.jpg" alt="карта проезда до магазина">
-          </picture>
-        </div>
+        <div class="contacts__map-wrapper"></div>
         <a class="btn btn--write-us" href="#">напишите нам</a>
       </section>
     </main>
+
     <footer class="footer">
-      <div class="wrapper wrapper--footer">
-        <a class="logo logo--footer" href="index.html" aria-label="магазин вязаных игрушек &laquo;Мишка&raquo;">
-          <img src="img/logo-footer.svg" width="102" height="34" alt="&laquo;MiSHKA&raquo;">
-        </a>
-        <section class="social">
-          <a class="social__icon social__icon--inst" href="https://www.instagram.com/htmlacademy/" target="_blank" aria-label="Наши фотоотчёты в Instagram"></a>
-          <a class="social__icon social__icon--fb" href="https://ru-ru.facebook.com/htmlacademy/" target="_blank" aria-label="Наше сообщество в Facebook"></a>
-          <a class="social__icon social__icon--tw" href="https://twitter.com/htmlacademy_ru?lang=ru" target="_blank" aria-label="Читайте наши новости в Twitter"></a>
-        </section>
-        <section class="copyright">
-          <p class="copyright__text">
-            Разработано
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Записывайтесь на интенсив по адаптивной вёрстке!"></a>
-          </p>
-        </section>
-      </div>
+      <include src="source/footer.html"></include>
     </footer>
+
     <section class="modal modal--size visually-hidden">
-      <h3 class="modal__title">добавить в корзину</h3>
-      <p class="modal__info">Выберете размер:</p>
-      <form method="get" action="https://echo.htmlacademy.ru/" class="modal__form">
-        <label class="modal__label modal__label--size">
-          s
-          <input class="modal__radio modal__radio--size" type="radio" name="size" value="s">
-        </label>
-        <label class="modal__label modal__label--size">
-          m
-          <input class="modal__radio modal__radio--size" type="radio" name="size" value="m">
-        </label>
-        <label class="modal__label modal__label--size">
-          l
-          <input class="modal__radio modal__radio--size" type="radio" name="size" value="l">
-        </label>
-        <button class="modal__submit" type="submit">добавить</button>
-      </form>
+      <include src="source/modal.html"></include>
     </section>
+
+  <script src="js/script.js"></script>
+
   </body>
 </html>

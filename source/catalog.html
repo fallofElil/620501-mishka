@@ -2,45 +2,20 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <div style="display:none">
+    <include src="build/img/svg/sprite.svg"></include>
+  </div>
+
   <header class="header">
-    <nav class="menu">
-      <a class="logo logo--header" href="index.html" aria-label="магазин вязаных игрушек &laquo;Мишка&raquo;">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img src="img/logo-mobile.svg" width="86" height="35" alt="Магазин &laquo;MiSHKA&raquo;">
-        </picture>
-      </a>
-      <button class="menu__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
-      <ul class="menu__list menu__list--top">
-        <li class="menu__item">
-          <a href="#">Каталог товаров</a>
-        </li>
-        <li class="menu__item">
-          <a href="#">Вязание на заказ</a>
-        </li>
-        <li class="menu__item menu__item--search">
-          <a href="#">Поиск по сайту</a>
-        </li>
-        <li class="menu__item menu__item--cart">
-          <a href="#">Корзина: пока пуста</a>
-        </li>
-        <li class="menu__item menu__item--desktop">
-          <a href="#">Новые поступления</a>
-        </li>
-        <li class="menu__item menu__item--desktop">
-          <a href="#">Распродажа</a>
-        </li>
-        <li class="menu__item menu__item--info">
-          <p>Бесплатная доставка по России</p>
-        </li>
-      </ul>
-    </nav>
+    <include src="source/header.html"></include>
   </header>
+
   <main>
     <div class="title-wrapper title-wrapper--catalog">
       <h1 class="page-title">Каталог товаров</h1>
@@ -55,8 +30,17 @@
         <div class="article__description">
           <h3 class="article__title"><a href="#">Зайчик-попрыгайчик</a></h3>
           <p class="article__characteristics">Рост 30 см, вес 200 г</p>
-          <p class="article__price">1&nbsp;200 руб.</p>
-          <a class="article__link-to-cart" href="#" aria-label="добавить в корзину"></a>
+          <hr class="article__divider" color="#ececec">
+          <div class="article__price-wrapper">
+            <p class="article__price">
+              1&nbsp;200 руб.
+            </p>
+            <a class="article__link-to-cart" href="#" aria-label="добавить в корзину">
+              <svg class="icon icon--to-cart" width="20" height="19">
+                <use xlink:href="#icon-cart"/>
+              </svg>
+            </a>
+          </div>
         </div>
       </article>
       <article class="article">
@@ -68,8 +52,17 @@
         <div class="article__description">
           <h3 class="article__title"><a href="#">Корзинка для белья</a></h3>
           <p class="article__characteristics">Диаметр 15 см, высота 10 см</p>
-          <p class="article__price">690 руб.</p>
-          <a class="article__link-to-cart" href="#" aria-label="добавить в корзину"></a>
+          <hr class="article__divider" color="#ececec">
+          <div class="article__price-wrapper">
+            <p class="article__price">
+              690 руб.
+            </p>
+            <a class="article__link-to-cart" href="#" aria-label="добавить в корзину">
+              <svg class="icon icon--to-cart" width="20" height="19">
+                <use xlink:href="#icon-cart"/>
+              </svg>
+            </a>
+          </div>
         </div>
       </article>
       <article class="article">
@@ -81,8 +74,17 @@
         <div class="article__description">
           <h3 class="article__title"><a href="#">Большая корзинка для игрушек</a></h3>
           <p class="article__characteristics">Диаметр 30 см, высота 30 см</p>
-          <p class="article__price">1&nbsp;500 руб.</p>
-          <a class="article__link-to-cart" href="#" aria-label="добавить в корзину"></a>
+          <hr class="article__divider" color="#ececec">
+          <div class="article__price-wrapper">
+            <p class="article__price">
+              1&nbsp;500 руб.
+            </p>
+            <a class="article__link-to-cart" href="#" aria-label="добавить в корзину">
+              <svg class="icon icon--to-cart" width="20" height="19">
+                <use xlink:href="#icon-cart"/>
+              </svg>
+            </a>
+          </div>
         </div>
       </article>
     </section>
@@ -93,7 +95,12 @@
         <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
         <img src="img/video-mobile@1x.jpg" alt="видео процесса вязания товара">
       </picture>
-      <button class="video-material__btn-play" aria-label="воспроизвести видео">&#10148;</button>
+      <button class="video-material__btn-play" aria-label="воспроизвести видео">
+        <svg class="icon icon--play" width="100.678" height="76.891">
+          <use xlink:href="#icon-play"/>
+        </svg>
+        &#10148;
+      </button>
       <div class="video-material__desc-wrapper">
         <p class="video-material__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о
           том, как появляются наши товары.</p>
@@ -101,42 +108,16 @@
       </div>
     </article>
   </main>
+
   <footer class="footer">
-    <div class="wrapper wrapper--footer">
-      <a class="logo logo--footer" href="index.html" aria-label="магазин вязаных игрушек &laquo;Мишка&raquo;">
-        <img src="img/logo-footer.svg" width="102" height="34" alt="&laquo;MiSHKA&raquo;">
-      </a>
-      <section class="social">
-        <a class="social__icon social__icon--inst" href="https://www.instagram.com/htmlacademy/" target="_blank" aria-label="Наши фотоотчёты в Instagram"></a>
-        <a class="social__icon social__icon--fb" href="https://ru-ru.facebook.com/htmlacademy/" target="_blank" aria-label="Наше сообщество в Facebook"></a>
-        <a class="social__icon social__icon--tw" href="https://twitter.com/htmlacademy_ru?lang=ru" target="_blank" aria-label="Читайте наши новости в Twitter"></a>
-      </section>
-      <section class="copyright">
-        <p class="copyright__text">
-          Разработано
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Записывайтесь на интенсив по адаптивной вёрстке!"></a>
-        </p>
-      </section>
-    </div>
+    <include src="source/footer.html"></include>
   </footer>
+
   <section class="modal modal--size visually-hidden">
-    <h3 class="modal__title">добавить в корзину</h3>
-    <p class="modal__info">Выберете размер:</p>
-    <form method="get" action="https://echo.htmlacademy.ru/" class="modal__form">
-      <label class="modal__label modal__label--size">
-        s
-        <input class="modal__radio modal__radio--size" type="radio" name="size" value="s">
-      </label>
-      <label class="modal__label modal__label--size">
-        m
-        <input class="modal__radio modal__radio--size" type="radio" name="size" value="m">
-      </label>
-      <label class="modal__label modal__label--size">
-        l
-        <input class="modal__radio modal__radio--size" type="radio" name="size" value="l">
-      </label>
-      <button class="modal__submit" type="submit">добавить</button>
-    </form>
+    <include src="source/modal.html"></include>
   </section>
+
+  <script src="js/script.js"></script>
+
 </body>
 </html>

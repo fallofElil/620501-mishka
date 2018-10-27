@@ -1,15 +1,31 @@
-@import "../variables.scss";
-
 .logo {
   display: block;
   text-align: center;
 
   &--header {
+    width: 86px;
     padding: 22px 0;
+    margin: 0 auto;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &--footer {
     display: none;
+
+    &:hover {
+      fill: $mint;
+    }
+
+    &:active {
+      fill: opacify($mint, 0.3);
+    }
   }
 }
 
@@ -36,7 +52,7 @@
     &--header {
       height: 72px;
       margin: 0 auto;
-      top: 0;
+      top: 10px;
       left: 0;
       bottom: 0;
       right: 0;
@@ -45,6 +61,33 @@
     &--footer {
       display: block;
       height: 34px;
+    }
+  }
+}
+
+.logo__img {
+  &--hover,
+  &--active {
+    display: none;
+  }
+}
+
+.logo--footer:hover {
+  .logo__img {
+    display:none;
+
+    &--hover {
+      display: block;
+    }
+  }
+}
+
+.logo--footer:active {
+  .logo__img {
+    display:none;
+
+    &--active {
+      display: block;
     }
   }
 }

@@ -2,45 +2,20 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <div style="display:none">
+    <include src="build/img/svg/sprite.svg"></include>
+  </div>
+
   <header class="header">
-    <nav class="menu">
-      <a class="logo logo--header" href="index.html" aria-label="магазин вязаных игрушек &laquo;Мишка&raquo;">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img src="img/logo-mobile.svg" width="86" height="35" alt="Магазин &laquo;MiSHKA&raquo;">
-        </picture>
-      </a>
-      <button class="menu__toggle" type="button"><span class="visually-hidden">открыть меню</span></button>
-      <ul class="menu__list menu__list--top">
-        <li class="menu__item">
-          <a href="#">Каталог товаров</a>
-        </li>
-        <li class="menu__item">
-          <a href="#">Вязание на заказ</a>
-        </li>
-        <li class="menu__item menu__item--search">
-          <a href="#">Поиск по сайту</a>
-        </li>
-        <li class="menu__item menu__item--cart">
-          <a href="#">Корзина: пока пуста</a>
-        </li>
-        <li class="menu__item menu__item--desktop">
-          <a href="#">Новые поступления</a>
-        </li>
-        <li class="menu__item menu__item--desktop">
-          <a href="#">Распродажа</a>
-        </li>
-        <li class="menu__item menu__item--info">
-          <p>Бесплатная доставка по России</p>
-        </li>
-      </ul>
-    </nav>
+    <include src="source/header.html"></include>
   </header>
+
   <main>
     <div class="title-wrapper title-wrapper--form">
       <h1 class="page-title">Вязание на заказ</h1>
@@ -50,24 +25,24 @@
     <form method="get" action="https://echo.htmlacademy.ru/" class="form">
       <fieldset class="form__field form__field--type">
         <legend class="form__field-title">тип</legend>
-        <input class="form__radio" type="radio" id="radio-acces" value="accessory">
+        <input class="form__radio visually-hidden" type="radio" id="radio-acces" value="accessory">
         <label class="form__label form__label--radio" for="radio-acces">Аксессуар для интерьера</label>
-        <input class="form__radio" type="radio" id="radio-toy" value="toy">
+        <input class="form__radio visually-hidden" type="radio" id="radio-toy" value="toy">
         <label class="form__label form__label--radio" for="radio-toy">Детская игрушка</label>
       </fieldset>
       <fieldset class="form__field form__field--color">
         <legend class="form__field-title">цвет</legend>
-        <input class="form__check" type="checkbox" id="check-white" name="color" value="white">
+        <input class="form__check visually-hidden" type="checkbox" id="check-white" name="color" value="white">
         <label class="form__label form__label--check" for="check-white">Белый</label>
-        <input class="form__check" type="checkbox" id="check-grey" name="color" value="grey">
+        <input class="form__check visually-hidden" type="checkbox" id="check-grey" name="color" value="grey">
         <label class="form__label form__label--check" for="check-grey">Серый</label>
-        <input class="form__check" type="checkbox" id="check-tiffany" name="color" value="tiffany">
+        <input class="form__check visually-hidden" type="checkbox" id="check-tiffany" name="color" value="tiffany">
         <label class="form__label form__label--check" for="check-tiffany">&laquo;Тиффани&raquo;</label>
-        <input class="form__check" type="checkbox" id="check-black" name="color" value="black">
+        <input class="form__check visually-hidden" type="checkbox" id="check-black" name="color" value="black">
         <label class="form__label form__label--check" for="check-black">Черный</label>
-        <input class="form__check" type="checkbox" id="check-pink" name="color" value="pink">
+        <input class="form__check visually-hidden" type="checkbox" id="check-pink" name="color" value="pink">
         <label class="form__label form__label--check" for="check-pink">Розовый</label>
-        <input class="form__check" type="checkbox" id="check-orange" name="color" value="orange">
+        <input class="form__check visually-hidden" type="checkbox" id="check-orange" name="color" value="orange">
         <label class="form__label form__label--check" for="check-orange">Оранжевый</label>
       </fieldset>
       <fieldset class="form__field form__field--fullname">
@@ -103,22 +78,10 @@
     </form>
   </main>
   <footer class="footer">
-    <div class="wrapper wrapper--footer">
-      <a class="logo logo--footer" href="index.html" aria-label="магазин вязаных игрушек &laquo;Мишка&raquo;">
-        <img src="img/logo-footer.svg" width="102" height="34" alt="&laquo;MiSHKA&raquo;">
-      </a>
-      <section class="social">
-        <a class="social__icon social__icon--inst" href="https://www.instagram.com/htmlacademy/" target="_blank" aria-label="Наши фотоотчёты в Instagram"></a>
-        <a class="social__icon social__icon--fb" href="https://ru-ru.facebook.com/htmlacademy/" target="_blank" aria-label="Наше сообщество в Facebook"></a>
-        <a class="social__icon social__icon--tw" href="https://twitter.com/htmlacademy_ru?lang=ru" target="_blank" aria-label="Читайте наши новости в Twitter"></a>
-      </section>
-      <section class="copyright">
-        <p class="copyright__text">
-          Разработано
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Записывайтесь на интенсив по адаптивной вёрстке!"></a>
-        </p>
-      </section>
-    </div>
+    <include src="source/footer.html"></include>
   </footer>
+
+  <script src="js/script.js"></script>
+
 </body>
 </html>

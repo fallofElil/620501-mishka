@@ -2,18 +2,35 @@
 
 .section-title {
   display: block;
+  margin: 0;
   font-size: 25px;
   font-weight: 700;
   line-height: 1.2em;
 
+  &--feedback {
+    margin-bottom: 35px;
+  }
+
   &--contacts {
+    width: 260px;
+    margin: 0 auto;
     margin-bottom: 35px;
     font-size: 18px;
+
+    @media (min-width: $desktop-width) {
+      font-size: 53px;
+      line-height: 1.07em;
+    }
+
+    svg {
+      display: none;
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
   .section-title {
+    margin-bottom: 5px;
     font-size: 43px;
     line-height: 1.16em;
 

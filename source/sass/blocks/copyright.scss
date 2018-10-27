@@ -5,8 +5,13 @@
 }
 
 .copyright__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 180px;
   margin: 0 auto;
+  padding-top: 23px;
+  padding-bottom: 23px;
   font-size: 19px;
   font-weight: 700;
   line-height: 0.94em;

@@ -8,8 +8,10 @@
 }
 
 .feedback__text {
-  color: $greyish-brown;
+  margin: 0;
   margin-bottom: 30px;
+  line-height: 2em;
+  color: $greyish-brown;
 }
 
 .feedback__username-full {
@@ -27,7 +29,33 @@
 }
 
 .feedback__comment-switch {
-  width: 260px;
+  position: relative;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  border: 1px solid $light-grey;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0;
+    right: 0;
+    width: 1px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: $light-grey;
+  }
+}
+
+.feedback__btn-switch {
+  width: 130px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border: none;
+  background-color: transparent;
+  font-size: 0;
 }
 
 @media (min-width: $tablet-width) {

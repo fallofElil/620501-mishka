@@ -1,0 +1,118 @@
+.icon {
+  display: inline;
+
+  &--search,
+  &--cart {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 30px;
+    display: block;
+    margin: auto 0;
+    fill: $icon-color;
+  }
+
+  &--search {
+    width: 17.6px;
+    height: 17.6px;
+  }
+
+  &--cart {
+    width: 20.3px;
+    height: 18.9px;
+
+    @media (min-width: $tablet-width) {
+      top: auto;
+      bottom: auto;
+      display: inline;
+    }
+  }
+
+  &--interior {
+    width: 40.219px;
+    height: 62.411px;
+    fill: $blue-green;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 30px;
+      right: 23px;
+    }
+  }
+
+  &--toy {
+    width: 60px;
+    height: 59.62px;
+    fill: $blue-green;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 30px;
+      right: 23px;
+    }
+  }
+
+  &--feature-flower,
+  &--feature-money,
+  &--feature-heart,
+  &--feature-ball,
+  &--feature-rocket,
+  &--feature-gift {
+    display: block;
+  }
+
+  &--feature-flower {
+    width: 31.972px;
+    height: 37.301px;
+  }
+
+  &--feature-money {
+    width: 46.575px;
+    height: 27.332px;
+  }
+
+  &--feature-heart {
+    width: 33.05px;
+    height: 27.857px;
+  }
+
+  &--feature-ball {
+    width: 34.373px;
+    height: 34.373px;
+  }
+
+  &--feature-rocket {
+    width: 54.156px;
+    height: 23.183px;
+  }
+
+  &--feature-gift {
+    width: 32.666px;
+    height: 32.486px;
+  }
+
+  &--icon-left-arrow,
+  &--icon-right-arrow {
+    width: 50px;
+    height: 26px;
+  }
+
+  &--icon-flag {
+    width: 46.68px;
+    height: 81.691px;
+  }
+
+  &--htmlacademy {
+    fill: $mint;
+  }
+
+  &--to-cart {
+    fill: $icon-color;
+  }
+
+  &--play {
+    width: 100.678px;
+    height: 76.891px;
+    fill: $mint;
+  }
+}

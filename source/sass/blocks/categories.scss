@@ -1,12 +1,23 @@
-@import "../variables.scss";
-
 .categories {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 670px;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
 }
 
 .categories__item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
   padding: 25px 30px;
 
@@ -17,6 +28,12 @@
   &--toys {
     background-color: $darker-mint;
   }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: auto;
+    padding: 0;
+  }
 }
 
 .categories__item {
@@ -26,31 +43,17 @@
   line-height: 1.26em;
   text-decoration: none;
   color: #ffffff;
-}
 
-@media (min-width: $tablet-width) {
-  .categories {
-    width: 670px;
-    flex-direction: row;
-    margin: 0 auto;
-  }
-
-  .categories__item-wrapper {
-    width: 335px;
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 300px;
     padding-top: 30px;
+    padding-bottom: 40px;
     padding-left: 35px;
-  }
-
-  .categories__item {
-    width: 265px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .categories {
-    width: 1050px;
-  }
-
   .categories__item-wrapper {
     width: 525px;
   }

@@ -1,8 +1,17 @@
 {
   "extends": "stylelint-config-htmlacademy",
 
+  "plugins": [
+    "stylelint-order"
+  ],
+
   "rules": {
     "declaration-no-important": true,
-    "indentation": [2, {"ignore": ["inside-parens"]}]
+    "indentation": [2, {"ignore": ["inside-parens"]}],
+    "order/order": [
+      "custom-properties",
+      "declarations"
+    ],
+    "order/properties-order": true
   }
 }

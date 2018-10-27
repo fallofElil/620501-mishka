@@ -1,12 +1,19 @@
 .social {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 140px;
   margin: auto;
-}
-
-.social__icon {
-  outline: 1px solid black;
-  width: 25px;
-  height: 25px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border-bottom: 1px solid #e5e5e5;
+  
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: auto 0;
+    margin-left: 155px;
+    margin-right: 85px;
+  }
 }
