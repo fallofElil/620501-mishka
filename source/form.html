@@ -24,17 +24,17 @@
       Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     <form method="get" action="https://echo.htmlacademy.ru/" class="form">
       <fieldset class="form__field form__field--type">
-        <legend class="form__field-title">тип</legend>
-        <input class="form__radio visually-hidden" type="radio" id="radio-acces" value="accessory">
+        <legend class="form__field-title form__field-title--type">тип</legend>
+        <input class="form__radio visually-hidden" type="radio" id="radio-acces" value="accessory" checked>
         <label class="form__label form__label--radio" for="radio-acces">Аксессуар для интерьера</label>
         <input class="form__radio visually-hidden" type="radio" id="radio-toy" value="toy">
         <label class="form__label form__label--radio" for="radio-toy">Детская игрушка</label>
       </fieldset>
       <fieldset class="form__field form__field--color">
-        <legend class="form__field-title">цвет</legend>
-        <input class="form__check visually-hidden" type="checkbox" id="check-white" name="color" value="white">
+        <legend class="form__field-title form__field-title--color">цвет</legend>
+        <input class="form__check visually-hidden" type="checkbox" id="check-white" name="color" value="white" checked>
         <label class="form__label form__label--check" for="check-white">Белый</label>
-        <input class="form__check visually-hidden" type="checkbox" id="check-grey" name="color" value="grey">
+        <input class="form__check visually-hidden" type="checkbox" id="check-grey" name="color" value="grey" checked>
         <label class="form__label form__label--check" for="check-grey">Серый</label>
         <input class="form__check visually-hidden" type="checkbox" id="check-tiffany" name="color" value="tiffany">
         <label class="form__label form__label--check" for="check-tiffany">&laquo;Тиффани&raquo;</label>
@@ -46,7 +46,7 @@
         <label class="form__label form__label--check" for="check-orange">Оранжевый</label>
       </fieldset>
       <fieldset class="form__field form__field--fullname">
-        <legend class="form__field-title">фио</legend>
+        <legend class="form__field-title form__field-title--fullname">фио</legend>
         <label class="form__label form__label--txt" for="txt-name">Имя:</label>
         <input class="form__txt" type="text" id="txt-name" name="name" placeholder="Введите ваше имя*" required>
         <label class="form__label form__label--txt" for="txt-surname">Фамилия:</label>
@@ -67,7 +67,7 @@
         </fieldset>
       </section>
       <fieldset class="form__field form__field--addition">
-        <legend class="form__field-title">доп</legend>
+        <legend class="form__field-title form__field-title--addition">доп</legend>
         <textarea class="form__textarea" name="order_message" id="txt-message" placeholder="Опишите все вашипожелания к заказу"></textarea>
         <label class="visually-hidden" for="txt-message">сообщение с описанием к заказу</label>
       </fieldset>
