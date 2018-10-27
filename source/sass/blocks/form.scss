@@ -37,10 +37,36 @@
   }
 }
 
-.form__label--txt {
+.form__label {
+  position: relative;
+  padding-left: 60px;
   font-size: 17px;
   font-weight: 700;
-  line-height: 1em;
+
+  &--radio,
+  &--check {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      border: 2px solid $greyish-brown;
+    }
+  }
+
+  &--radio {
+    &::before {
+      border-radius: 50%;
+    }
+  }
+
+  &--txt {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1em;
+  }
 }
 
 .form__txt {

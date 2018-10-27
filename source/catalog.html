@@ -30,13 +30,17 @@
         <div class="article__description">
           <h3 class="article__title"><a href="#">Зайчик-попрыгайчик</a></h3>
           <p class="article__characteristics">Рост 30 см, вес 200 г</p>
-          <hr>
-          <p class="article__price">1&nbsp;200 руб.</p>
-          <a class="article__link-to-cart" href="#" aria-label="добавить в корзину">
-            <svg class="icon icon--cart" width="20" height="19">
-              <use xlink:href="#icon-cart"/>
-            </svg>
-          </a>
+          <hr class="article__divider" color="#ececec">
+          <div class="article__price-wrapper">
+            <p class="article__price">
+              1&nbsp;200 руб.
+            </p>
+            <a class="article__link-to-cart" href="#" aria-label="добавить в корзину">
+              <svg class="icon icon--to-cart" width="20" height="19">
+                <use xlink:href="#icon-cart"/>
+              </svg>
+            </a>
+          </div>
         </div>
       </article>
       <article class="article">
@@ -48,13 +52,17 @@
         <div class="article__description">
           <h3 class="article__title"><a href="#">Корзинка для белья</a></h3>
           <p class="article__characteristics">Диаметр 15 см, высота 10 см</p>
-          <hr>
-          <p class="article__price">690 руб.</p>
-          <a class="article__link-to-cart" href="#" aria-label="добавить в корзину">
-            <svg class="icon icon--cart" width="20" height="19">
-              <use xlink:href="#icon-cart"/>
-            </svg>
-          </a>
+          <hr class="article__divider" color="#ececec">
+          <div class="article__price-wrapper">
+            <p class="article__price">
+              690 руб.
+            </p>
+            <a class="article__link-to-cart" href="#" aria-label="добавить в корзину">
+              <svg class="icon icon--to-cart" width="20" height="19">
+                <use xlink:href="#icon-cart"/>
+              </svg>
+            </a>
+          </div>
         </div>
       </article>
       <article class="article">
@@ -66,13 +74,17 @@
         <div class="article__description">
           <h3 class="article__title"><a href="#">Большая корзинка для игрушек</a></h3>
           <p class="article__characteristics">Диаметр 30 см, высота 30 см</p>
-          <hr>
-          <p class="article__price">1&nbsp;500 руб.</p>
-          <a class="article__link-to-cart" href="#" aria-label="добавить в корзину">
-            <svg class="icon icon--cart" width="20" height="19">
-              <use xlink:href="#icon-cart"/>
-            </svg>
-          </a>
+          <hr class="article__divider" color="#ececec">
+          <div class="article__price-wrapper">
+            <p class="article__price">
+              1&nbsp;500 руб.
+            </p>
+            <a class="article__link-to-cart" href="#" aria-label="добавить в корзину">
+              <svg class="icon icon--to-cart" width="20" height="19">
+                <use xlink:href="#icon-cart"/>
+              </svg>
+            </a>
+          </div>
         </div>
       </article>
     </section>
@@ -83,7 +95,12 @@
         <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
         <img src="img/video-mobile@1x.jpg" alt="видео процесса вязания товара">
       </picture>
-      <button class="video-material__btn-play" aria-label="воспроизвести видео">&#10148;</button>
+      <button class="video-material__btn-play" aria-label="воспроизвести видео">
+        <svg class="icon icon--play" width="100.678" height="76.891">
+          <use xlink:href="#icon-play"/>
+        </svg>
+        &#10148;
+      </button>
       <div class="video-material__desc-wrapper">
         <p class="video-material__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о
           том, как появляются наши товары.</p>
