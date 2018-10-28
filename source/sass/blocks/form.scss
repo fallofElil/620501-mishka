@@ -9,10 +9,13 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
-    width: auto;
+    width: 500px;
+    padding-left: 167px;
+    margin: 0 auto;
+    margin-bottom: 50px;
 
     &--fullname {
       top: 33px;
@@ -21,7 +24,8 @@
 
   @media (min-width: $desktop-width) {
     top: 0;
-    left: -115px;
+    left: -14px;
+    width: 700px;
   }
 
   &--type,
@@ -50,6 +54,19 @@
       }
     }
 
+    @media (min-width: $desktop-width) {
+      width: 700px;
+
+      .form__txt {
+        width: 555px;
+        padding-left: 20px;
+
+        &:first-of-type {
+          width: 608px;
+        }
+      }
+    }
+
     .form__label {
       padding-left: 0;
     }
@@ -64,6 +81,20 @@
   &--email {
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
+    }
+  }
+
+  &--submit {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      width: 670px;
+      padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 57px;
+      width: 700px;
     }
   }
 
@@ -107,6 +138,10 @@
 
   &--color {
     margin-bottom: 35px;
+
+    @media (min-width: $desktop-width) {
+      top: 33px;
+    }
   }
 
   &--fullname {
@@ -238,14 +273,6 @@
     width: 670px;
   }
 
-  .form__field {
-    position: relative;
-    width: 500px;
-    padding-left: 167px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-  }
-
   .form__field--color {
     flex-direction: row;
     flex-wrap: wrap;
@@ -255,6 +282,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      left: 10px;
       width: 750px;
     }
   }
@@ -278,6 +306,12 @@
         }
       }
     }
+
+    @media (min-width: $desktop-width) {
+      .form__txt {
+        width: 700px;
+      }
+    }
   }
 
   .form__textarea {
@@ -285,29 +319,14 @@
     height: 140px;
     padding-top: 15px;
     padding-left: 18px;
+
+    @media (min-width: $desktop-width) {
+      width: 700px;
+    }
   }
 
   .form__field--addition {
     height: auto;
-  }
-
-  .form__field--submit {
-    display: flex;
-    justify-content: space-between;
-    width: 670px;
-    padding: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .description,
-  .form__field,
-  .form__contacts {
-    width: 700px;
-  }
-
-  .form__textarea {
-    width: 700px;
   }
 }
 
