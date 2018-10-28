@@ -113,7 +113,9 @@
       width: 82px;
       margin-left: 320px;
       padding: 0;
-      outline: 1px solid darkgrey;
+      border-left: 1px solid #ececec;
+      border-right: 1px solid #ececec;
+      /*outline: 1px solid darkgrey;*/
 
       a {
         display: block;
@@ -132,7 +134,7 @@
       padding: 0;
       font-size: 17px;
       text-align: right;
-      outline: 1px solid darkgrey;
+      /*outline: 1px solid darkgrey;*/
 
       a {
         display: block;
@@ -149,8 +151,9 @@
       margin: 0;
     }
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       display: inline-flex;
+      width: 231px;
       margin-left: auto;
     }
   }
@@ -204,10 +207,10 @@
 
   .menu__list {
     .menu__item {
-      width: 235px;
+      width: 234px;
       height: 90px;
       padding: 0;
-      outline: 1px solid orchid;
+      /*outline: 1px solid orchid;*/
 
       &--search {
         width: 85px;

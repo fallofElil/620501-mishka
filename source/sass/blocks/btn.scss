@@ -13,6 +13,7 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $greyish-brown;
+  cursor: pointer;
 
   &--week-art {
     @media (min-width: $desktop-width) {
@@ -27,6 +28,7 @@
   }
 
   &--send-order {
+    width: 258px;
     margin-bottom: 55px;
     background-color: transparent;
   }
