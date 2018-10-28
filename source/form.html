@@ -20,7 +20,7 @@
     <div class="title-wrapper title-wrapper--form">
       <h1 class="page-title">Вязание на заказ</h1>
     </div>
-    <p class="description">Мы будем рады воплотить в жизнь ваши пожелания!
+    <p class="description description--form">Мы будем рады воплотить в жизнь ваши пожелания!
       Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     <form method="get" action="https://echo.htmlacademy.ru/" class="form">
       <fieldset class="form__field form__field--type">
@@ -30,21 +30,23 @@
         <input class="form__radio visually-hidden" type="radio" id="radio-toy" value="toy">
         <label class="form__label form__label--radio" for="radio-toy">Детская игрушка</label>
       </fieldset>
-      <fieldset class="form__field form__field--color">
-        <legend class="form__field-title form__field-title--color">цвет</legend>
-        <input class="form__check visually-hidden" type="checkbox" id="check-white" name="color" value="white" checked>
-        <label class="form__label form__label--check" for="check-white">Белый</label>
-        <input class="form__check visually-hidden" type="checkbox" id="check-grey" name="color" value="grey" checked>
-        <label class="form__label form__label--check" for="check-grey">Серый</label>
-        <input class="form__check visually-hidden" type="checkbox" id="check-tiffany" name="color" value="tiffany">
-        <label class="form__label form__label--check" for="check-tiffany">&laquo;Тиффани&raquo;</label>
-        <input class="form__check visually-hidden" type="checkbox" id="check-black" name="color" value="black">
-        <label class="form__label form__label--check" for="check-black">Черный</label>
-        <input class="form__check visually-hidden" type="checkbox" id="check-pink" name="color" value="pink">
-        <label class="form__label form__label--check" for="check-pink">Розовый</label>
-        <input class="form__check visually-hidden" type="checkbox" id="check-orange" name="color" value="orange">
-        <label class="form__label form__label--check" for="check-orange">Оранжевый</label>
-      </fieldset>
+      <div class="form__field-wrapper">
+        <fieldset class="form__field form__field--color">
+          <legend class="form__field-title form__field-title--color">цвет</legend>
+          <input class="form__check visually-hidden" type="checkbox" id="check-white" name="color" value="white" checked>
+          <label class="form__label form__label--check" for="check-white">Белый</label>
+          <input class="form__check visually-hidden" type="checkbox" id="check-grey" name="color" value="grey" checked>
+          <label class="form__label form__label--check" for="check-grey">Серый</label>
+          <input class="form__check visually-hidden" type="checkbox" id="check-tiffany" name="color" value="tiffany">
+          <label class="form__label form__label--check" for="check-tiffany">&laquo;Тиффани&raquo;</label>
+          <input class="form__check visually-hidden" type="checkbox" id="check-black" name="color" value="black">
+          <label class="form__label form__label--check" for="check-black">Черный</label>
+          <input class="form__check visually-hidden" type="checkbox" id="check-pink" name="color" value="pink">
+          <label class="form__label form__label--check" for="check-pink">Розовый</label>
+          <input class="form__check visually-hidden" type="checkbox" id="check-orange" name="color" value="orange">
+          <label class="form__label form__label--check" for="check-orange">Оранжевый</label>
+        </fieldset>
+      </div>
       <fieldset class="form__field form__field--fullname">
         <legend class="form__field-title form__field-title--fullname">фио</legend>
         <label class="form__label form__label--txt" for="txt-name">Имя:</label>

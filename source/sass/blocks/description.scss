@@ -1,16 +1,17 @@
 @import "../variables.scss";
 
 .description {
-  width: 260px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  font-size: 13px;
-  line-height: 1.84em;
-  color: $greyish-brown;
-}
+  &--form {
+    width: 260px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 13px;
+    line-height: 1.84em;
+    color: $greyish-brown;
 
-@media (min-width: $tablet-width) {
-  .description {
-    width: 670px;
+    @media (min-width: $tablet-width) {
+      width: 670px;
+      margin-bottom: 70px;
+    }
   }
 }

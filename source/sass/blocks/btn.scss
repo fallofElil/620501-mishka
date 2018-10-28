@@ -13,6 +13,7 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $greyish-brown;
+  cursor: pointer;
 
   &--week-art {
     @media (min-width: $desktop-width) {

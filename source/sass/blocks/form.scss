@@ -38,14 +38,15 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-    }
 
-    .form__txt {
-      width: 375px;
-      margin-bottom: 25px;
+      .form__txt {
+        width: 375px;
+        padding-left: 18px;
+        margin-bottom: 25px;
 
-      &:first-of-type {
-        width: 425px;
+        &:first-of-type {
+          width: 425px;
+        }
       }
     }
 
@@ -79,6 +80,12 @@
   color: $mint;
   text-transform: uppercase;
   width: 260px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
   &::after {
     position: absolute;
@@ -163,10 +170,6 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 55px;
     }
-    
-    /*@media (min-width: $desktop-width) {
-
-    }*/
   }
 
   &--check {
@@ -210,6 +213,9 @@
   width: 260px;
   height: 140px;
   border: 2px solid #000000;
+  font-family: $main-font;
+  font-size: 17px;
+  line-height: 1em;
 
   &::placeholder {
     color: $grey-placeholder;
@@ -277,6 +283,8 @@
   .form__textarea {
     width: 500px;
     height: 140px;
+    padding-top: 15px;
+    padding-left: 18px;
   }
 
   .form__field--addition {
@@ -300,5 +308,12 @@
 
   .form__textarea {
     width: 700px;
+  }
+}
+
+.form__field-wrapper {
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    background-color: $background-grey;
   }
 }

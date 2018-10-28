@@ -149,8 +149,9 @@
       margin: 0;
     }
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       display: inline-flex;
+      width: 231px;
       margin-left: auto;
     }
   }
