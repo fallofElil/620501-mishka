@@ -8,6 +8,22 @@
   margin-bottom: 30px;
   border: none;
 
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+
+    &--fullname {
+      top: 33px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: -115px;
+  }
+
   &--type,
   &--color,
   &--fullname {
@@ -26,6 +42,7 @@
 
     .form__txt {
       width: 375px;
+      margin-bottom: 25px;
 
       &:first-of-type {
         width: 425px;
@@ -34,6 +51,18 @@
 
     .form__label {
       padding-left: 0;
+    }
+  }
+
+  &--phone {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &--email {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
     }
   }
 
@@ -50,10 +79,6 @@
   color: $mint;
   text-transform: uppercase;
   width: 260px;
-  
-  @media (min-width: $tablet-width) {
-    width: auto;
-  }
 
   &::after {
     position: absolute;
@@ -79,6 +104,11 @@
 
   &--fullname {
     margin-bottom: 30px;
+  }
+
+  &--phone,
+  &--email {
+    top: 50%;
   }
 }
 
@@ -210,12 +240,6 @@
     margin-bottom: 50px;
   }
 
-  .form__field-title {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
   .form__field--color {
     flex-direction: row;
     flex-wrap: wrap;
@@ -232,6 +256,22 @@
   .form__contacts {
     position: relative;
     background-color: $background-grey;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      margin-bottom: 50px;
+
+      .form__txt {
+        width: 480px;
+        padding-left: 20px;
+        background-color: $background-grey;
+
+        &::placeholder {
+          color: rgba(68, 68, 68, 0.3);
+        }
+      }
+    }
   }
 
   .form__textarea {
@@ -256,15 +296,6 @@
   .form__field,
   .form__contacts {
     width: 700px;
-  }
-
-  .form__field-title {
-    top: 0;
-    left: -115px;
-
-    &::after {
-      display: none;
-    }
   }
 
   .form__textarea {
