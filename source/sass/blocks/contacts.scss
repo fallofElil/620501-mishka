@@ -46,11 +46,22 @@
 }
 
 .contacts__value {
-  &--email a {
-    padding-bottom: 5px;
-    text-decoration: none;
-    border-bottom: 1px solid $mint;
-    color: $greyish-brown;
+  &--email {
+    a {
+      padding-bottom: 5px;
+      text-decoration: none;
+      border-bottom: 1px solid $mint;
+      color: $greyish-brown;
+
+      &:hover {
+        color: $mint;
+      }
+
+      &:active {
+        color: $mint;
+        opacity: 0.3;
+      }
+    }
   }
 
   @media (min-width: $tablet-width) {

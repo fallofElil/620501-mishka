@@ -56,6 +56,15 @@
   border: none;
   background-color: transparent;
   font-size: 0;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
