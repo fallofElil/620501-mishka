@@ -90,6 +90,14 @@
     text-decoration: none;
     color: #000000;
 
+    &:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+
     @media (min-width: $tablet-width) {
       padding: 0;
       font-size: 15px;
