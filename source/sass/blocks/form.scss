@@ -1,6 +1,10 @@
 .form {
   width: 260px;
   margin: 0 auto;
+
+  input {
+    font-family: $main-font;
+  }
 }
 
 .form__field {
