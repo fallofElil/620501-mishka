@@ -17,3 +17,18 @@
     margin-right: 85px;
   }
 }
+
+.social__icon {
+  &:hover {
+    svg {
+      fill: $mint;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: $mint;
+      opacity: 0.3;
+    }
+  }
+}
