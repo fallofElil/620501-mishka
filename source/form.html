@@ -58,14 +58,24 @@
       </fieldset>
       <section class="form__contacts">
         <fieldset class="form__field form__field--phone">
-          <legend class="form__field-title form__field-title--phone">тел</legend>
-          <input class="form__txt form__txt--phone" type="tel" id="txt-phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-          <label class="visually-hidden" for="txt-phone">номер телефона</label>
+          <legend class="form__field-title form__field-title--phone visually-hidden">тел</legend>
+          <label class="form__label form__label--phone" for="txt-phone">тел</label>
+          <div class="form__input-wrapper">
+            <input class="form__txt form__txt--phone" type="tel" id="txt-phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            <svg class="icon icon--phone" viewBox="0 0 24.829 24.333" width="25" height="24">
+              <use xlink:href="#icon-phone"/>
+            </svg>
+          </div>
         </fieldset>
         <fieldset class="form__field form__field--email">
-          <legend class="form__field-title form__field-title--email">e-mail</legend>
-          <input class="form__txt form__txt--email" type="email" id="txt-email" name="email" placeholder="Ваш Email*" required>
-          <label class="visually-hidden" for="txt-email">ваш email</label>
+          <legend class="form__field-title form__field-title--email visually-hidden">e-mail</legend>
+          <label class="form__label form__label--email" for="txt-email">e-mail</label>
+          <div class="form__input-wrapper">
+            <input class="form__txt form__txt--email" type="email" id="txt-email" name="email" placeholder="Ваш Email*" required>
+            <svg class="icon icon--mail" viewBox="0 0 32 32" width="32" height="32">
+              <use xlink:href="#icon-mail"/>
+            </svg>
+          </div>
         </fieldset>
       </section>
       <fieldset class="form__field form__field--addition">
