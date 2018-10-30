@@ -333,10 +333,6 @@
     color: $grey-placeholder;
   }
 
-  .icon {
-    fill: $grey-placeholder;
-  }
-
   &:hover + .icon,
   &:focus + .icon {
     fill: $mint;
@@ -350,6 +346,7 @@
     position: absolute;
     top: 15%;
     right: 0;
+    fill: $grey-placeholder;
 
     @media (min-width: $tablet-width) {
       right: 5%;
