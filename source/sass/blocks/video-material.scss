@@ -1,6 +1,7 @@
 @import "../variables.scss";
 
 .video-material {
+  position: relative;
   width: 260px;
   margin: 0 auto;
   margin-bottom: 60px;
@@ -8,6 +9,11 @@
 }
 
 .video-material__title {
+  position: relative;
+  width: 130px;
+  margin-tpo: 30px;
+  margin-bottom: 25px;
+  padding-left: 90px;
   font-size: 17px;
   font-weight: 700;
   line-height: 1.41em;
@@ -31,6 +37,12 @@
 }
 
 .video-material__btn-play {
+  position: absolute;
+  top: 130px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
   width: 101px;
   height: 77px;
   padding: 0;
@@ -52,7 +64,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    position: absolute;
     top: 190px;
     left: 0;
     right: 0;

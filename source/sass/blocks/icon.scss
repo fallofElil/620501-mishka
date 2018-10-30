@@ -107,7 +107,16 @@
   }
 
   &--to-cart {
+    position: absolute;
+    left: 0;
     fill: $icon-color;
+  }
+
+  &--video {
+    position: absolute;
+    top: 6px;
+    left: 34px;
+    fill: $mint;
   }
 
   &--play {
