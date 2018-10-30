@@ -19,7 +19,20 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  background-image: url("../img/svg/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   font-size: 0;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     position: absolute;

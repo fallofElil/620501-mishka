@@ -113,6 +113,14 @@
   &--play {
     width: 100.678px;
     height: 76.891px;
-    fill: $mint;
+
+    .i-play__main-fig {
+      fill: $mint;
+    }
+
+    .i-play__border,
+    .i-play__center-triag {
+      fill: #ffffff;
+    }
   }
 }
