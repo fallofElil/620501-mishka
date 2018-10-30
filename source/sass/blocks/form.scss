@@ -92,8 +92,10 @@
     @media (min-width: $tablet-width) {
       display: flex;
       justify-content: space-between;
+      align-items: baseline;
       width: 670px;
       padding: 0;
+      margin-bottom: 50px;
     }
 
     @media (min-width: $desktop-width) {
@@ -150,11 +152,19 @@
 
   &--fullname {
     margin-bottom: 30px;
+
+    @media (min-width: $tablet-width) {
+      top: 8%;
+    }
   }
 
   &--phone,
   &--email {
     top: 50%;
+  }
+
+  &--addition {
+    margin-bottom: 20px;
   }
 }
 
@@ -186,8 +196,25 @@
   font-weight: 700;
   cursor: pointer;
 
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 1em;
+  }
+
   &--radio,
   &--check {
+    &:hover {
+      &::before {
+        border-color: $mint;
+      }
+    }
+
+    &:active {
+      &::before {
+        border-color: opacify($greyish-brown, 0.3);
+      }
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -228,33 +255,122 @@
   }
 
   &--txt {
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 1em;
+    @media (min-width: $tablet-width) {
+      top: -11px;
+    }
+  }
+
+  &--phone,
+  &--email {
+    position: relative;
+    display: block;
+    width: 260px;
+    padding: 0;
+    color: $mint;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      width: auto;
+      top: 21%;
+      left: 0;
+      font-size: 17px;
+      line-height: 1em;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      height: 1px;
+      background-color: $mint;
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
+  }
+
+  &--phone {
+    &::after {
+      width: 200px;
+    }
+  }
+
+  &--email {
+    &::after {
+      width: 179px;
+    }
   }
 }
 
 .form__txt {
   width: 260px;
   height: 52px;
+  margin-bottom: 23px;
   border: none;
   box-shadow: inset 0 -2px 0 0 #000000;
   font-size: 17px;
   line-height: 1em;
   vertical-align: middle;
 
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 1em;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: inset 0 -2px 0 0 $mint;
+  }
+
+  &:last-of-type {
+    margin-bottom: 30px;
+  }
+
   &::placeholder {
     color: $grey-placeholder;
+  }
+
+  .icon {
+    fill: $grey-placeholder;
+  }
+
+  &:hover + .icon,
+  &:focus + .icon {
+    fill: $mint;
+  }
+}
+
+.form__input-wrapper {
+  position: relative;
+
+  .icon {
+    position: absolute;
+    top: 15%;
+    right: 0;
+
+    @media (min-width: $tablet-width) {
+      right: 5%;
+    }
   }
 }
 
 .form__textarea {
-  width: 260px;
-  height: 140px;
+  width: 243px;
+  height: 122px;
+  padding-top: 18px;
+  padding-left: 17px;
   border: 2px solid #000000;
   font-family: $main-font;
   font-size: 17px;
   line-height: 1em;
+
+  &:hover,
+  &:focus {
+    border-color: $mint;
+  }
 
   &::placeholder {
     color: $grey-placeholder;
@@ -262,10 +378,15 @@
 }
 
 .form__notification {
+  margin: 0;
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.14em;
   color: $greyish-brown;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
