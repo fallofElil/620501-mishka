@@ -4,40 +4,30 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    width: 670px;
+    position: relative;
     flex-direction: row;
     margin: 0 auto;
-  }
-  
-  @media (min-width: $desktop-width) {
-    width: 1050px;
-  }
-}
+    background-color: #f9f9f9;
 
-.categories__item-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-  padding: 25px 30px;
-
-  &--accessories {
-    background-color: $mint;
-  }
-
-  &--toys {
-    background-color: $darker-mint;
-  }
-
-  @media (min-width: $tablet-width) {
-    position: relative;
-    width: auto;
-    padding: 0;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      display: block;
+      width: 100vw;
+      height: 24px;
+      margin: 0 auto;
+      background-image: url("../img/svg/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+    }
   }
 }
 
 .categories__item {
+  position: relative;
   width: 260px;
+  padding: 30px;
+  margin: 0 auto;
   font-size: 19px;
   font-weight: 700;
   line-height: 1.26em;
@@ -46,18 +36,62 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    width: 300px;
-    padding-top: 30px;
+    width: 265px;
+    padding: 35px;
     padding-bottom: 40px;
     padding-left: 35px;
+  }
+
+  .icon {
+    position: absolute;
+    top: 10%;
+    right: 20%;
+  }
+
+  &--accessories {
+    background-color: $mint;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      margin-left: auto;
+    }
+
+    .icon {
+      top: 23px;
+      right: 35px;
+
+      @media (min-width: $tablet-width) {
+        top: 30px;
+        rigth: 35px;
+      }
+    }
+  }
+
+  &--toys {
+    background-color: $darker-mint;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      margin-right: auto;
+    }
+
+    .icon {
+      top: 20px;
+      right: 27px;
+
+      @media (min-width: $tablet-width) {
+        top: 30px;
+        rigth: 35px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 32px;
+      }
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .categories__item-wrapper {
-    width: 525px;
-  }
-
   .categories__item {
     width: 455px;
   }
