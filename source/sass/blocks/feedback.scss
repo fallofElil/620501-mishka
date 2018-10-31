@@ -4,7 +4,29 @@
   position: relative;
   width: 260px;
   margin: 0 auto;
-  padding-bottom: 50px;
+  margin-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -47px;
+      height: 457px;
+      width: 350px;
+      background-image: url("../img/review@1x.jpg");
+      background-repeat: no-repeat;
+      background-position-x: 0;
+      background-position-y: 0;
+      z-index: -1;
+    }
+  }
+  
+  @media (min-width: $desktop-width) {
+    margin-bottom: 170px;
+  }
 }
 
 .feedback__text {

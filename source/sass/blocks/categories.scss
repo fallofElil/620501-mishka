@@ -19,6 +19,14 @@
       margin: 0 auto;
       background-image: url("../img/svg/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
+      background-size: 90%;
+      background-position: bottom;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      height: 34px;
     }
   }
 }
@@ -40,6 +48,11 @@
     padding: 35px;
     padding-bottom: 40px;
     padding-left: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 455px;
+    padding-bottom: 50px;
   }
 
   .icon {
@@ -88,11 +101,5 @@
         top: 32px;
       }
     }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .categories__item {
-    width: 455px;
   }
 }
