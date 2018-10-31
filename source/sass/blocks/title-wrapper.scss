@@ -28,7 +28,9 @@
     }
 
     @media (min-width: $desktop-width) {
+      margin-top: -20px;
       background-image: url("../img/hero-desktop@1x.jpg");
+      background-position-y: -3px;
     }
   }
 }

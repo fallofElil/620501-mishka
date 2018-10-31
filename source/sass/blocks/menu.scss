@@ -5,6 +5,22 @@
 
   @media (min-width: $tablet-width) {
     width: 670px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 90px;
+      left: -50px;
+      width: 768px;
+      height: 1px;
+      background-color: #ececec;
+    }
+  }
+  
+  @media (min-width: $desktop-width) {
+    &::after {
+      width: 1150px;
+    }
   }
 }
 
