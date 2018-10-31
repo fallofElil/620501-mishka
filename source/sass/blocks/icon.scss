@@ -97,8 +97,6 @@
   }
 
   &--to-cart {
-    position: absolute;
-    left: 0;
     fill: $icon-color;
   }
 
@@ -107,6 +105,16 @@
     top: 6px;
     left: 34px;
     fill: $mint;
+
+    @media (min-width: $tablet-width) {
+      top: -5px;
+      left: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+      left: 0;
+    }
   }
 
   &--play {

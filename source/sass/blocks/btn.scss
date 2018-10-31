@@ -48,6 +48,11 @@
       order: -1;
     }
   }
+
+  &--order {
+    width: 190px;
+    margin-bottom: 33px;
+  }
 }
 
 @media (min-width: $tablet-width) {
