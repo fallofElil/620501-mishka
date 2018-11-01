@@ -56,18 +56,20 @@
       <div class="form__field-wrapper">
         <fieldset class="form__field form__field--color">
           <legend class="form__field-title form__field-title--color">цвет</legend>
-          <input class="form__check visually-hidden" type="checkbox" id="check-white" name="color" value="white" checked>
-          <label class="form__label form__label--check" for="check-white">Белый</label>
-          <input class="form__check visually-hidden" type="checkbox" id="check-grey" name="color" value="grey" checked>
-          <label class="form__label form__label--check" for="check-grey">Серый</label>
-          <input class="form__check visually-hidden" type="checkbox" id="check-tiffany" name="color" value="tiffany">
-          <label class="form__label form__label--check" for="check-tiffany">&laquo;Тиффани&raquo;</label>
-          <input class="form__check visually-hidden" type="checkbox" id="check-black" name="color" value="black">
-          <label class="form__label form__label--check" for="check-black">Черный</label>
-          <input class="form__check visually-hidden" type="checkbox" id="check-pink" name="color" value="pink">
-          <label class="form__label form__label--check" for="check-pink">Розовый</label>
-          <input class="form__check visually-hidden" type="checkbox" id="check-orange" name="color" value="orange">
-          <label class="form__label form__label--check" for="check-orange">Оранжевый</label>
+          <div class="form__check-wrapper">
+            <input class="form__check visually-hidden" type="checkbox" id="check-white" name="color" value="white" checked>
+            <label class="form__label form__label--check" for="check-white">Белый</label>
+            <input class="form__check visually-hidden" type="checkbox" id="check-grey" name="color" value="grey" checked>
+            <label class="form__label form__label--check" for="check-grey">Серый</label>
+            <input class="form__check visually-hidden" type="checkbox" id="check-tiffany" name="color" value="tiffany">
+            <label class="form__label form__label--check" for="check-tiffany">&laquo;Тиффани&raquo;</label>
+            <input class="form__check visually-hidden" type="checkbox" id="check-black" name="color" value="black">
+            <label class="form__label form__label--check" for="check-black">Черный</label>
+            <input class="form__check visually-hidden" type="checkbox" id="check-pink" name="color" value="pink">
+            <label class="form__label form__label--check" for="check-pink">Розовый</label>
+            <input class="form__check visually-hidden" type="checkbox" id="check-orange" name="color" value="orange">
+            <label class="form__label form__label--check" for="check-orange">Оранжевый</label>
+          </div>
         </fieldset>
       </div>
       <fieldset class="form__field form__field--fullname">
@@ -102,7 +104,7 @@
         </fieldset>
       </section>
       <fieldset class="form__field form__field--addition">
-        <legend class="form__field-title form__field-title--addition">доп</legend>
+        <legend class="form__field-title form__field-title--addition visually-hidden">доп</legend>
         <textarea class="form__textarea" name="order_message" id="txt-message" placeholder="Опишите все вашипожелания к заказу"></textarea>
         <label class="visually-hidden" for="txt-message">сообщение с описанием к заказу</label>
       </fieldset>

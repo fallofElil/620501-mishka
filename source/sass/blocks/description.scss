@@ -15,5 +15,10 @@
       font-size: 17px;
       line-height: 1.76em;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 700px;
+      margin-bottom: 72px;
+    }
   }
 }
