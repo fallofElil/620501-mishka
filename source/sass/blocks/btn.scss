@@ -15,9 +15,32 @@
   color: $greyish-brown;
   cursor: pointer;
 
+  &:hover {
+    background-color: $greyish-brown;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: $greyish-brown;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media ($desktop-width) {
+    width: 230px;
+  }
+
   &--week-art {
     @media (min-width: $desktop-width) {
       width: 290px;
+    }
+  }
+
+  &--feedback {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 80px;
+      right: 0;
+      padding: 15px 40px;
     }
   }
 
@@ -25,47 +48,41 @@
     width: 256px;
     margin: 0 auto;
     margin-bottom: 40px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 230px;
+      margin: 0;
+      margin-left: 175px;
+    }
   }
 
   &--send-order {
     width: 258px;
     margin-bottom: 55px;
     background-color: transparent;
-  }
-}
 
-@media (min-width: $tablet-width) {
-  .btn {
-    &--feedback {
-      position: absolute;
-      top: 80px;
-      right: 0;
-      padding: 15px 40px;
-    }
-
-    &--write-us {
-      margin-bottom: 60px;
-    }
-
-    &--order {
-      width: 585px;
-      margin-bottom: 45px;
-    }
-
-    &--send-order {
+    @media (min-width: $tablet-width) {
+      width: 230px;
       margin: 0;
       order: -1;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .btn {
-    width: 230px;
+  &--order {
+    width: 190px;
+    margin-bottom: 33px;
 
-    &--write-us {
-      margin: 0;
-      margin-left: 175px;
+    @media (min-width: $tablet-width) {
+      width: 585px;
+      margin-bottom: 45px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 230px;
     }
   }
 }

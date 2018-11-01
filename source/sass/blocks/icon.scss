@@ -32,24 +32,14 @@
     width: 40.219px;
     height: 62.411px;
     fill: $blue-green;
-
-    @media (min-width: $tablet-width) {
-      position: absolute;
-      top: 30px;
-      right: 23px;
-    }
+    opacity: 0.5;
   }
 
   &--toy {
     width: 60px;
     height: 59.62px;
     fill: $blue-green;
-
-    @media (min-width: $tablet-width) {
-      position: absolute;
-      top: 30px;
-      right: 23px;
-    }
+    opacity: 0.5;
   }
 
   &--feature-flower,
@@ -110,9 +100,34 @@
     fill: $icon-color;
   }
 
+  &--video {
+    position: absolute;
+    top: 6px;
+    left: 34px;
+    fill: $mint;
+
+    @media (min-width: $tablet-width) {
+      top: -5px;
+      left: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+      left: 0;
+    }
+  }
+
   &--play {
     width: 100.678px;
     height: 76.891px;
-    fill: $mint;
+
+    .i-play__main-fig {
+      fill: $mint;
+    }
+
+    .i-play__border,
+    .i-play__center-triag {
+      fill: #ffffff;
+    }
   }
 }

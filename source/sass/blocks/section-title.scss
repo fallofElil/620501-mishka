@@ -1,5 +1,3 @@
-@import "../variables.scss";
-
 .section-title {
   display: block;
   margin: 0;
@@ -7,8 +5,45 @@
   font-weight: 700;
   line-height: 1.2em;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
+    font-size: 43px;
+    line-height: 1.16em;
+  }
+
+  &--week-article {
+    @media (min-width: $desktop-width) {
+      width: 880px;
+      margin-left: auto;
+      font-size: 53px;
+      line-height: 1em;
+    }
+  }
+
+  &--about-us {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 53px;
+      line-height: 1em;
+    }
+  }
+
   &--feedback {
     margin-bottom: 35px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 50px;
+      font-size: 53px;
+      line-height: 1em;
+      margin-left: 175px;
+    }
   }
 
   &--contacts {
@@ -17,56 +52,37 @@
     margin-bottom: 35px;
     font-size: 18px;
 
-    @media (min-width: $desktop-width) {
-      font-size: 53px;
-      line-height: 1.07em;
-    }
-
-    svg {
-      display: none;
-    }
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .section-title {
-    margin-bottom: 5px;
-    font-size: 43px;
-    line-height: 1.16em;
-
-    &--about-us {
-      margin-bottom: 40px;
-    }
-
-    &--feedback {
-      margin-bottom: 50px;
-    }
-
-    &--contacts {
+    @media (min-width: $tablet-width) {
+      position: relative;
       width: 670px;
       margin: 0 auto;
       margin-bottom: 50px;
-    }
-  }
-}
+      font-size: 43px;
+      line-height: 1.16em;
 
-@media (min-width: $desktop-width) {
-  .section-title {
-    &--week-article {
-      width: 875px;
-      margin-left: auto;
+      &::after {
+        content: "";
+        position: absolute;
+        top: -25px;
+        right: 0;
+        width: 47px;
+        height: 81px;
+        background-image: url("../img/svg/icon-flag.svg");
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      width: auto;
       font-size: 53px;
       line-height: 1em;
-    }
-
-    &--feedback {
-      margin-left: 175px;
-    }
-
-    &--contacts {
       margin: 0;
-      margin-left: 175px;
-      margin-bottom: 55px;
+      padding-left: 167px;
+      margin-bottom: 48px;
+
+      &::after {
+        top: -6px;
+        left: 63px;
+      }
     }
   }
 }

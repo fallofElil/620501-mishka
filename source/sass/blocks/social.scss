@@ -15,5 +15,21 @@
     margin: auto 0;
     margin-left: 155px;
     margin-right: 85px;
+    border-bottom: none;
+  }
+}
+
+.social__icon {
+  &:hover {
+    svg {
+      fill: $mint;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: $mint;
+      opacity: 0.3;
+    }
   }
 }

@@ -14,17 +14,29 @@
     &:active {
       opacity: 0.3;
     }
+
+    @media (min-width: $tablet-width) {
+      width: 112px;
+    }
+    
+    @media (min-width: $desktop-width) {
+      width: 149px;
+    }
   }
 
   &--footer {
     display: none;
 
     &:hover {
-      fill: $mint;
+      svg {
+        fill: $mint;
+      }
     }
 
     &:active {
-      fill: opacify($mint, 0.3);
+      svg {
+        fill: opacify($mint, 0.3);
+      }
     }
   }
 }
@@ -69,25 +81,5 @@
   &--hover,
   &--active {
     display: none;
-  }
-}
-
-.logo--footer:hover {
-  .logo__img {
-    display:none;
-
-    &--hover {
-      display: block;
-    }
-  }
-}
-
-.logo--footer:active {
-  .logo__img {
-    display:none;
-
-    &--active {
-      display: block;
-    }
   }
 }

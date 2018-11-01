@@ -5,6 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position:  50% 0;
+      /* Mobile layout by default */
+      background-image: url( "img/pp/mishka-form-mobile.jpg" );
+    }
+    /* Tablet */
+    @media ( min-width: 768px ) {
+      HTML {
+        /* Tablet layout */
+        background-image: url( "img/pp/mishka-form-tablet.jpg" );
+      }
+    }
+    /* Desktop */
+    @media ( min-width: 960px ) {
+      HTML {
+        /* Desktop layout */
+        background-image: url( "img/pp/mishka-form-desktop.jpg" );
+      }
+    }
+  </style>
+  <script src="js/pixel_glass.js"></script>
 </head>
 <body>
 
@@ -33,18 +56,20 @@
       <div class="form__field-wrapper">
         <fieldset class="form__field form__field--color">
           <legend class="form__field-title form__field-title--color">цвет</legend>
-          <input class="form__check visually-hidden" type="checkbox" id="check-white" name="color" value="white" checked>
-          <label class="form__label form__label--check" for="check-white">Белый</label>
-          <input class="form__check visually-hidden" type="checkbox" id="check-grey" name="color" value="grey" checked>
-          <label class="form__label form__label--check" for="check-grey">Серый</label>
-          <input class="form__check visually-hidden" type="checkbox" id="check-tiffany" name="color" value="tiffany">
-          <label class="form__label form__label--check" for="check-tiffany">&laquo;Тиффани&raquo;</label>
-          <input class="form__check visually-hidden" type="checkbox" id="check-black" name="color" value="black">
-          <label class="form__label form__label--check" for="check-black">Черный</label>
-          <input class="form__check visually-hidden" type="checkbox" id="check-pink" name="color" value="pink">
-          <label class="form__label form__label--check" for="check-pink">Розовый</label>
-          <input class="form__check visually-hidden" type="checkbox" id="check-orange" name="color" value="orange">
-          <label class="form__label form__label--check" for="check-orange">Оранжевый</label>
+          <div class="form__check-wrapper">
+            <input class="form__check visually-hidden" type="checkbox" id="check-white" name="color" value="white" checked>
+            <label class="form__label form__label--check" for="check-white">Белый</label>
+            <input class="form__check visually-hidden" type="checkbox" id="check-grey" name="color" value="grey" checked>
+            <label class="form__label form__label--check" for="check-grey">Серый</label>
+            <input class="form__check visually-hidden" type="checkbox" id="check-tiffany" name="color" value="tiffany">
+            <label class="form__label form__label--check" for="check-tiffany">&laquo;Тиффани&raquo;</label>
+            <input class="form__check visually-hidden" type="checkbox" id="check-black" name="color" value="black">
+            <label class="form__label form__label--check" for="check-black">Черный</label>
+            <input class="form__check visually-hidden" type="checkbox" id="check-pink" name="color" value="pink">
+            <label class="form__label form__label--check" for="check-pink">Розовый</label>
+            <input class="form__check visually-hidden" type="checkbox" id="check-orange" name="color" value="orange">
+            <label class="form__label form__label--check" for="check-orange">Оранжевый</label>
+          </div>
         </fieldset>
       </div>
       <fieldset class="form__field form__field--fullname">
@@ -58,18 +83,28 @@
       </fieldset>
       <section class="form__contacts">
         <fieldset class="form__field form__field--phone">
-          <legend class="form__field-title form__field-title--phone">тел</legend>
-          <input class="form__txt form__txt--phone" type="tel" id="txt-phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-          <label class="visually-hidden" for="txt-phone">номер телефона</label>
+          <legend class="form__field-title form__field-title--phone visually-hidden">тел</legend>
+          <label class="form__label form__label--phone" for="txt-phone">тел</label>
+          <div class="form__input-wrapper">
+            <input class="form__txt form__txt--phone" type="tel" id="txt-phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            <svg class="icon icon--phone" viewBox="0 0 24.829 24.333" width="25" height="24">
+              <use xlink:href="#icon-phone"/>
+            </svg>
+          </div>
         </fieldset>
         <fieldset class="form__field form__field--email">
-          <legend class="form__field-title form__field-title--email">e-mail</legend>
-          <input class="form__txt form__txt--email" type="email" id="txt-email" name="email" placeholder="Ваш Email*" required>
-          <label class="visually-hidden" for="txt-email">ваш email</label>
+          <legend class="form__field-title form__field-title--email visually-hidden">e-mail</legend>
+          <label class="form__label form__label--email" for="txt-email">e-mail</label>
+          <div class="form__input-wrapper">
+            <input class="form__txt form__txt--email" type="email" id="txt-email" name="email" placeholder="Ваш Email*" required>
+            <svg class="icon icon--mail" viewBox="0 0 32 32" width="32" height="32">
+              <use xlink:href="#icon-mail"/>
+            </svg>
+          </div>
         </fieldset>
       </section>
       <fieldset class="form__field form__field--addition">
-        <legend class="form__field-title form__field-title--addition">доп</legend>
+        <legend class="form__field-title form__field-title--addition visually-hidden">доп</legend>
         <textarea class="form__textarea" name="order_message" id="txt-message" placeholder="Опишите все вашипожелания к заказу"></textarea>
         <label class="visually-hidden" for="txt-message">сообщение с описанием к заказу</label>
       </fieldset>
@@ -84,6 +119,8 @@
   </footer>
 
   <script src="js/script.js"></script>
+  <script src="js/picturefill.min.js"></script>
+  <script src="js/svgxuse.min.js"></script>
 
 </body>
 </html>

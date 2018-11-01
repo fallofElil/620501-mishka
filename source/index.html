@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* Mobile layout by default */
+        background-image: url( "img/pp/mishka-index-mobile.jpg" );
+      }
+      /* Tablet */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Tablet layout */
+          background-image: url( "img/pp/mishka-index-tablet.jpg" );
+        }
+      }
+      /* Desktop */
+      @media ( min-width: 1200px ) {
+        HTML {
+          /* Desktop layout */
+          background-image: url( "img/pp/mishka-index-desktop.jpg" );
+        }
+      }
+    </style>
+    <script src="js/pixel_glass.js"></script>
   </head>
   <body>
 
@@ -21,22 +44,18 @@
         <h1 class="page-title page-title--home">Милые&nbsp;штуки ручной работы&nbsp;для&nbsp;дома</h1>
       </div>
       <section class="categories">
-        <p class="categories__item-wrapper categories__item-wrapper--accessories">
-          <a class="categories__item categories__item--accessories" href="#">
-            Предметы <br>интерьера
-            <svg class="icon icon--interior" viewBox="0 0 40.219 62.411" width="40" height="62">
-              <use xlink:href="#icon-interior"/>
-            </svg>
-          </a>
-        </p>
-        <p class="categories__item-wrapper categories__item-wrapper--toys">
-          <a class="categories__item categories__item--toys" href="#">
-            Детские <br>игрушки
-            <svg class="icon icon--toy" viewBox="0 0 60 59.62" width="60" height="60">
-              <use xlink:href="#icon-toy"/>
-            </svg>
-          </a>
-        </p>
+        <a class="categories__item categories__item--accessories" href="#">
+          Предметы <br>интерьера
+          <svg class="icon icon--interior" viewBox="0 0 40.219 62.411" width="40" height="62">
+            <use xlink:href="#icon-interior"/>
+          </svg>
+        </a>
+        <a class="categories__item categories__item--toys" href="#">
+          Детские <br>игрушки
+          <svg class="icon icon--toy" viewBox="0 0 60 59.62" width="60" height="60">
+            <use xlink:href="#icon-toy"/>
+          </svg>
+        </a>
       </section>
       <article class="week-article">
         <header class="week-article__header">
@@ -61,9 +80,9 @@
             </tr>
           </table>
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
-            <img class="week-article__img" src="img/triple-set-mobile@1x.jpg" alt="вязаные корзинки">
+            <source media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img class="week-article__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="вязаные корзинки">
           </picture>
           <p class="week-article__price">Цена: 990 руб.</p>
           <a class="btn btn--week-art" href="#">заказать</a>
@@ -134,12 +153,7 @@
         <a class="btn btn--feedback" href="#">написать</a>
       </section>
       <section class="contacts">
-        <h2 class="section-title section-title--contacts">
-          <svg class="icon icon--flag" viewBox="0 0 46.68 81.691" width="47" height="81">
-            <use xlink:href="#icon-flag"/>
-          </svg>
-          Контакты
-        </h2>
+        <h2 class="section-title section-title--contacts">Контакты</h2>
         <table class="contacts__table">
           <tr class="contacts__row">
             <th class="contacts__title">e-mail:</th>
@@ -153,7 +167,9 @@
               д. 19/8, офис 101</td>
           </tr>
         </table>
-        <div class="contacts__map-wrapper"></div>
+        <div class="contacts__map-wrapper">
+          <iframe src="https://yandex.ru/map-widget/v1/-/CBBT7AvGoA"></iframe>
+        </div>
         <a class="btn btn--write-us" href="#">напишите нам</a>
       </section>
     </main>
@@ -166,7 +182,9 @@
       <include src="source/modal.html"></include>
     </section>
 
-  <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/svgxuse.min.js"></script>
 
   </body>
 </html>

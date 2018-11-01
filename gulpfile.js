@@ -63,12 +63,19 @@ gulp.task("clean", function () {
   return del("build");
 });
 
+gulp.task("cleanTrash", function () {
+  return del(["build/header.html", "build/footer.html", "build/modal.html"]).then(paths => {
+    console.log("Deleted files:\n", paths.join("\n"));
+  });
+});
+
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/logo/**",
     "source/img/svg/**",
     "source/img/**.jpg",
+    "source/img/pp/**.jpg",
     "source/js/**"
   ], {
     base: "source"
@@ -89,7 +96,7 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "svgSprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "svgSprite", "html", "cleanTrash"));
 gulp.task("start", gulp.series("css", "server"));
 
 gulp.task("reload", gulp.series("build", "start"));
