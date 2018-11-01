@@ -4,7 +4,7 @@
   display: block;
   height: 175px;
   margin-bottom: 30px;
-  background-color: #f9f9f9;
+  background-color: $background-grey;
 
   @media (min-width: $tablet-width) {
     padding-top: 40px;
@@ -15,12 +15,19 @@
     background-repeat: repeat-x;
   }
 
+  @media (min-width: $desktop-width) {
+    height: 255px;
+    margin-top: -20px;
+    padding-top: 0;
+  }
+
   &--home {
     height: 280px;
     padding: 0 30px;
     background-image: url("../img/hero-mobile@1x.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    background-color: #f9f9f9;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-mobile@2x.jpg");
@@ -43,6 +50,12 @@
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/hero-desktop@2x.jpg");
       }
+    }
+  }
+
+  &--catalog {
+    @media (min-width: $desktop-width) {
+      margin-bottom: 110px;
     }
   }
 }

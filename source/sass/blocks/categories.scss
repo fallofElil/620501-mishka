@@ -12,14 +12,16 @@
     &::after {
       content: "";
       position: absolute;
+      left: 0;
       bottom: 0;
       display: block;
       width: 100vw;
+      max-width: 100%;
       height: 24px;
       margin: 0 auto;
       background-image: url("../img/svg/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
-      background-size: 90%;
+      background-size: auto 24px;
       background-position: bottom;
     }
   }
@@ -27,6 +29,7 @@
   @media (min-width: $desktop-width) {
     &::after {
       height: 34px;
+      background-size: auto 34px;
     }
   }
 }
@@ -53,6 +56,23 @@
   @media (min-width: $desktop-width) {
     width: 455px;
     padding-bottom: 50px;
+
+    &:hover,
+    &:focus {
+      top: -5px;
+
+      .icon {
+        opacity: 0.7;
+      }
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+
+      .icon {
+        opacity: 0.3;
+      }
+    }
   }
 
   .icon {
@@ -78,6 +98,12 @@
         rigth: 35px;
       }
     }
+
+    @media (min-width: $desktop-width) {
+      &:hover {
+        background-color: #59d5bc;
+      }
+    }
   }
 
   &--toys {
@@ -99,6 +125,12 @@
 
       @media (min-width: $desktop-width) {
         top: 32px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &:hover {
+        background-color: #46c1ae;
       }
     }
   }
