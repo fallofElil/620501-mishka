@@ -1,5 +1,3 @@
-@import "../variables.scss";
-
 .feedback {
   position: relative;
   width: 260px;
@@ -7,6 +5,9 @@
   margin-bottom: 45px;
 
   @media (min-width: $tablet-width) {
+    width: 670px;
+    padding: 0;
+    padding-top: 80px;
     margin-bottom: 70px;
 
     &::before {
@@ -21,10 +22,15 @@
       background-position-x: 0;
       background-position-y: 0;
       z-index: -1;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/review@2x.jpg");
+      }
     }
   }
   
   @media (min-width: $desktop-width) {
+    width: 1050px;
     margin-bottom: 170px;
   }
 }
@@ -34,6 +40,15 @@
   margin-bottom: 30px;
   line-height: 2em;
   color: $greyish-brown;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 770px;
+    margin-left: 175px;
+  }
 }
 
 .feedback__username-full {
@@ -41,6 +56,10 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 1.41em;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 175px;
+  }
 }
 
 .feedback__username {
@@ -48,6 +67,10 @@
   font-size: 17px;
   line-height: 1.76em;
   color: $greyish-brown;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 175px;
+  }
 }
 
 .feedback__comment-switch {
@@ -59,6 +82,10 @@
   border: 1px solid $light-grey;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 140px;
     border: none;
   }
 
@@ -94,40 +121,5 @@
 
   &:active {
     opacity: 0.3;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .feedback {
-    width: 670px;
-    padding: 0;
-    padding-top: 80px;
-  }
-
-  .feedback__text {
-    margin-bottom: 60px;
-  }
-
-  .feedback__comment-switch {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 140px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .feedback {
-    width: 1050px;
-  }
-
-  .feedback__text {
-    width: 770px;
-  }
-
-  .feedback__text,
-  .feedback__username-full,
-  .feedback__username {
-    margin-left: 175px;
   }
 }
