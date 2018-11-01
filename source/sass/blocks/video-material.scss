@@ -19,28 +19,6 @@
   @media (min-width: $desktop-width) {
     width: 1050px;
     margin-bottom: 105px;
-    box-shadow: none;
-    border-right: 1px solid #ececec;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 368px;
-      height: 1px;
-      background-color: #ececec;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 368px;
-      height: 1px;
-      background-color: #ececec;
-    }
   }
 }
 
@@ -62,11 +40,11 @@
   }
   
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 38px;
-    right: 138px;
     width: 150px;
-    margin: 0;
+    margin-top: 38px;
+    margin-left: auto;
+    margin-right: 140px;
+    margin-bottom: 33px;
     padding: 0;
     padding-top: 55px;
   }
@@ -87,6 +65,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 682px;
     margin-bottom: 0;
     background-image: url("../img/video-desktop@1x.jpg");
@@ -96,10 +77,9 @@
 
 .video-material__desc-wrapper {
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 175px;
-    right: 60px;
     width: 230px;
+    margin-left: auto;
+    margin-right: 60px;
   }
 }
 
