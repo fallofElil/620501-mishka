@@ -75,6 +75,7 @@ gulp.task("copy", function () {
     "source/img/logo/**",
     "source/img/svg/**",
     "source/img/**.jpg",
+    "source/img/pp/**.jpg",
     "source/js/**"
   ], {
     base: "source"

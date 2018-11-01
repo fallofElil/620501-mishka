@@ -19,6 +19,7 @@
     "gulp-svgmin": "^2.1.0",
     "gulp-svgo": "^1.5.4",
     "gulp-svgstore": "^7.0.0",
+    "pixel-glass": "^1.0.13",
     "posthtml-include": "^1.2.0",
     "stylelint": "9.6.x",
     "stylelint-config-htmlacademy": "0.1.x",
