@@ -15,8 +15,8 @@
     width: 315px;
     height: 660px;
     margin: 0;
-    margin-right: 49px;
-    margin-bottom: 60px;
+    margin-right: 50px;
+    margin-bottom: 55px;
 
     &:last-child {
       margin-right: 0;
@@ -90,6 +90,11 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1.2em;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 21px;
+    margin-bottom: 5px;
   }
 }
 

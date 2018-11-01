@@ -17,7 +17,7 @@
 
   @media (min-width: $desktop-width) {
     height: 255px;
-    margin-top: -20px;
+    margin-top: 0;
     padding-top: 0;
   }
 
@@ -55,7 +55,7 @@
 
   &--catalog {
     @media (min-width: $desktop-width) {
-      margin-bottom: 110px;
+      margin-bottom: 130px;
     }
   }
 }

@@ -80,5 +80,9 @@
       width: 585px;
       margin-bottom: 45px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 230px;
+    }
   }
 }
