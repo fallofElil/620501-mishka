@@ -99,20 +99,31 @@
 }
 
 .contacts__map-wrapper {
+  position: relative;
   display: block;
-  width: 320px;
+  width: 100vw;
+  max-width: 100%;
   height: 457px;
   margin: 0 auto;
   margin-bottom: 40px;
   background-color: #f5ead8;
   background-image: url("../img/map-mobile@1x.jpg");
+  background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/map-mobile@2x.jpg");
   }
 
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: none;
+  }
+
   @media (min-width: $tablet-width) {
-    width: 768px;
     background-image: url("../img/map-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
