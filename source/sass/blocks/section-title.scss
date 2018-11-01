@@ -13,7 +13,7 @@
 
   &--week-article {
     @media (min-width: $desktop-width) {
-      width: 875px;
+      width: 880px;
       margin-left: auto;
       font-size: 53px;
       line-height: 1em;
@@ -23,6 +23,11 @@
   &--about-us {
     @media (min-width: $tablet-width) {
       margin-bottom: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 53px;
+      line-height: 1em;
     }
   }
 
@@ -34,6 +39,9 @@
     }
 
     @media (min-width: $desktop-width) {
+      margin-bottom: 50px;
+      font-size: 53px;
+      line-height: 1em;
       margin-left: 175px;
     }
   }
@@ -66,13 +74,14 @@
     @media (min-width: $desktop-width) {
       width: auto;
       font-size: 53px;
-      line-height: 1.07em;
+      line-height: 1em;
       margin: 0;
-      padding-left: 110px;
-      margin-bottom: 70px;
+      padding-left: 167px;
+      margin-bottom: 48px;
 
       &::after {
-        left: 0;
+        top: -6px;
+        left: 63px;
       }
     }
   }

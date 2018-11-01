@@ -27,7 +27,7 @@
     width: 1050px;
     min-height: 305px;
     margin-bottom: 105px;
-    padding-top: 155px;
+    padding-top: 148px;
 
     &::before {
       height: 23px;
@@ -54,10 +54,13 @@
   @media (min-width: $desktop-width) {
     width: 300px;
     margin-left: 175px;
-    margin-bottom: 55px;
+    margin-bottom: 47px;
+    font-size: 17px;
+    line-height: 1.76em;
 
     tbody {
       display: table;
+      width: 350px;
     }
   }
 }
@@ -65,6 +68,10 @@
 .contacts__table th,
 .contacts__table td {
   padding-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 28px;
+  }
 }
 
 .contacts__title {
@@ -72,6 +79,10 @@
   font-weight: 300;
   text-align: left;
   vertical-align: top;
+
+  @media (min-width: $desktop-width) {
+    width: 67px;
+  }
 }
 
 .contacts__value {
@@ -95,6 +106,10 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
   }
 }
 
@@ -133,7 +148,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 95px;
+    top: 80px;
     right: 0;
     margin-bottom: 0;
     width: 525px;

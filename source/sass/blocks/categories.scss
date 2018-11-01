@@ -28,8 +28,8 @@
 
   @media (min-width: $desktop-width) {
     &::after {
-      height: 34px;
-      background-size: auto 34px;
+      height: 37px;
+      background-size: auto 37px;
     }
   }
 }
@@ -55,7 +55,10 @@
 
   @media (min-width: $desktop-width) {
     width: 455px;
+    padding-top: 27px;
     padding-bottom: 50px;
+    font-size: 20px;
+    line-height: 1.5em;
 
     &:hover,
     &:focus {
