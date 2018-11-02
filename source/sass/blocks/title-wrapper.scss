@@ -7,11 +7,14 @@
   background-color: $background-grey;
 
   @media (min-width: $tablet-width) {
+    height: 195px;
     padding-top: 40px;
     margin-top: -42px;
-    margin-bottom: 0;
+    margin-bottom: 69px;
     background-image: url("../img/svg/bg-zigzag-fill.svg");
+    background-size: auto 23px;
     background-position: bottom;
+    background-position-x: -4px;
     background-repeat: repeat-x;
   }
 
@@ -58,7 +61,7 @@
 
   &--catalog {
     @media (min-width: $tablet-width) {
-      margin-bottom: 30px;
+      margin-bottom: 70px;
     }
 
     @media (min-width: $desktop-width) {

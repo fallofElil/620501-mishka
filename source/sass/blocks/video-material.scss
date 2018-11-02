@@ -12,6 +12,7 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 668px;
+    margin-bottom: 63px;
     border: none;
     box-shadow: inset 0 0 0 1px #ececec;
   }
@@ -34,6 +35,8 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
+    margin-top: 11px;
+    margin-bottom: 33px;
     padding-left: 105px;
     font-size: 20px;
     line-height: 1.2em;
@@ -136,7 +139,7 @@
     width: 585px;
     margin: 0 auto;
     margin-left: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 34px;
     font-size: 15px;
     line-height: 2em;
   }

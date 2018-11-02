@@ -9,6 +9,7 @@
     position: relative;
     width: 670px;
     height: 335px;
+    margin-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -88,6 +89,7 @@
   line-height: 1.41em;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
     font-size: 20px;
     line-height: 1.2em;
   }
@@ -147,7 +149,8 @@
 
   @media (min-width: $tablet-width) {
     margin-top: auto;
-    padding-top: 23px;
+    padding-top: 22px;
+    margin-bottom: 27px;
 
     &::before {
       width: 270px;
