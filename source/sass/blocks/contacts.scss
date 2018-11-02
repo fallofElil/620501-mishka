@@ -42,6 +42,7 @@
 .contacts__table {
   width: 260px;
   margin: 0 auto;
+  margin-bottom: 10px;
   color: $greyish-brown;
 
   @media (min-width: $tablet-width) {
@@ -69,7 +70,8 @@
 
 .contacts__table th,
 .contacts__table td {
-  padding-bottom: 40px;
+  padding-bottom: 25px;
+  line-height: 2em;
 
   @media (min-width: $desktop-width) {
     padding-bottom: 28px;

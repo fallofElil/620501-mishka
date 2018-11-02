@@ -35,6 +35,14 @@ cartBtn.addEventListener("click", function (evt) {
   modal.classList.add("modal--show");
 });
 
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (modal.classList.contains("modal--show")) {
+      modal.classList.remove("modal--show");
+    }
+  }
+});
+
 window.onclick = function (evt) {
   if (evt.target == modal) {
     modal.classList.remove("modal--show");

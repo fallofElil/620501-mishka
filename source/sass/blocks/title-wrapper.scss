@@ -3,7 +3,7 @@
 .title-wrapper {
   display: block;
   height: 175px;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   background-color: $background-grey;
 
   @media (min-width: $tablet-width) {
@@ -26,6 +26,7 @@
     padding: 0 30px;
     background-image: url("../img/hero-mobile@1x.jpg");
     background-position: center;
+    background-position-y: -20px;
     background-repeat: no-repeat;
     background-color: #f9f9f9;
 

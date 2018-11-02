@@ -21,6 +21,8 @@
   }
 
   &--about-us {
+    margin-bottom: 20px;
+
     @media (min-width: $tablet-width) {
       margin-bottom: 40px;
     }
@@ -32,7 +34,7 @@
   }
 
   &--feedback {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 50px;
@@ -49,7 +51,7 @@
   &--contacts {
     width: 260px;
     margin: 0 auto;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     font-size: 18px;
 
     @media (min-width: $tablet-width) {

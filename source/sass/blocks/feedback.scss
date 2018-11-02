@@ -42,7 +42,7 @@
 
 .feedback__text {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   line-height: 2em;
   color: $greyish-brown;
 
@@ -61,8 +61,8 @@
 
 .feedback__username-full {
   margin: 0;
-  margin-bottom: 10px;
-  font-size: 24px;
+  margin-bottom: 3px;
+  font-size: 17px;
   font-weight: 700;
   line-height: 1.41em;
 
@@ -91,7 +91,7 @@
   width: auto;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 33px;
   border: 1px solid $light-grey;
 
   @media (min-width: $tablet-width) {

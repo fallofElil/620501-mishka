@@ -30,6 +30,11 @@
     @media ($mobile-width-only) {
       left: 0;
     }
+    
+    @media (min-width: $tablet-width) {
+      width: 570px;
+      min-height: 337px;
+    }
   }
 }
 
@@ -42,6 +47,14 @@
   line-height: 1.2em;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 354px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    font-size: 30px;
+    line-height: 1.9em;
+  }
 }
 
 .modal__info {
@@ -49,12 +62,22 @@
   margin-bottom: 25px;
   line-height: 2em;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 1.76em;
+  }
 }
 
 .modal__form {
   width: 260px;
   margin: 0 auto;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+    margin-bottom: 45px;
+  }
 }
 
 .modal__input-wrapper {
@@ -63,12 +86,22 @@
   justify-content: flex-start;
   margin: 0 auto;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+  }
+}
+
+.modal__radio {
+  &--size:checked + .modal__label {
+    border: 2px solid $mint;
+  }
 }
 
 .modal__label {
   &--size {
-    width: 82px;
-    margin-right: 7px;
+    width: 80px;
+    margin-right: 9px;
     padding-top: 15px;
     padding-bottom: 15px;
     border: 2px solid #ececec;
@@ -79,6 +112,10 @@
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      width: 110px;
+    }
 
     &:last-child {
       margin-right: 0;
@@ -107,4 +144,8 @@
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+  }
 }

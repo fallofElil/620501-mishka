@@ -4,18 +4,14 @@
     <p class="modal__info">Выберете размер:</p>
     <form method="get" action="https://echo.htmlacademy.ru/" class="modal__form">
       <div class="modal__input-wrapper">
-        <label class="modal__label modal__label--size">
-          s
-          <input class="modal__radio modal__radio--size visually-hidden" type="radio" name="size" value="s" checked>
-        </label>
-        <label class="modal__label modal__label--size">
-          m
-          <input class="modal__radio modal__radio--size visually-hidden" type="radio" name="size" value="m">
-        </label>
-        <label class="modal__label modal__label--size">
-          l
-          <input class="modal__radio modal__radio--size visually-hidden" type="radio" name="size" value="l">
-        </label>
+        <input class="modal__radio modal__radio--size visually-hidden" id="size_s" type="radio" name="size" value="s" checked>
+        <label class="modal__label modal__label--size" for="size_s">s</label>
+
+        <input class="modal__radio modal__radio--size visually-hidden" id="size_m" type="radio" name="size" value="m">
+        <label class="modal__label modal__label--size" for="size_m">m</label>
+
+        <input class="modal__radio modal__radio--size visually-hidden" id="size_l" type="radio" name="size" value="l">
+        <label class="modal__label modal__label--size" for="size_l">l</label>
       </div>
       <button class="modal__submit" type="submit">добавить</button>
     </form>

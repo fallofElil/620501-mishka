@@ -6,17 +6,19 @@
   align-content: space-between;
   width: 260px;
   margin: 0 auto;
-  margin-bottom: 55px;
+  padding-top: 28px;
+  margin-bottom: 14px;
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
+    left: -30px;
     width: 100vw;
     height: 6px;
     background-image: url("../img/svg/bg-zigzag-line.svg");
     background-repeat: repeat-x;
-    background-size: 90%;
+    background-size: auto 6px;
   }
 
   @media (min-width: $tablet-width) {
@@ -60,12 +62,11 @@
 }
 
 .about-us__feature {
-  /*padding-top: 50px;*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 90px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   font-size: 17px;
   font-weight: 700;
   line-height: 1.17em;
