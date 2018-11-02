@@ -215,6 +215,7 @@
       display: inline-flex;
       width: 231px;
       margin-left: auto;
+      border: none;
     }
   }
 
@@ -241,24 +242,46 @@
       padding: 0;
 
       &--search {
-        width: 85px;
+        width: 82px;
         order: 0;
-        margin-left: 260px;
+        margin-left: 247px;
       }
 
       &--cart {
+        width: 264px;
         order: 0;
+      }
+
+      &--catalog,
+      &--new {
+        width: 185px;
+        border: none;
+      }
+
+      &--order,
+      &--sale {
+        padding-left: 34px;
+        border: none;
+      }
+
+      &--order {
+        border-left: 1px solid #ececec;
       }
 
       &--info {
         height: 0;
         padding-top: 20px;
+        border: none;
       }
 
       &--desktop {
         display: inline-flex;
         height: 0;
         padding-top: 20px;
+      }
+
+      &:last-child {
+        border: none;
       }
     }
   }

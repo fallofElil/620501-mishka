@@ -1,3 +1,4 @@
+//-----menu-----
 var menu = document.querySelector(".menu");
 var menuToggle = document.querySelector(".menu__toggle");
 
@@ -18,3 +19,24 @@ menuToggle.addEventListener("click", function () {
     menu.classList.remove("menu--opened");
   }
 });
+
+//-----modal-----
+var weekArtBtn = document.querySelector(".btn--week-art");
+var cartBtn = document.querySelectorAll(".article__link-to-cart");
+var modal = document.querySelector(".modal");
+
+weekArtBtn.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  modal.classList.add("modal--show");
+});
+
+cartBtn.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  modal.classList.add("modal--show");
+});
+
+window.onclick = function (evt) {
+  if (evt.target == modal) {
+    modal.classList.remove("modal--show");
+  }
+}

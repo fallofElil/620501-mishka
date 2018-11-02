@@ -26,13 +26,15 @@
   @media (min-width: $desktop-width) {
     width: 1050px;
     min-height: 305px;
-    margin-bottom: 105px;
+    margin-bottom: 108px;
     padding-top: 148px;
 
     &::before {
+      top: -11px;
       height: 23px;
       width: 1050px;
-      background-size: auto;
+      background-size: auto 21px;
+      background-position: 28px;
     }
   }
 }

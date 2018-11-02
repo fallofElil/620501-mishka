@@ -2,6 +2,10 @@
 
 .copyright {
   margin: auto 0;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 30px;
+  }
 }
 
 .copyright__text {

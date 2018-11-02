@@ -1,6 +1,7 @@
-@import "pixel_glass";
+@import "normalize.scss";
 @import "variables.scss";
 @import "global.scss";
+@import "pixel-glass.scss";
 @import "blocks/about-us.scss";
 @import "blocks/article.scss";
 @import "blocks/btn.scss";
@@ -23,3 +24,4 @@
 @import "blocks/contacts.scss";
 @import "blocks/wrapper.scss";
 @import "blocks/icon.scss";
+@import "blocks/modal.scss";

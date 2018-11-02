@@ -11,9 +11,18 @@
   margin-bottom: 30px;
   z-index: 5;
 
+  @media (min-width: $tablet-width) {
+    width: 670px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
   @media (min-width: $desktop-width) {
+    position: relative;
+    width: 1050px;
     align-items: center;
-    margin-bottom: 45px;
+    margin-bottom: 46px;
   }
 }
 
@@ -74,8 +83,18 @@
 }
 
 .week-article__price {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.41em;
+  color: $greyish-brown;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 1.2em;
   }
 
   @media (min-width: $desktop-width) {
@@ -109,34 +128,12 @@
   }
 }
 
-.week-article__price {
-  margin: 0 auto;
-  margin-bottom: 25px;
-  font-size: 17px;
-  font-weight: 700;
-  text-align: center;
-  line-height: 1.41em;
-  color: $greyish-brown;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 1.2em;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .week-article {
     position: relative;
     width: 670px;
     padding-top: 50px;
     padding-bottom: 65px;
-  }
-
-  .week-article__header {
-    width: 670px;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 40px;
   }
 
   .week-article__subtitle {
@@ -154,11 +151,6 @@
     width: 1050px;
     padding-top: 107px;
     padding-bottom: 85px;
-  }
-
-  .week-article__header {
-    position: relative;
-    width: 1050px;
   }
 
   .week-article__description-wrapper {
