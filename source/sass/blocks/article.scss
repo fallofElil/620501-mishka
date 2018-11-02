@@ -3,7 +3,7 @@
 .article {
   width: 260px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -105,7 +105,7 @@
 
 .article__characteristics {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-size: 13px;
   line-height: 2.3em;
   color: $greyish-brown;

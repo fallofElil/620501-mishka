@@ -4,7 +4,7 @@
   position: relative;
   width: 260px;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
   border: 1px solid #ececec;
 
   @media (min-width: $tablet-width) {
@@ -25,7 +25,7 @@
 .video-material__title {
   position: relative;
   width: 130px;
-  margin-tpo: 30px;
+  margin-top: 24px;
   margin-bottom: 25px;
   padding-left: 90px;
   font-size: 17px;
@@ -53,7 +53,7 @@
 .video-material__video {
   width: 260px;
   height: 150px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   background-image: url("../img/video-mobile@1x.jpg");
 
   @media (min-width: $tablet-width) {
@@ -127,7 +127,7 @@
   width: 185px;
   margin: 0;
   margin-left: 35px;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   font-size: 13px;
   line-height: 1.84em;
   color: $greyish-brown;
