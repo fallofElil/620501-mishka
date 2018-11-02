@@ -121,6 +121,17 @@
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
+
+    .menu__item {
+      padding: 0;
+      border: none;
+
+      &--catalog,
+      &--order,
+      &--info {
+        padding-top: 19px;
+      }
+    }
   }
 }
 
@@ -171,7 +182,7 @@
     @media (min-width: $tablet-width) {
       order: -1;
       width: 82px;
-      margin-left: 230px;
+      margin-left: 323px;
       padding: 0;
       border-left: 1px solid #ececec;
       border-right: 1px solid #ececec;

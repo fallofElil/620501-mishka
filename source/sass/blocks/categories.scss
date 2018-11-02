@@ -7,6 +7,7 @@
     position: relative;
     flex-direction: row;
     margin: 0 auto;
+    margin-bottom: 35px;
     background-color: #f9f9f9;
 
     &::after {
@@ -21,7 +22,7 @@
       margin: 0 auto;
       background-image: url("../img/svg/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
-      background-size: auto 24px;
+      background-size: auto 23px;
       background-position: bottom;
     }
   }
@@ -50,8 +51,10 @@
     display: block;
     width: 265px;
     padding: 35px;
+    padding-top: 31px;
     padding-bottom: 40px;
-    padding-left: 35px;
+    font-size: 20px;
+    line-height: 1.5em;
   }
 
   @media (min-width: $desktop-width) {

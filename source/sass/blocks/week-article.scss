@@ -57,7 +57,7 @@
   margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 38px;
     font-size: 17px;
     line-height: 1.76em;
   }
@@ -73,7 +73,7 @@
   border-collapse: collapse;
   
   @media (min-width: $tablet-width) {
-    margin-bottom: 35px;
+    margin-bottom: 51px;
   }
 
   @media (min-width: $desktop-width) {
@@ -92,7 +92,7 @@
   color: $greyish-brown;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
     font-size: 20px;
     line-height: 1.2em;
   }
@@ -119,7 +119,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 150px; /*--временное значение, нужно определиться, относительно какого блока позиционировать--*/
+    top: 106px;
     right: 0;
   }
 
@@ -132,8 +132,7 @@
   .week-article {
     position: relative;
     width: 670px;
-    padding-top: 50px;
-    padding-bottom: 65px;
+    padding-bottom: 55px;
   }
 
   .week-article__subtitle {

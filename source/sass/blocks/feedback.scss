@@ -8,7 +8,7 @@
     width: 670px;
     padding: 0;
     padding-top: 80px;
-    margin-bottom: 70px;
+    margin-bottom: 110px;
 
     &::before {
       content: "";
@@ -48,6 +48,8 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
+    font-size: 17px;
+    line-height: 1.76em;
   }
 
   @media (min-width: $desktop-width) {
@@ -98,7 +100,8 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 140px;
+    width: 180px;
+    margin-bottom: 0;
     border: none;
   }
 

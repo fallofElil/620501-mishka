@@ -15,11 +15,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 70px;
+    padding-top: 80px;
 
     &::before {
       height: 15px;
-      background-size: 85%;
+      background-size: auto 15px;
     }
   }
 
@@ -48,6 +48,7 @@
   @media (min-width: $tablet-width) {
     width: 670px;
     margin: 0 auto;
+    margin-bottom: 30px;
 
     tbody {
       display: flex;
@@ -58,8 +59,6 @@
     width: 300px;
     margin-left: 175px;
     margin-bottom: 47px;
-    font-size: 17px;
-    line-height: 1.76em;
 
     tbody {
       display: table;
@@ -72,6 +71,11 @@
 .contacts__table td {
   padding-bottom: 25px;
   line-height: 2em;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 1.76em;
+  }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 28px;
@@ -90,6 +94,14 @@
 }
 
 .contacts__value {
+  @media (min-width: $tablet-width) {
+    padding-right: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
+
   &--email {
     a {
       padding-bottom: 5px;
@@ -108,12 +120,10 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
-    padding-right: 55px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-right: 0;
+  &--address {
+    @media (min-width: $tablet-width) {
+      padding-right: 0;
+    }
   }
 }
 
@@ -143,6 +153,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
     background-image: url("../img/map-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
