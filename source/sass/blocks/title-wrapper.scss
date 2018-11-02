@@ -70,7 +70,14 @@
   }
 
   &--form {
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 62px;
+    }
+
     @media (min-width: $desktop-width) {
+      margin-top: -22px;
       margin-bottom: 119px;
     }
   }
