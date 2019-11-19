@@ -221,6 +221,8 @@
 
     &--info {
       height: 0;
+      margin-right: 45px;
+      margin-top: 20px;
 
       p {
         margin: 0;
@@ -229,6 +231,7 @@
 
     &--catalog {
       width: 185px;
+      margin-left: 50px;
       border: none;
 
       a {
@@ -255,7 +258,12 @@
 
     &--new {
       width: 185px;
+      margin-left: 50px;
       border: none;
+    }
+
+    &--sale {
+      margin-left: 35px;
     }
 
     &--desktop {

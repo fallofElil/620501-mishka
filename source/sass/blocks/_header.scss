@@ -15,5 +15,14 @@
 @media (min-width: $desktop-width) {
   .header {
     width: 1150px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 19px;
+      width: 100%;
+      height: 1px;
+      background-color: #ececec;
+    }
   }
 }
