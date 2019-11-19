@@ -8,6 +8,7 @@
 
   @media (min-width: $tablet-width) {
     height: 760px;
+    margin-top: -50px;
 
     &::after {
       content: "";

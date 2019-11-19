@@ -3,26 +3,26 @@
   min-height: 80px;
   margin: 0 auto;
   z-index: 2;
-}
 
-@media (min-width: $tablet-width) {
-  .header {
+  @media (min-width: $tablet-width) {
     width: auto;
     min-height: 90px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .header {
-    width: 1150px;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
-      bottom: 19px;
+      bottom: 51px;
       width: 100%;
       height: 1px;
       background-color: #ececec;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+
+    &::after {
+      bottom: 19px;
     }
   }
 }

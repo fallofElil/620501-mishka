@@ -16,22 +16,24 @@
   <style>
     HTML {
       background-repeat: no-repeat;
-      background-position:  50% 0;
+      background-position: 50% 0;
       /* Mobile layout by default */
-      background-image: url( "img/pp/mishka-index-mobile.jpg" );
+      background-image: url("img/pp/mishka-index-mobile.jpg");
     }
+
     /* Tablet */
-    @media ( min-width: 768px ) {
+    @media (min-width: 768px) {
       HTML {
         /* Tablet layout */
-        background-image: url( "img/pp/mishka-index-tablet.jpg" );
+        background-image: url("img/pp/mishka-index-tablet.jpg");
       }
     }
+
     /* Desktop */
-    @media ( min-width: 1200px ) {
+    @media (min-width: 1200px) {
       HTML {
         /* Desktop layout */
-        background-image: url( "img/pp/mishka-index-desktop.jpg" );
+        background-image: url("img/pp/mishka-index-desktop.jpg");
       }
     }
   </style>
@@ -53,7 +55,7 @@
 
       <picture class="home-top-pic">
         <source media="(min-width: 1200px)" srcset="img/hero-desktop@1x.jpg 1x, img/hero-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="img/hero-tablet@1x.jpg 1x, img/hero-tablet@2x.jpg 2x" width="668">
+        <source media="(min-width: 768px)" srcset="img/hero-tablet@1x.jpg 1x, img/hero-tablet@2x.jpg 2x">
         <img src="img/hero-mobile@1x.jpg" alt="полка с вязанными игрушками" srcset="img/hero-mobile@2x.jpg 2x">
       </picture>
 
@@ -109,47 +111,49 @@
         <a class="btn btn--week-art" href="#">заказать</a>
       </div>
     </article>
-    <section class="about-us">
-      <h2 class="section-title section-title--about-us">Коротко о нас:</h2>
-      <ul class="about-us__list">
-        <li class="about-us__feature about-us__feature--eco">
-          <svg class="icon icon--feature-flower" viewBox="0 0 31.972 37.301" width="32" height="37px">
-            <use xlink:href="#icon-feature-flower" />
-          </svg>
-          Экологически чистые&nbsp;материалы
-        </li>
-        <li class="about-us__feature about-us__feature--price">
-          <svg class="icon icon--feature-money" viewBox="0 0 46.575 27.332" width="47" height="27">
-            <use xlink:href="#icon-feature-money" />
-          </svg>
-          Скандинавский стиль по&nbsp;российской&nbsp;цене
-        </li>
-        <li class="about-us__feature about-us__feature--like">
-          <svg class="icon icon--feature-heart" viewBox="0 0 33.05 27.857" width="34" height="27">
-            <use xlink:href="#icon-feature-heart" />
-          </svg>
-          Увеличивает лайки на&nbsp;фотографиях
-        </li>
-        <li class="about-us__feature about-us__feature--love">
-          <svg class="icon icon--feature-ball" viewBox="0 0 34.373 34.373" width="35" height="34">
-            <use xlink:href="#icon-feature-ball" />
-          </svg>
-          Связано вручную с любовью&nbsp;и&nbsp;умилением
-        </li>
-        <li class="about-us__feature about-us__feature--support">
-          <svg class="icon icon--feature-rocket" viewBox="0 0 54.156 23.183" width="55" height="23">
-            <use xlink:href="#icon-feature-rocket" />
-          </svg>
-          Поддержка отечественного производителя
-        </li>
-        <li class="about-us__feature about-us__feature--gift">
-          <svg class="icon icon--feature-gift" viewBox="0 0 32.666 32.486" width="33" height="32">
-            <use xlink:href="#icon-feature-gift" />
-          </svg>
-          Поставляется в подарочной&nbsp;упаковке
-        </li>
-      </ul>
-    </section>
+    <div class="container container--about-us">
+      <section class="about-us">
+        <h2 class="section-title section-title--about-us">Коротко о нас:</h2>
+        <ul class="about-us__list">
+          <li class="about-us__feature about-us__feature--eco">
+            <svg class="icon icon--feature-flower" viewBox="0 0 31.972 37.301" width="32" height="37px">
+              <use xlink:href="#icon-feature-flower" />
+            </svg>
+            Экологически чистые&nbsp;материалы
+          </li>
+          <li class="about-us__feature about-us__feature--price">
+            <svg class="icon icon--feature-money" viewBox="0 0 46.575 27.332" width="47" height="27">
+              <use xlink:href="#icon-feature-money" />
+            </svg>
+            Скандинавский стиль по&nbsp;российской&nbsp;цене
+          </li>
+          <li class="about-us__feature about-us__feature--like">
+            <svg class="icon icon--feature-heart" viewBox="0 0 33.05 27.857" width="34" height="27">
+              <use xlink:href="#icon-feature-heart" />
+            </svg>
+            Увеличивает лайки на&nbsp;фотографиях
+          </li>
+          <li class="about-us__feature about-us__feature--love">
+            <svg class="icon icon--feature-ball" viewBox="0 0 34.373 34.373" width="35" height="34">
+              <use xlink:href="#icon-feature-ball" />
+            </svg>
+            Связано вручную с любовью&nbsp;и&nbsp;умилением
+          </li>
+          <li class="about-us__feature about-us__feature--support">
+            <svg class="icon icon--feature-rocket" viewBox="0 0 54.156 23.183" width="55" height="23">
+              <use xlink:href="#icon-feature-rocket" />
+            </svg>
+            Поддержка отечественного производителя
+          </li>
+          <li class="about-us__feature about-us__feature--gift">
+            <svg class="icon icon--feature-gift" viewBox="0 0 32.666 32.486" width="33" height="32">
+              <use xlink:href="#icon-feature-gift" />
+            </svg>
+            Поставляется в подарочной&nbsp;упаковке
+          </li>
+        </ul>
+      </section>
+    </div>
     <section class="feedback">
       <h2 class="section-title section-title--feedback">Отзывы</h2>
       <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого

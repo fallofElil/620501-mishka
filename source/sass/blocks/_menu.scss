@@ -125,7 +125,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .menu {
+    width: 670px;
+    margin: 0 auto;
+  }
+
   .menu__list {
+    width: 100%;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -139,7 +145,6 @@
 
   .menu__item {
     padding: 0;
-    padding-top: 20px;
     width: 165px;
 
     &:last-child {
@@ -163,7 +168,7 @@
 
     &--search {
       width: 82px;
-      margin-left: 323px;
+      margin-left: 320px;
       padding: 0;
       border-left: 1px solid #ececec;
       border-right: 1px solid #ececec;
@@ -178,6 +183,7 @@
     &--cart {
       width: 265px;
       height: 90px;
+      margin: 0;
       font-size: 17px;
       text-align: right;
 
@@ -188,12 +194,20 @@
       }
     }
 
+    &--catalog {
+      margin-left: 0;
+      margin-right: 5px;
+    }
+
     &--info {
       display: inline-flex;
       width: 231px;
-      padding-top: 19px;
       margin-left: auto;
       border: none;
+
+      p {
+        margin-top: 20px;
+      }
     }
   }
 
