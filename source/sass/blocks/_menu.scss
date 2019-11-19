@@ -186,7 +186,6 @@
       padding: 0;
       border-left: 1px solid #ececec;
       border-right: 1px solid #ececec;
-      /*outline: 1px solid darkgrey;*/
 
       a {
         display: block;
@@ -205,11 +204,11 @@
       padding: 0;
       font-size: 17px;
       text-align: right;
-      /*outline: 1px solid darkgrey;*/
 
       a {
         display: block;
-        padding-top: 35px;
+        padding-top: 30px;
+        padding-bottom: 30px;
         font-size: 17px;
       }
     }
@@ -238,7 +237,8 @@
     &--catalog a,
     &--order a {
       display: block;
-      padding-top: 35px;
+      padding-top: 30px;
+      padding-bottom: 30px;
       font-size: 17px;
       line-height: 1.41em;
     }
@@ -280,6 +280,7 @@
       }
 
       &--info {
+        width: 231px;
         height: 0;
         padding-top: 20px;
         border: none;
@@ -288,7 +289,7 @@
       &--desktop {
         display: inline-flex;
         height: 0;
-        padding-top: 20px;
+        padding-top: 15px;
       }
 
       &:last-child {
