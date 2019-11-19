@@ -92,11 +92,8 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"), server.reload);
+  gulp.watch("source/*.html").on("change", gulp.series("html"), server.reload);
 });
 
 gulp.task("build", gulp.series("clean", "copy", "css", "svgSprite", "html", "cleanTrash"));
-gulp.task("start", gulp.series("css", "server"));
-
-gulp.task("reload", gulp.series("build", "start"));
