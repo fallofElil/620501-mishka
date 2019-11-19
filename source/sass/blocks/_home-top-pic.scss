@@ -1,0 +1,14 @@
+.home-top-pic {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: $tablet-width) {
+        width: 100%;
+        height: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: auto;
+        height: 745px;
+    }
+}

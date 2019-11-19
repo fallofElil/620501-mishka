@@ -2,16 +2,18 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: stretch;
   align-items: center;
   background-color: #f9f9f9;
 
   @media (min-width: $tablet-width) {
+    height: 760px;
+
     &::after {
       content: "";
       position: absolute;
       left: 0;
-      bottom: -14px;
+      bottom: 0;
       display: block;
       width: 100vw;
       max-width: 100%;
@@ -26,7 +28,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -21px;
+    height: 760px;
+    margin-top: -38px;
 
     &::after {
       height: 37px;
