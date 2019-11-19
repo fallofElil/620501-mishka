@@ -1,7 +1,36 @@
 .top-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f9f9f9;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: block;
+      width: 100vw;
+      max-width: 100%;
+      height: 24px;
+      margin: 0 auto;
+      background-image: url("../img/svg/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: auto 23px;
+      background-position: bottom;
+      z-index: 2;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -21px;
+
+    &::after {
+      height: 37px;
+      background-size: auto 37px;
+    }
+  }
 }

@@ -25,21 +25,11 @@
   }
 
   &--home {
-    height: 1em;
-    padding: 0 30px;
+    position: absolute;
+    top: 0px;
+    height: auto;
     margin: 0;
-    background-position: center;
-    background-position-y: -20px;
-    background-repeat: no-repeat;
-    background-color: #f9f9f9;
-
-    @media (min-width: $tablet-width) {
-      height: 1em;
-    }
-
-    @media (min-width: $desktop-width) {
-      height: 1em;
-    }
+    background: none;
   }
 
   &--catalog {
