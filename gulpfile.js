@@ -92,7 +92,7 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"), server.reload);
+  gulp.watch("source/sass/**/*.{scss,sass}").on("change", gulp.series("css"), server.reload);
   gulp.watch("source/*.html").on("change", gulp.series("html"), server.reload);
 });
 

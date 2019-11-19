@@ -10,7 +10,7 @@
     height: 195px;
     padding-top: 40px;
     margin-top: -42px;
-    margin-bottom: 69px;
+    margin-bottom: 70px;
     background-image: url("../img/svg/bg-zigzag-fill.svg");
     background-size: auto 23px;
     background-position: bottom;
@@ -25,37 +25,20 @@
   }
 
   &--home {
-    height: 280px;
+    height: 1em;
     padding: 0 30px;
-    background-image: url("../img/hero-mobile@1x.jpg");
+    margin: 0;
     background-position: center;
     background-position-y: -20px;
     background-repeat: no-repeat;
     background-color: #f9f9f9;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/hero-mobile@2x.jpg");
-    }
-
     @media (min-width: $tablet-width) {
-      height: 625px;
-      margin-top: -42px;
-      background-position-y: -2px;
-      background-image: url("../img/hero-tablet@1x.jpg");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/hero-tablet@2x.jpg");
-      }
+      height: 1em;
     }
 
     @media (min-width: $desktop-width) {
-      margin-top: -22px;
-      background-image: url("../img/hero-desktop@1x.jpg");
-      background-position-y: -3px;
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/hero-desktop@2x.jpg");
-      }
+      height: 1em;
     }
   }
 
