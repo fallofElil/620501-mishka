@@ -7,6 +7,7 @@ var gulp = require("gulp"),
     autoprefixer = require("autoprefixer"),
     server = require("browser-sync").create(),
     cheerio = require("gulp-cheerio"),
+    minify = require("gulp-minify"),
     replace = require("gulp-replace"),
     rename = require("gulp-rename"),
     del = require("del"),
@@ -59,6 +60,13 @@ gulp.task("html", () => {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("js", () => {
+  return gulp.src("source/js/script.js")
+    .pipe(minify())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("clean", function () {
   return del("build");
 });
@@ -76,7 +84,8 @@ gulp.task("copy", function () {
     "source/img/svg/**",
     "source/img/**.jpg",
     "source/img/pp/**.jpg",
-    "source/js/**"
+    "source/js/*.min.js",
+    "source/js/pixel_glass.js"
   ], {
     base: "source"
   })
@@ -94,6 +103,7 @@ gulp.task("server", function () {
 
   gulp.watch("source/sass/**/*.{scss,sass}").on("change", gulp.series("css"));
   gulp.watch("source/*.html").on("change", gulp.series("html"), server.reload);
+  gulp.watch("source/js/script.js").on("change", gulp.series("js"), server.reload);
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "svgSprite", "html", "cleanTrash"));
+gulp.task("build", gulp.series("clean", "copy", "css", "js", "svgSprite", "html", "cleanTrash"));
