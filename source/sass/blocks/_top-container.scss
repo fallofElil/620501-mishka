@@ -2,13 +2,14 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
+  justify-content: space-between;
   align-items: center;
   background-color: #f9f9f9;
 
   @media (min-width: $tablet-width) {
-    height: 760px;
+    height: 755px;
     margin-top: -50px;
+    margin-bottom: 35px;
 
     &::after {
       content: "";
@@ -29,12 +30,26 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 760px;
     margin-top: -20px;
 
     &::after {
       height: 37px;
       background-size: auto 37px;
+    }
+  }
+}
+
+.top-container__pic-container {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    height: 100%;
+    width: 670px;
+    overflow: hidden;
+    margin: 0 auto;
+
+    img {
+      margin-left: 50%;
+      transform: translate(-50%);
     }
   }
 }

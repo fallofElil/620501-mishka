@@ -68,6 +68,10 @@
   }
 }
 
+.contacts__row {
+  padding-top: 5px;
+}
+
 .contacts__table th,
 .contacts__table td {
   padding-bottom: 25px;
@@ -89,6 +93,10 @@
   text-align: left;
   vertical-align: top;
 
+  @media (min-width: $tablet-width) {
+    width: 70px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 67px;
   }
@@ -96,7 +104,7 @@
 
 .contacts__value {
   @media (min-width: $tablet-width) {
-    padding-right: 55px;
+    padding-right: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -123,6 +131,8 @@
 
   &--address {
     @media (min-width: $tablet-width) {
+      padding-left: 5px;
+      padding-bottom: 5px;
       padding-right: 0;
     }
   }

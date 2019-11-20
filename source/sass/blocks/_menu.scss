@@ -217,6 +217,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .menu {
+    width: 1050px;
+  }
+
   .menu__item {
     width: 234px;
     height: 90px;
@@ -235,8 +239,8 @@
 
     &--info {
       height: 0;
-      margin-right: 45px;
       margin-top: 20px;
+      margin-right: -4px;
 
       p {
         margin: 0;
@@ -245,7 +249,7 @@
 
     &--catalog {
       width: 185px;
-      margin-left: 50px;
+      margin-left: 0;
       border: none;
 
       a {
@@ -258,7 +262,7 @@
     }
 
     &--order {
-      padding-left: 34px;
+      padding-left: 30px;
       border: none;
 
       a {
@@ -272,7 +276,6 @@
 
     &--new {
       width: 185px;
-      margin-left: 50px;
       border: none;
     }
 

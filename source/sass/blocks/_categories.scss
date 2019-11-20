@@ -3,10 +3,8 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    bottom: 0;
     flex-direction: row;
-    margin: 0 auto;
+    margin-top: auto;
     background-color: #f9f9f9;
   }
 }
