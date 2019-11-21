@@ -4,7 +4,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 490px;
+  height: 485px;
+  margin-bottom: 25px;
   background-color: #f9f9f9;
 
   @media (min-width: $tablet-width) {
@@ -43,16 +44,19 @@
 .top-container__pic-container {
   position: absolute;
   top: 0;
+  width: 320px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: -20px;
+
+  img {
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
 
   @media (min-width: $tablet-width) {
     height: 100%;
     width: 670px;
-    overflow: hidden;
-    margin: 0 auto;
-
-    img {
-      margin-left: 50%;
-      transform: translate(-50%);
-    }
+    margin-top: auto;
   }
 }

@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   z-index: 5;
 
   @media (min-width: $tablet-width) {
@@ -54,7 +54,7 @@
 
 .week-article__description-txt {
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 38px;
@@ -105,8 +105,12 @@
 .week-article__characteristics th,
 .week-article__characteristics td {
   padding-top: 7px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   border-bottom: 1px solid $light-grey;
+}
+
+.week-article__characteristic-value {
+  padding-left: 10px;
 }
 
 .week-article__characteristic-title {

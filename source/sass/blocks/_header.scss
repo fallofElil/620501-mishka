@@ -2,6 +2,8 @@
   position: relative;
   min-height: 80px;
   margin: 0 auto;
+  border-bottom: 1px solid #ececec;
+  background-color: #fff;
   z-index: 2;
 
   @media (min-width: $tablet-width) {
