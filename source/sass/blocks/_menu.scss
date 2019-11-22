@@ -153,6 +153,7 @@
   .menu__item {
     padding: 0;
     width: 165px;
+    border-bottom: none;
 
     &:last-child {
       border: none;
@@ -179,6 +180,7 @@
       padding: 0;
       border-left: 1px solid #ececec;
       border-right: 1px solid #ececec;
+      border-bottom: none;
 
       a {
         width: 82px;
@@ -204,6 +206,7 @@
     &--catalog {
       margin-left: 0;
       margin-right: 5px;
+      border-top: none;
     }
 
     &--info {
@@ -258,6 +261,7 @@
       width: 185px;
       margin-left: 0;
       border: none;
+      border-right: 1px solid #ececec;
 
       a {
         display: block;
